@@ -22,3 +22,12 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+### MVPs
+* Flickr
+* Photos
+* Albums
+* Comments
+* Tags
+* Bonus: Favorites
+* Bonus: Follows
