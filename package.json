@@ -1,5 +1,5 @@
 {
-  "name": "captur",
+  "name": "captr",
   "private": true,
   "dependencies": {
     "babel-core": "^6.26.0",
@@ -15,7 +15,7 @@
     "redux-logger": "^3.0.6",
     "webpack": "^3.10.0"
   },
-  "description": "captur: social media network to share and display photos",
+  "description": "captr: social media network to share and display photos",
   "version": "1.0.0",
   "main": "index.js",
   "directories": {
@@ -28,14 +28,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GreenRabite/captur.git"
+    "url": "git+https://github.com/GreenRabite/captr.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GreenRabite/captur/issues"
+    "url": "https://github.com/GreenRabite/captr/issues"
   },
-  "homepage": "https://github.com/GreenRabite/captur#readme",
+  "homepage": "https://github.com/GreenRabite/captr#readme",
   "devDependencies": {}
 }

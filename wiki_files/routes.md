@@ -1,6 +1,6 @@
 # Routes
 
-Below are the routes used in captur.
+Below are the routes used in **captr**.
 
 ## API Endpoints
 

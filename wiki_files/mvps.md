@@ -1,6 +1,6 @@
 ### MVPs
 
-**captur** was developed  under the guidelines of the **"MVP"** feature system (__Minimum Viable Product__) in order to become a viable production level product by the end of short development schedule. This page works double time in that it is high overarching scope of the project as well as a barometer for the developer on what needs to be implemented next. This list will cover **seven** of these points ranging from four core design features and three more relating directly to the functionality of the parent app, _Flickr_. These features are as follows:
+**captr** was developed  under the guidelines of the **"MVP"** feature system (__Minimum Viable Product__) in order to become a viable production level product by the end of short development schedule. This page works double time in that it is high overarching scope of the project as well as a barometer for the developer on what needs to be implemented next. This list will cover **seven** of these points ranging from four core design features and three more relating directly to the functionality of the parent app, _Flickr_. These features are as follows:
 
 1. [ ] New account creation, login, guest/demo login, and authentication
 2. [ ] Production level README

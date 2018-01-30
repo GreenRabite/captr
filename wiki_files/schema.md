@@ -7,7 +7,8 @@
 | `id`             | Integer   | not null, primary key     |
 | `username`       | String    | not null, indexed, unique |
 | `email`          | String    | not null, indexed, unique |
-| `profile_img`    | String    | not null                  |
+| `first_name`     | String    | not null,                 |
+| `profile_img`    | String    | optional                  |
 | `password_digest`| String    | not null                  |
 | `session_token`  | String    | not null, indexed, unique |
 | `created_at`     | Datetime  | not null                  |
@@ -24,6 +25,8 @@
 | `created_at`     | Datetime  | not null                      |
 | `updated_at`     | Datetime  | not null                      |
 
+* `owner_id` references the `users` table.
+
 ## `photos`
 
 | Column Name      | Data Type | Comments                      |
@@ -35,7 +38,9 @@
 | `created_at`     | Datetime  | not null                      |
 | `updated_at`     | Datetime  | not null                      |
 
-## `albums_photos`
+* `owner_id` references the `users` table.
+
+## `album_photos`
 
 | Column Name      | Data Type | Comments                      |
 |:----------------:|:---------:| :----------------------------:|
@@ -64,5 +69,15 @@
 |:----------------:|:---------:| :----------------------------:|
 | `id`             | Integer   | not null, primary key         |
 | `name`           | String    | not null                      |
+| `created_at`     | Datetime  | not null                      |
+| `updated_at`     | Datetime  | not null                      |
+
+## `taggings`
+
+| Column Name      | Data Type | Comments                      |
+|:----------------:|:---------:| :----------------------------:|
+| `id`             | Integer   | not null, primary key         |
+| `tag_id`         | Integer   | not null, foreign key         |
+| `photo_id`       | Integer   | not null  foreign key         |
 | `created_at`     | Datetime  | not null                      |
 | `updated_at`     | Datetime  | not null                      |

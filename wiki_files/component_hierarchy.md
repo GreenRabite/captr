@@ -19,23 +19,29 @@
         * `UserShow`
     * State
       * `users[:id]`, `photos`, `albums`, `favorites`
-* Users New Page
+* Users Form Page
     * Routes
-        * `/users/new`
+        * `/signup`
+        * `/users/:userId/edit`
     * Components
-        * `UserNew`
+        * `UserFormContainer`
+            * `UserNew`
+            * `UserEdit`
+    * State
+        *`users[:id]`
 ***
 ## Photos
 
 * Photos Index Page
     * Routes
-        * `/home`
+        * `/`
+        * `/photos`
     * Components
         * `PhotoIndexContainer`
         * `PhotoIndex`
         * `PhotoIndexItem`
     * State
-        * `photos[:id]`, `users[:id]`, `albums[:id]`, `ui`
+        * `photos[:id]`, `users[:id]`, `ui`
 * Photo Show Page
     * Routes
         * `/photos/:photoId`
@@ -91,7 +97,7 @@
             * `SessionButtons`
         * `UserNavContainer`
             * `UserNav`
-    * State: `Session`
+    * State: `session`
 
 ***
 ## Tags
