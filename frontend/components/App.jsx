@@ -1,8 +1,19 @@
 import React from 'react';
+import { Route, Switch, Link, HashRouter } from 'react-router-dom';
+
+// Components
+import GreetingContainer from './greeting/greeting_container';
+import SessionFormContainer from './session/session_form_container';
+import { AuthRoute } from './../utils/route_utils';
 
 const App = () => (
   <div>
-    <h1>Im working with captr</h1>
+    <header>
+      <GreetingContainer/>
+    </header>
+
+    <AuthRoute path="/login" component={SessionFormContainer} />
+    <AuthRoute path="/signup" component={SessionFormContainer} />
   </div>
 );
 

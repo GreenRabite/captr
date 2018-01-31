@@ -10,7 +10,15 @@ import {login, logout, signup, receiveCurrentUser, receiveErrors } from './actio
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');
-  let store = configureStore();
+  let preloadedState = undefined;
+  if (window.currentUser) {
+    preloadedState = {
+      session: {
+        currentUser: window.currentUser
+      }
+    };
+  }
+  let store = configureStore(preloadedState);
   window.getState = store.getState;
   window.dispatch = store.dispatch;
   window.signup = APIUsers.signup;
@@ -19,5 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
   window.login = login;
   window.logout = logout;
   window.signup = signup;
+
   ReactDOM.render(<Root store = { store } />, root);
 });
