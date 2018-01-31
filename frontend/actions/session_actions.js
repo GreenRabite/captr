@@ -1,4 +1,5 @@
-import * as APISession from "../utils/session_api_util";
+import * as APISession from "../utils/session_api_utils";
+import * as APIUsers from "../utils/users_api_utils";
 
 export const RECEIVE_CURRENT_USER = "RECEIVE_CURRENT_USER";
 export const RECEIVE_ERRORS = "RECEIVE_ERRORS";
@@ -19,7 +20,7 @@ export const login = (user) => (dispatch) =>(
 );
 
 export const signup = (user) => (dispatch) =>(
-  APISession.signup(user).then((newUser) => (dispatch(receiveCurrentUser(newUser)))),
+  APIUsers.signup(user).then((newUser) => (dispatch(receiveCurrentUser(newUser)))),
   (errors) => dispatch(receiveErrors(errors.responseJSON))
 );
 
