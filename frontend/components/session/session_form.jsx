@@ -18,6 +18,9 @@ class SessionForm extends React.Component {
     if (nextProps.loggedIn) {
       this.props.history.push('/');
     }
+    if (this.props.errors && this.props.errors.length) {
+      this.props.clearErrors();
+    }
   }
 
   update(field) {
@@ -114,14 +117,14 @@ class SessionForm extends React.Component {
             </label>
             <br/>
             <br/>
-            <div className="form-submit">
-              <input type="submit" value="Submit" />
-            </div>
-            <div className="session_form_ending_tag">{this.navLink()}</div>
-            <br/>
             <ul>
               {this.renderErrors()}
             </ul>
+            <div className="form-submit">
+              <input className="shadow" type="submit" value="Submit" />
+            </div>
+            <div className="session_form_ending_tag">{this.navLink()}</div>
+            <br/>
           </div>
         </form>
       </div>

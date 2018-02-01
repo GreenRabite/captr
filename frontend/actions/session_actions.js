@@ -15,16 +15,16 @@ export const receiveErrors = (errors) => ({
 });
 
 export const login = (user) => (dispatch) =>(
-  APISession.login(user).then((currentUser)=> dispatch(receiveCurrentUser(currentUser))),
-  (errors) => dispatch(receiveErrors(errors.responseJSON))
+  APISession.login(user).then((currentUser)=> dispatch(receiveCurrentUser(currentUser)),
+  (errors) => dispatch(receiveErrors(errors.responseJSON)))
 );
 
 export const signup = (user) => (dispatch) =>(
-  APIUsers.signup(user).then((newUser) => (dispatch(receiveCurrentUser(newUser)))),
-  (errors) => dispatch(receiveErrors(errors.responseJSON))
+  APIUsers.signup(user).then((newUser) => (dispatch(receiveCurrentUser(newUser))),
+  (errors) => dispatch(receiveErrors(errors.responseJSON)))
 );
 
 export const logout = () => (dispatch) =>(
-  APISession.logout().then((user) => (dispatch(receiveCurrentUser(null)))),
-  (errors) => dispatch(receiveCurrentUser(errors.responseJSON))
+  APISession.logout().then((user) => (dispatch(receiveCurrentUser(null))),
+  (errors) => dispatch(receiveCurrentUser(errors.responseJSON)))
 );

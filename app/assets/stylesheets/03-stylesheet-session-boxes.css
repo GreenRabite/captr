@@ -59,11 +59,32 @@
 	margin-right: 10px;
 }
 
-.buton-front-page{
+.button-front-page{
 	background-color: white;
 	padding: 5px;
 	color: black;
 	font-size: 17px;
 	border-radius: 5px;
-	margin-right: 7px;
+	height: 25px;
+	width: 125px;
+}
+
+.button-front-page:hover {
+	color: #0D120A;
+  background-color: #EDE3E9;
+}
+
+.button-front-page-container {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	margin-left: 40%;
+}
+
+.frontpage-button {
+	background-color: white;
+	padding: 11px 13px 11px 13px;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
 }

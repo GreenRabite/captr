@@ -26,7 +26,7 @@ const personalGreeting = (currentUser, logout) => (
     </div>
     <div className="login-nav-right">
       <h2 className="header-name">Hi, {currentUser.fname}!</h2>
-      <button className="header-button" onClick={logout}>Log Out</button>
+      <button className="header-button shadow" onClick={logout}>Log Out</button>
     </div>
 	</hgroup>
 );

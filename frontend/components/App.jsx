@@ -6,6 +6,7 @@ import GreetingContainer from './greeting/greeting_container';
 import SessionFormContainer from './session/session_form_container';
 import { AuthRoute } from './../utils/route_utils';
 import SplashContainer from './splash/splash_container';
+import SplashHeaders from './splash/splash_headers';
 import Footer from './footer';
 
 const App = () => {
@@ -21,12 +22,12 @@ const App = () => {
       <header>
         <GreetingContainer/>
       </header>
-        <div className="bodySplash">
-          <h1>Follow your passion.</h1>
-          <h3>Join the <strong>captr</strong> community and share your stories with passionate people</h3>
-        </div>;
       <Switch>
-
+        <AuthRoute exact path="/" component={SplashHeaders}   />
+        <AuthRoute exact path="/login" component={SplashHeaders}   />
+        <AuthRoute exact path="/signup" component={SplashHeaders}   />
+      </Switch>
+      <Switch>
         <AuthRoute path="/login" component={SplashContainer}   />
         <AuthRoute path="/signup" component={SplashContainer}  />
       </Switch>
