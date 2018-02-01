@@ -11,12 +11,6 @@ import Footer from './footer';
 
 const App = () => {
 
-  let splashHeading;
-  if (window.currentUser === undefined) {
-    splashHeading = "";
-  }else {
-    splashHeading = "hidden";
-  }
   return(
     <div>
       <header>
