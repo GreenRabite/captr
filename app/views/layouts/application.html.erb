@@ -5,6 +5,15 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script type="text/javascript">
+      window.staticImage = {
+        headerImage: "<%= asset_url("captr.svg") %>",
+        bgImage: "<%= asset_url("corgi.jpg") %>"
+      }
+    </script>
+
     <% if current_user %>
       <script>
         window.currentUser = {

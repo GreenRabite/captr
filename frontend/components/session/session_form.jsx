@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
+import Modal from 'react-modal';
 
 class SessionForm extends React.Component {
   constructor(props) {
@@ -34,9 +35,9 @@ class SessionForm extends React.Component {
 
   navLink() {
     if (this.props.formType === 'login') {
-      return <Link to="/signup">Sign Up Instead</Link>;
+      return <div>Need to create an account?<Link to="/signup"> Sign up.</Link></div>;
     } else {
-      return <Link to="/login">Log In Instead</Link>;
+      return <div>Already a member? <Link to="/login"> Log in.</Link></div>;
     }
   }
 
@@ -61,7 +62,7 @@ class SessionForm extends React.Component {
     let signUpInfo;
       if (this.props.formType === "signup") {
         signUpInfo = (
-          <div>
+          <div className="login-form-container">
             <label>
               <input type="text"
                 placeholder="First Name"
@@ -84,12 +85,13 @@ class SessionForm extends React.Component {
       }
 
     return (
-      <div className="login-form-container">
+      <div className="login-form-container login">
         <form onSubmit={this.handleSubmit} className="login-form-box">
-          Welcome to captr!
-          <br/>
-          Please {this.props.formType} or {this.navLink()}
-            {this.renderErrors()}
+          <div className="login-top-info">
+            Welcome to captr!
+            <br/>
+            Please {this.props.formType} below:
+          </div>
           <div className="login-form">
             <br/>
             <label>
@@ -111,7 +113,15 @@ class SessionForm extends React.Component {
               />
             </label>
             <br/>
-            <input type="submit" value="Submit" />
+            <br/>
+            <div className="form-submit">
+              <input type="submit" value="Submit" />
+            </div>
+            <div className="session_form_ending_tag">{this.navLink()}</div>
+            <br/>
+            <ul>
+              {this.renderErrors()}
+            </ul>
           </div>
         </form>
       </div>
