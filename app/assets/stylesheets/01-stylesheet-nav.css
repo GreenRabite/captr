@@ -31,6 +31,7 @@ input {
 
   border-radius: 5px;
   margin-right: 10px;
+  margin-top: 20px;
 }
 
 /*.nav-buttons a:hover{
@@ -41,10 +42,13 @@ input {
 
 .nav-button-login a{
   background-color: none;
-  color: white;
-  font-weight: 400;
-  font-size: 15px;
+  color: rgba(255,255,255, 1);
+  font-weight: 200;
+  font-size: 25px;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+.nav-button-login a:hover{
+  color: rgba(255,255,255, 0.5);
 }
 
 .nav-button-signup a{

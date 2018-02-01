@@ -78,13 +78,15 @@
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
-	margin-left: 40%;
+	margin-left: 5%;
 }
 
-.frontpage-button {
+.frontpage-button a {
 	background-color: white;
 	padding: 11px 13px 11px 13px;
 	color: black;
 	font-weight: bold;
 	font-size: 18px;
+	border-radius: 5px;
+	border: 1px solid gray;
 }
