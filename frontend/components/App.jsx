@@ -19,17 +19,17 @@ const App = () => {
       </header>
 
 
-      <ProtectedRoute path="/" component={PhotoIndexContainer} />
-      <Switch>
-      </Switch>
 
 
-      <AuthRoute path="/" component={SplashContainer}  />
+      <AuthRoute exact path="/" component={SplashContainer}  />
       <Switch>
         <AuthRoute path="/login" component={Splash}   />
         <AuthRoute path="/signup" component={Splash} />
       </Switch>
 
+      <Switch>
+        <ProtectedRoute path="/" component={PhotoIndexContainer} />
+      </Switch>
       <footer>
         <Footer/>
       </footer>
