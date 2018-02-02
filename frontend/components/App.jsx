@@ -18,18 +18,16 @@ const App = () => {
         <GreetingContainer/>
       </header>
 
-
-
-
-      <AuthRoute exact path="/" component={SplashContainer}  />
       <Switch>
-        <AuthRoute path="/login" component={Splash}   />
-        <AuthRoute path="/signup" component={Splash} />
+        <AuthRoute exact path="/login" component={Splash}   />
+        <AuthRoute exact path="/signup" component={Splash} />
       </Switch>
 
       <Switch>
-        <ProtectedRoute path="/" component={PhotoIndexContainer} />
+        <ProtectedRoute path="/home" component={PhotoIndexContainer} />
+        <AuthRoute path="/" component={SplashContainer}  />
       </Switch>
+
       <footer>
         <Footer/>
       </footer>
