@@ -11,8 +11,8 @@ class PhotoIndex extends React.Component {
   }
 
   render(){
+    debugger;
     let PhotoIndexItems = this.props.photos.map((photo)=> {
-      console.log(photo);
       return <PhotoIndexItem key={photo.id} photo={photo}/>;
     });
     return(

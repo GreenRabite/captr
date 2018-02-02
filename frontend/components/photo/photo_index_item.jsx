@@ -1,9 +1,9 @@
 import React from 'react';
 
-const PhotoIndexItem = (photo) => {
+const PhotoIndexItem = ({photo}) => {
   return (
     <div>
-      <img src={`${photo.photo.img_url}`}/>
+      <img src={`${photo.img_url}`}/>
     </div>
   );
 };
