@@ -30,7 +30,7 @@ export const createPhoto = (photo) => (
 
 export const deletePhoto = (id) => (
   $.ajax({
-    method: 'POST',
-    url: `api/photos`
+    method: 'DELETE',
+    url: `api/photos/${id}`
   })
 );

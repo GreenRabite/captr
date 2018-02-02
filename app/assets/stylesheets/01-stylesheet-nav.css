@@ -77,12 +77,22 @@ input {
   z-index: -1;
 }
 
-html {
+.splashBG {
   background: url("https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  /*height: 110vh;
+  width: 100vw;*/
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -112,8 +122,8 @@ html {
   /*background-color: pink;*/
   flex-direction: column;
   width: 600px;
-  margin-left: 35%;
-  margin-top: 18%;
+  /*margin-left: 35%;
+  margin-top: 18%;*/
   color:white;
   font-family: 'Noto Sans', sans-serif;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);

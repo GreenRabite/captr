@@ -34,17 +34,19 @@ class Splash extends React.Component {
 
   render () {
     return (
-      <div className="modal-container">
-        <ReactModal
-           isOpen={this.state.showModal}
-           contentLabel="onRequestClose Example"
-           onRequestClose={this.handleCloseModal}
-           className="Modal"
-           overlayClassName="Overlay"
-           shouldCloseOnOverlayClick={true}
-        >
-          <SessionFormContainer/>
-        </ReactModal>
+      <div>
+        <div className="modal-container">
+          <ReactModal
+            isOpen={this.state.showModal}
+            contentLabel="onRequestClose Example"
+            onRequestClose={this.handleCloseModal}
+            className="Modal"
+            overlayClassName="Overlay"
+            shouldCloseOnOverlayClick={true}
+            >
+            <SessionFormContainer/>
+          </ReactModal>
+        </div>
       </div>
     );
   }

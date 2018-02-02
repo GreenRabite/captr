@@ -5,8 +5,15 @@ class User < ApplicationRecord
   after_initialize :ensure_session_token
   attr_reader :password
 
-  has_many :photos
-  has_many :albums
+  has_many :photos,
+  primary_key: :id,
+  foreign_key: :owner_id,
+  class_name: :Photo
+
+  has_many :albums,
+  primary_key: :id,
+  foreign_key: :owner_id,
+  class_name: :Album
 
   def password=(password)
     @password = password
