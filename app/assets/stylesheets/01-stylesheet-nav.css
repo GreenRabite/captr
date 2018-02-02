@@ -25,6 +25,8 @@ input {
 
 .nav-buttons {
   display: flex;
+  justify-content: center;
+  margin-right: 10px;
 }
 
 .nav-buttons a{
@@ -40,12 +42,20 @@ input {
   border-radius: 5px;
 }*/
 
+.nav-button-login {
+  align-items: center;
+  vertical-align: middle;
+  margin-top: 3px;
+}
+
 .nav-button-login a{
   background-color: none;
   color: rgba(255,255,255, 1);
   font-weight: 200;
-  font-size: 25px;
+  font-size: 15px;
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  text-align: center;
+  justify-content: center;
 }
 .nav-button-login a:hover{
   color: rgba(255,255,255, 0.5);
@@ -176,4 +186,14 @@ footer {
   -webkit-box-shadow: 2px 2px 3px 3px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow:    2px 2px 3px 3px #ccc;  /* Firefox 3.5 - 3.6 */
   box-shadow:         2px 2px 3px 3px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.fa-2x:hover{
+  color: rgba(0, 0, 0, .5);
+  /*top: 10px;*/
+}
+
+.search-container-glass {
+  display: flex;
+  align-items: center;
 }

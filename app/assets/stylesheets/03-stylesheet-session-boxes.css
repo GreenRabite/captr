@@ -57,6 +57,15 @@
 .header-name{
 	font-family: 'Noto Sans', sans-serif;
 	margin-right: 10px;
+	font-size: 18px;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+	font-weight: 400;
+	color: rgba(255, 255, 255, 1);
+}
+
+.header-name:hover {
+	color: rgba(0, 0, 0, .5);
+	cursor: pointer;
 }
 
 .button-front-page{

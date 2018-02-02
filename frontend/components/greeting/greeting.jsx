@@ -4,10 +4,13 @@ import { Link } from 'react-router-dom';
 const sessionLinks = () => (
   <nav className="nav">
     <div className="nav-logo">
-      <img src={window.staticImage.headerImage} alt="captr"></img>
+      <Link to="/">
+        <img src={window.staticImage.headerImage} alt="captr"></img>
+      </Link>
     </div>
-    <div>
-      <input type="text" placeholder="Photos, people, or groups" className="nav-search form-style-6"></input>
+    <div className="search">
+      <span className="fa fa-search"></span>
+      <input type="text" placeholder="Photos, people, or groups"></input>
     </div>
     <div className="nav-buttons">
       <div className="nav-button-login"><Link to="/login">Log In</Link></div>
@@ -19,14 +22,19 @@ const sessionLinks = () => (
 const personalGreeting = (currentUser, logout) => (
 	<hgroup className="nav">
     <div className="nav-logo">
-      <img src={window.staticImage.headerImage} alt="captr"></img>
+      <Link to="/">
+        <img src={window.staticImage.headerImage} alt="captr"></img>
+      </Link>
     </div>
-    <div>
-      <input type="text" placeholder="Photos, people, or groups" className="nav-search"></input>
+    <div className="search">
+      <span className="fa fa-search"></span>
+      <input type="text" placeholder="Photos, people, or groups"></input>
     </div>
     <div className="login-nav-right">
       <h2 className="header-name">Hi, {currentUser.fname}!</h2>
-      <button className="bttn-gradient" onClick={logout}>Log Out</button>
+      <div className="nav-buttons">
+        <button className="bttn-gradient" onClick={logout}>Log Out</button>
+      </div>
     </div>
 	</hgroup>
 );
