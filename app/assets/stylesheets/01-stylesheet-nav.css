@@ -8,7 +8,7 @@
 
 .nav img{
   height: 55px;
-  /*margin-left: 15px;*/
+  margin-left: 15px;
 }
 
 .nav-search{
@@ -26,14 +26,14 @@ input {
 .nav-buttons {
   display: flex;
   justify-content: center;
-  /*margin-right: 10px;*/
+  margin-right: 10px;
 }
 
 .nav-buttons a{
 
   border-radius: 5px;
-  /*margin-right: 10px;
-  margin-top: 20px;*/
+  margin-right: 10px;
+  margin-top: 20px;
 }
 
 /*.nav-buttons a:hover{
@@ -45,7 +45,7 @@ input {
 .nav-button-login {
   align-items: center;
   vertical-align: middle;
-  /*margin-top: 3px;*/
+  margin-top: 3px;
 }
 
 .nav-button-login a{
