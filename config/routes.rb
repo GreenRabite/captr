@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     # Static Page Controller
     root "static_pages#root"
 
-    namespace :api, default: {format: :json} do
+    namespace :api, defaults: {format: :json} do
       resources :users, only: [:create, :show, :edit, :index]
       resource :session, only: [:create, :destroy]
       resources :photos, except: [:new, :edit]

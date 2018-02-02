@@ -1,3 +1,14 @@
 .photo-index-container {
   display: flex;
+  width: 75%;
+  margin: auto;
+  justify-content: space-between;
+  /*border: 1px solid red;*/
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+.photo-index-item {
+  /*margin: auto;*/
+  /*border: 1px solid orange;*/
 }
