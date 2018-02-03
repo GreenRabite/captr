@@ -25,7 +25,7 @@ export const fetchPhotos = () => (dispatch) => (
 );
 
 export const fetchPhoto = (id) => (dispatch) => (
-  APIPhoto.fetchPhoto(id).then((photo)=> (dispatch(receiveAllPhotos(photo))))
+  APIPhoto.fetchPhoto(id).then((photo)=> (dispatch(receivePhoto(photo))))
 );
 
 export const createPhoto = (photo) => (dispatch) => (
@@ -37,5 +37,5 @@ export const updatePhoto = (photo) => (dispatch) => (
 );
 
 export const deletePhoto = (id) => (dispatch) => (
-  APIPhoto.deletePhoto(id).then((deletedPhoto)=> (dispatch(receivePhoto(deletedPhoto))))
+  APIPhoto.deletePhoto(id).then((deletedPhoto)=> (dispatch(removePhoto(deletedPhoto))))
 );

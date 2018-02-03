@@ -1,0 +1,7 @@
+.photo-show-container {
+  display:block;
+  width: 50%;
+  margin-top: 180px;
+  border: 1px solid gray;
+  background-color: gray;
+}

@@ -5,10 +5,30 @@
   justify-content: space-between;
   /*border: 1px solid red;*/
   flex-wrap: wrap;
-  margin-top: 80px;
+  margin-top: 140px;
 }
 
 .photo-index-item {
   /*margin: auto;*/
   /*border: 1px solid orange;*/
+}
+
+.captrBG {
+  /*background: url("https://webgradients.com/public/webgradients_png/013%20Heavy%20Rain.png");*/
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+  /*position: fixed;*/
+  /*top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;*/
+  /*background-color: #e6f3ff;*/
+  background-color: rgba(230,243,255,0.6);
+  z-index: -1;
+  /*height: 110vh;
+  width: 100vw;*/
+  display: flex;
+  justify-content: center;
 }

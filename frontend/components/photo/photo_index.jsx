@@ -15,8 +15,11 @@ class PhotoIndex extends React.Component {
       return <PhotoIndexItem key={photo.id} photo={photo}/>;
     });
     return(
-      <div className="photo-index-container" >
-        {PhotoIndexItems}
+      <div className="captrBG">
+        <div className="photo-index-container" >
+          {PhotoIndexItems}
+        </div>
+
       </div>
     );
   }
