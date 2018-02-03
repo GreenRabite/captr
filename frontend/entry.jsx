@@ -7,6 +7,7 @@ import Root from './components/root';
 import * as APIUsers from './utils/users_api_utils';
 import * as APISession from './utils/session_api_utils';
 import * as APIPhoto from './utils/photo_api_utils';
+import * as APIComment from './utils/comment_api_utils';
 import {login, logout, signup, receiveCurrentUser, receiveErrors } from './actions/session_actions';
 import {fetchPhotos, fetchPhoto, createPhoto, updatePhoto, deletePhoto } from './actions/photo_actions';
 
@@ -29,11 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
   window.login = login;
   window.logout = logout;
   window.signup = signup;
-  window.fetchPhotos = fetchPhotos;
-  window.fetchPhoto = fetchPhoto;
-  window.createPhoto = createPhoto;
-  window.updatePhoto = updatePhoto;
-  window.deletePhoto = deletePhoto;
+  window.fetchComments = APIComment.fetchComments;
+  window.createComment = APIComment.createComment;
+  window.updateComment = APIComment.updateComment;
+  window.deleteComment = APIComment.deleteComment;
 
   ReactDOM.render(<Root store = { store } />, root);
 });

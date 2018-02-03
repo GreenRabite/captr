@@ -15,7 +15,6 @@ class PhotoIndex extends React.Component {
     let PhotoIndexItems = this.props.photos.map((photo)=> {
       return <PhotoIndexItem key={photo.id} photo={photo}/>;
     });
-    debugger;
     if (this.props.loading) {
       return(
         <LoadingScreen />
