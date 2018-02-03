@@ -1,4 +1,5 @@
 import * as APIPhoto from "../utils/photo_api_utils";
+import { loading } from './ui_actions';
 
 export const RECEIVE_ALL_PHOTOS = "RECEIVE_ALL_PHOTOS";
 export const RECEIVE_PHOTO = "RECEIVE_PHOTO";
@@ -20,9 +21,11 @@ export const removePhoto = (photoId) => ({
   photoId
 });
 
-export const fetchPhotos = () => (dispatch) => (
-  APIPhoto.fetchPhotos().then((photos)=> (dispatch(receiveAllPhotos(photos))))
-);
+export const fetchPhotos = () => (dispatch) => {
+  dispatch(loading());
+  return APIPhoto.fetchPhotos().then((photos)=>
+  (dispatch(receiveAllPhotos(photos))));
+};
 
 export const fetchPhoto = (id) => (dispatch) => (
   APIPhoto.fetchPhoto(id).then((photo)=> (dispatch(receivePhoto(photo))))

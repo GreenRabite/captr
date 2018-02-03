@@ -4,8 +4,9 @@ import { fetchPhoto } from './../../actions/photo_actions';
 
 
 const mapStateToProps = (state,ownProps) => {
-  debugger;
-  return {photo: state.entities.photos[ownProps.match.params.photoId]};
+  return {
+    photo: state.entities.photos[ownProps.match.params.photoId]
+  };
 };
 
 const mapDispatchToProps = (dispatch) => ({

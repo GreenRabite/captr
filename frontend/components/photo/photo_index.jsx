@@ -1,5 +1,6 @@
 import React from 'react';
 import PhotoIndexItem from './photo_index_item';
+import LoadingScreen from './../ui_loading_screen';
 
 class PhotoIndex extends React.Component {
   constructor(props){
@@ -14,14 +15,21 @@ class PhotoIndex extends React.Component {
     let PhotoIndexItems = this.props.photos.map((photo)=> {
       return <PhotoIndexItem key={photo.id} photo={photo}/>;
     });
-    return(
-      <div className="captrBG">
-        <div className="photo-index-container" >
-          {PhotoIndexItems}
-        </div>
+    debugger;
+    if (this.props.loading) {
+      return(
+        <LoadingScreen />
+      );
+    }else{
+      return(
+        <div className="captrBG">
+          <div className="photo-index-container" >
+            {PhotoIndexItems}
+          </div>
 
-      </div>
-    );
+        </div>
+      );
+    }
   }
 }
 

@@ -8,9 +8,9 @@
   margin-top: 140px;
 }
 
-.photo-index-item {
-  /*margin: auto;*/
-  /*border: 1px solid orange;*/
+.photo-index-item img{
+  -webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(2.5px 5px 5px #222);
 }
 
 .captrBG {
@@ -25,10 +25,13 @@
   right: 0;
   bottom: 0;*/
   /*background-color: #e6f3ff;*/
-  background-color: rgba(230,243,255,0.6);
+  /*background-color: rgba(230,243,255,0.6);*/
+  background: linear-gradient(to right, #f5f7fa , #c3cfe2);
   z-index: -1;
   /*height: 110vh;
   width: 100vw;*/
   display: flex;
+  height: 100%;
+  height: 100%;
   justify-content: center;
 }

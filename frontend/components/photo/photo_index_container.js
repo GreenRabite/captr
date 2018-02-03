@@ -5,7 +5,8 @@ import { selectAllPhotos } from './../../reducers/selectors';
 
 const mapStateToProps = (state) =>{
   return {
-    photos: selectAllPhotos(state)
+    photos: selectAllPhotos(state),
+    loading: state.ui.loading
   };
 };
 
