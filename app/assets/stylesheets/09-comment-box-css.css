@@ -1,0 +1,93 @@
+.comment-title{
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.comment-show-item{
+  display: flex;
+  width: 50%;
+  margin: auto;
+  text-align: right;
+  justify-content: flex-start;
+}
+
+.commenter-info{
+  vertical-align: middle;
+  border: 1px dotted gray;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  -webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(2.5px 5px 5px #222);
+}
+
+.commenter-info > img{
+  margin:auto;
+  vertical-align: middle;
+}
+
+.tip {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 10px solid #ccc;
+}
+
+.tip-up {
+  top: -25px; /* Same as body margin top + border */
+  left: 10px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+
+.tip-down {
+  bottom: -25px;
+  left: 10px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.tip-left {
+  top: 10px;
+  left: -25px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  background: linear-gradient(to right, #f5f7fa , #c3cfe2);
+
+}
+
+.tip-right {
+  top: 10px;
+  right: -25px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.dialogbox .body {
+  position: relative;
+  max-width: 300px;
+  height: auto;
+  margin: 20px 10px;
+  padding: 5px;
+  background: linear-gradient(to right, #ccc , #c3cfe2);
+  border-radius: 10px;
+  border: 5px solid #ccc;
+  -webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(2.5px 5px 5px #222);
+}
+
+.body .message {
+  min-height: 30px;
+  border-radius: 10px;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #797979;
+}

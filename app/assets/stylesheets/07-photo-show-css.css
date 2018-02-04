@@ -20,7 +20,7 @@
 }
 
 .photo-show-main-container {
-  /*background: #D3D3D3;*/
+  /*background: #262629;*/
 
   background: linear-gradient(to right, #f5f7fa , #c3cfe2);
   /*background: linear-gradient(to right, rgba(0,0,0,.2), rgba(0,0,0,.7));*/
@@ -45,6 +45,7 @@
   display: flex;
   justify-content: center;
   width: 60%;
+  margin-top:30px;
 }
 
 .photo-user-headers h4{

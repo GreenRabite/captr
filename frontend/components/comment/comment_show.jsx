@@ -23,6 +23,7 @@ class CommentShow extends React.Component{
       });
       return(
         <div>
+          <div className="comment-title">Comments</div>
           {CommentShowItems}
         </div>
       );

@@ -9,8 +9,9 @@ class PhotoShow extends React.Component {
   componentDidMount(){
     this.props.fetchPhotoComments(this.props.match.params.photoId).
     then(this.props.fetchPhoto(this.props.match.params.photoId)
-  );
-}
+    );
+  }
+
 
   render(){
     if (!this.props.photo) {
