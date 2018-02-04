@@ -1,4 +1,7 @@
-import * as APIComment from './../utils/comment_api_utils'
+import * as APIComment from './../utils/comment_api_utils';
+import { loading } from './ui_actions';
+
+// export constants
 export const RECEIVE_COMMENTS = "RECEIVE_COMMENTS";
 export const RECEIVE_COMMENT = "RECEIVE_COMMENT";
 export const REMOVE_COMMENT = "REMOVE_COMMENT";
@@ -15,12 +18,14 @@ export const receiveComment = (comment) => ({
 
 export const removeComment = (comment) => ({
   type: REMOVE_COMMENT,
-  commentId
+  comment
 });
 
-export const fetchPhotoComments = (photoId) =>(dispatch) => (
-  APIComment.fetchComments(photoId).then((serverComments) => dispatch(receiveComments(serverComments)))
-);
+export const fetchPhotoComments = (photoId) =>(dispatch) => {
+  dispatch(loading());
+  return APIComment.fetchComments(photoId).then((serverComments) =>
+  dispatch(receiveComments(serverComments)));
+};
 
 export const fetchOneComment = (commentId) =>(dispatch) => (
   APIComment.fetchComment(commentId).then((serverComment) => dispatch(receiveComment(serverComment)))
@@ -35,5 +40,5 @@ export const updateComment = (comment) =>(dispatch) => (
 );
 
 export const deleteComment = (commentId) => (dispatch) => (
-  deleteComment(commentId).then((deletedComment) => dispatch(removeComment(deletedComment)))
+  APIComment.deleteComment(commentId).then((deletedComment) => dispatch(removeComment(deletedComment)))
 );

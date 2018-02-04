@@ -1,6 +1,7 @@
 import * as APIPhoto from "../utils/photo_api_utils";
 import { loading } from './ui_actions';
 
+// export constants
 export const RECEIVE_ALL_PHOTOS = "RECEIVE_ALL_PHOTOS";
 export const RECEIVE_PHOTO = "RECEIVE_PHOTO";
 export const REMOVE_PHOTO = "REMOVE_PHOTO";
