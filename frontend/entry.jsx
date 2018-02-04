@@ -10,6 +10,7 @@ import * as APIPhoto from './utils/photo_api_utils';
 import * as APIComment from './utils/comment_api_utils';
 import {login, logout, signup, receiveCurrentUser, receiveErrors } from './actions/session_actions';
 import {fetchPhotos, fetchPhoto, createPhoto, updatePhoto, deletePhoto } from './actions/photo_actions';
+import {fetchPhotoComments, fetchOneComment, createComment, updateComment, deleteComment } from './actions/comment_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');
@@ -30,10 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
   window.login = login;
   window.logout = logout;
   window.signup = signup;
-  window.fetchComments = APIComment.fetchComments;
-  window.createComment = APIComment.createComment;
-  window.updateComment = APIComment.updateComment;
-  window.deleteComment = APIComment.deleteComment;
+  window.fetchPhotoComments = store.dispatch(fetchPhotoComments);
+  window.fetchOneComment = store.dispatch(fetchOneComment);
+  window.createComment = store.createComment;
+  window.updateComment = store.updateComment;
+  window.deleteComment = store.deleteComment;
 
   ReactDOM.render(<Root store = { store } />, root);
 });

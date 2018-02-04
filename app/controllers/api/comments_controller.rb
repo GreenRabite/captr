@@ -37,6 +37,15 @@ class Api::CommentsController < ApplicationController
     render :index
   end
 
+  def show
+    @comment = Comment.find_by(id: params[:id])
+    if @comment
+      render :show
+    else
+      render json: ["Could not find comment."]
+    end
+  end
+
   private
   def comment_params
     params.require(:comment).permit(:body, :photo_id)

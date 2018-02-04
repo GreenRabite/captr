@@ -6,6 +6,14 @@ export const fetchComments = (photoId) => (
   })
 );
 
+export const fetchComment = (commentId) => (
+  $.ajax({
+    method: 'GET',
+    url: `api/comments/${commentId}`,
+    data: {commentId}
+  })
+);
+
 export const updateComment = (comment) => (
   $.ajax({
     method: 'PATCH',

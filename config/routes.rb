@@ -9,6 +9,6 @@ Rails.application.routes.draw do
       resources :photos, except: [:new, :edit] do
         resources :comments, only: [:create]
       end
-      resources :comments, only: [:index, :update, :destroy]
+      resources :comments, only: [:index, :update, :destroy, :show]
     end
 end
