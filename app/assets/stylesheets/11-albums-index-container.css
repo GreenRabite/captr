@@ -1,0 +1,48 @@
+.album-index-container{
+  width: 85%;
+  /*border: 1px solid gray;*/
+  display: flex;
+  margin: auto;
+  /*margin-top: 30px;*/
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.album-index-item-container {
+  height: 400px;
+  width: 400px;
+  /*background: pink;*/
+  /*border: 1px solid black;*/
+  border-radius: 5px;
+  margin-left: 30px;
+  margin-top: 30px;
+  overflow: hidden;
+  -webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(2.5px 5px 5px #222);
+}
+
+.album-index-item-container > img{
+  align-items: center;
+}
+
+.album-img{
+  height: 100%;
+}
+
+.album-index-item-info{
+  margin: auto;
+  /*display: flex;*/
+}
+
+.center{
+  display: block;
+  margin: auto;
+  /*width: 75%;*/
+  text-align: center;
+}
+
+.url-headers > h1{
+  text-align: center;
+  margin-top: 60px;
+  font-size: 30px;
+}
