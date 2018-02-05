@@ -1,0 +1,29 @@
+.album-show-img{
+  height: 400px;
+  width: 400px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.album-photos-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+  margin-top: 20px;
+  -webkit-filter: drop-shadow(7px 5px 5px #222 );
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+.cover-photo{
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-height: 300px;
+  max-width: 100%;
+  overflow: hidden;
+  float:left;
+}

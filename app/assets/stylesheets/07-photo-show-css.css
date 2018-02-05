@@ -1,7 +1,8 @@
 .photo-show-container {
   display:block;
-  max-width: 60%;
-  max-height: 60%;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
   /*margin-top: 110px;*/
   margin: auto;
   /*border: 1px solid gray;*/
@@ -9,6 +10,7 @@
 }
 
 .photo-show-container img{
+  z-index: -1;
   -webkit-filter: drop-shadow(5px 5px 5px #222 );
   filter: drop-shadow(2.5px 5px 5px #222);
 }
@@ -37,7 +39,7 @@
   object-fit: cover;
   -webkit-filter: drop-shadow(5px 5px 5px #222 );
   filter: drop-shadow(2.5px 5px 5px #222);
-  margin-top: 18px;
+  /*margin-top: 18px;*/
   margin-left: 30px;
 }
 

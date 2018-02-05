@@ -28,3 +28,17 @@
 # 50.times do
 #   Comment.create(body: Faker::StarWars.quote, user_id: User.all.to_a.sample.id, photo_id: Photo.all.to_a.sample.id)
 # end
+#
+# 1.times do
+#   Tag.create(name: Faker::Overwatch.unique.location)
+#   Tag.create(name: Faker::GameOfThrones.city)
+#   Tag.create(name: Faker::LordOfTheRings.location)
+# end
+#
+arr= [];
+10.times do
+  tag = Tag.all.sample.id
+  photo = Photo.all.sample.id
+  Tagging.create(tag_id: tag, photo_id: photo ) if  arr.include?([tag,photo])== false
+  arr << [tag,photo]
+end
