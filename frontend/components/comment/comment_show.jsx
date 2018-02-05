@@ -1,6 +1,7 @@
 import React from 'react';
 import LoadingScreen from './../ui_loading_screen';
 import CommentShowItem from './comment_show_item';
+import CommentFormContainer from './comment_form_container';
 
 
 class CommentShow extends React.Component{
@@ -25,6 +26,8 @@ class CommentShow extends React.Component{
         <div>
           <div className="comment-title">Comments</div>
           {CommentShowItems}
+          <CommentFormContainer />
+          <div className="empty-spacer"></div>
         </div>
       );
     }

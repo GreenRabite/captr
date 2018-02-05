@@ -9,8 +9,8 @@ const CommentShowItem = ({comment}) => (
       <div className="body">
         <span className="tip tip-left"></span>
         <div className="message">
-          <h1>{`${comment.username}`}</h1>
-          <h2>{`${comment.body}`}</h2>
+          <div className="comment-form-username">{`${comment.username}`}</div>
+          <div>{`${comment.body}`}</div>
         </div>
       </div>
     </div>

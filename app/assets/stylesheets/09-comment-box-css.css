@@ -28,6 +28,17 @@
   vertical-align: middle;
 }
 
+.comment-form-username{
+  font-weight: bold;
+  text-align: left;
+}
+
+.comment-bttn{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
 .tip {
   width: 0px;
   height: 0px;

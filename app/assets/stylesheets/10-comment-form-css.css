@@ -1,0 +1,17 @@
+.comment-form-container{
+  width: 500px;
+  height: 400px;
+  border: 1px solid black;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.empty-spacer{
+  height: 80px;
+}
+
+.add-comment-box{
+  display: flex;
+  justify-content: center;
+}
