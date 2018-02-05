@@ -8,9 +8,11 @@ import * as APIUsers from './utils/users_api_utils';
 import * as APISession from './utils/session_api_utils';
 import * as APIPhoto from './utils/photo_api_utils';
 import * as APIComment from './utils/comment_api_utils';
+import * as APIAlbum from './utils/album_api_utils';
 import {login, logout, signup, receiveCurrentUser, receiveErrors } from './actions/session_actions';
 import {fetchPhotos, fetchPhoto, createPhoto, updatePhoto, deletePhoto } from './actions/photo_actions';
 import { receiveComments, receiveComment, removeComment, fetchPhotoComments, fetchOneComment, createComment, updateComment, deleteComment } from './actions/comment_actions';
+import { fetchAlbums, fetchAlbum, createAlbum, updateAlbum, deleteAlbum } from './actions/album_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');
@@ -31,14 +33,18 @@ document.addEventListener('DOMContentLoaded', () => {
   window.login = login;
   window.logout = logout;
   window.signup = signup;
-  window.receiveComments = receiveComments;
-  window.receiveComment = receiveComment;
-  window.removeComment = removeComment;
-  window.fetchPhotoComments = fetchPhotoComments;
-  window.fetchOneComment = fetchOneComment;
-  window.createComment = createComment;
-  window.updateComment = updateComment;
-  window.deleteComment = deleteComment;
+  //API Calls
+  // window.fetchAlbums = APIAlbum.fetchAlbums;
+  // window.fetchAlbum = APIAlbum.fetchAlbum;
+  // window.updateAlbum = APIAlbum.updateAlbum;
+  // window.createAlbum = APIAlbum.createAlbum;
+  // window.deleteAlbum = APIAlbum.deleteAlbum;
+  //Action Creators
+  window.fetchAlbums = fetchAlbums;
+  window.fetchAlbum = fetchAlbum;
+  window.createAlbum = createAlbum;
+  window.updateAlbum = updateAlbum;
+  window.deleteAlbum = deleteAlbum;
 
   ReactDOM.render(<Root store = { store } />, root);
 });

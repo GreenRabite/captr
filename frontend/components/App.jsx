@@ -9,6 +9,7 @@ import Splash from './splash/splash';
 import PhotoIndexContainer from './photo/photo_index_container';
 import PhotoShowContainer from './photo/photo_show_container';
 import SplashContainer from './splash/splash_container';
+
 import Footer from './footer';
 
 const App = () => {
@@ -26,7 +27,9 @@ const App = () => {
 
       <Switch>
         <ProtectedRoute path="/home" component={PhotoIndexContainer} />
-        <Route exact path="/photos/:photoId" component={PhotoShowContainer} />
+        <Route path="/photos/:photoId" component={PhotoShowContainer} />
+        
+
         <AuthRoute path="/" component={SplashContainer}  />
       </Switch>
 

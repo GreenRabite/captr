@@ -1,6 +1,5 @@
 import merge from 'lodash/merge';
 import { RECEIVE_COMMENTS, RECEIVE_COMMENT, REMOVE_COMMENT } from '../actions/comment_actions';
-import { RECEIVE_PHOTO } from '../actions/photo_actions';
 
 const commentReducer = (state = {}, action ) => {
   Object.freeze(state);
@@ -14,12 +13,11 @@ const commentReducer = (state = {}, action ) => {
       return newState;
     case REMOVE_COMMENT:
       newState = merge({},state);
-      delete newState[action.comment];
+      delete newState[action.comment.id];
       return newState;
-    case RECEIVE_PHOTO:
     default:
       return state;
   }
-} ;
+};
 
 export default commentReducer;

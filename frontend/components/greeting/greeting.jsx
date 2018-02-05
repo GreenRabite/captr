@@ -20,23 +20,28 @@ const sessionLinks = () => (
 );
 
 const personalGreeting = (currentUser, logout) => (
-	<hgroup className="nav">
-    <div className="nav-logo">
-      <Link to="/">
-        <img src={window.staticImage.headerImage} alt="captr"></img>
-      </Link>
-    </div>
-    <div className="search">
-      <span className="fa fa-search"></span>
-      <input type="text" placeholder="Photos, people, or groups"></input>
-    </div>
-    <div className="login-nav-right">
-      <h2 className="header-name">Hi, {currentUser.fname}!</h2>
-      <div className="nav-buttons">
-        <button className="bttn-gradient" onClick={logout}>Log Out</button>
+  <div>
+    <hgroup className="nav">
+      <div className="nav main-nav-bar">
+        <div className="nav-logo">
+          <Link to="/">
+            <img src={window.staticImage.headerImage} alt="captr"></img>
+          </Link>
+        </div>
+        <div className="search">
+          <span className="fa fa-search"></span>
+          <input type="text" placeholder="Photos, people, or groups"></input>
+        </div>
+        <div className="login-nav-right">
+          <h2 className="header-name">Hi, {currentUser.fname}!</h2>
+          <div className="nav-buttons">
+            <button className="bttn-gradient" onClick={logout}>Log Out</button>
+          </div>
+        </div>
       </div>
-    </div>
-	</hgroup>
+    </hgroup>
+</div>
+
 );
 
 const Greeting = ({ currentUser, logout }) => (

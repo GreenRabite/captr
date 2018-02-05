@@ -83,6 +83,7 @@ input {
   width: 75px;
 }
 
+
 .splash{
   position: fixed;
   top: 0;
@@ -91,7 +92,7 @@ input {
   bottom: 0;
   z-index: -1;
 }
-
+/* http://thewallpaper.co/wp-content/uploads/2016/10/4k-Wallpapers-Screen-Download-desktop-wallpapers-high-definition-amazing-cool-colourful-free-display-picture-3840x2160.jpg */
 .splashBG {
   background: url("https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") no-repeat center center fixed;
   -webkit-background-size: cover;

@@ -1,5 +1,6 @@
 import { RECEIVE_ALL_PHOTOS, RECEIVE_PHOTO } from './../actions/photo_actions';
 import { RECEIVE_COMMENTS, RECEIVE_COMMENT } from './../actions/comment_actions';
+import { RECEIVE_ALBUMS, RECEIVE_ALBUM } from './../actions/album_actions';
 import { LOADING } from './../actions/ui_actions';
 import merge from 'lodash/merge';
 
@@ -16,6 +17,10 @@ const uiReducer = (state = _initialLoadState, action) => {
     case RECEIVE_PHOTO:
       return merge({}, state, {loading : false});
     case RECEIVE_COMMENTS:
+      return merge({}, state, {loading : false});
+    case RECEIVE_ALBUMS:
+      return merge({}, state, {loading : false});
+    case RECEIVE_ALBUM:
       return merge({}, state, {loading : false});
     case LOADING:
       return merge({}, state, {loading : true});
