@@ -11,6 +11,7 @@ class PhotoIndex extends React.Component {
     this.props.fetchPhotos();
   }
 
+
   render(){
     let PhotoIndexItems = this.props.photos.map((photo)=> {
       return <PhotoIndexItem key={photo.id} photo={photo}/>;
@@ -22,10 +23,9 @@ class PhotoIndex extends React.Component {
     }else{
       return(
         <div className="captrBG">
-          <div className="photo-index-container" >
+          <div className="masonry">
             {PhotoIndexItems}
           </div>
-
         </div>
       );
     }

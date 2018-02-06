@@ -29,9 +29,9 @@ const App = () => {
 
       <Switch>
         <ProtectedRoute path="/home" component={PhotoIndexContainer} />
-        <Route path="/photos/:photoId" component={PhotoShowContainer} />
-        <Route exact path="/albums" component={AlbumIndexContainer} />
-        <Route path="/albums/:albumId" component={AlbumShowContainer} />
+        <ProtectedRoute path="/photos/:photoId" component={PhotoShowContainer} />
+        <ProtectedRoute exact path="/albums" component={AlbumIndexContainer} />
+        <ProtectedRoute path="/albums/:albumId" component={AlbumShowContainer} />
 
         <AuthRoute path="/" component={SplashContainer}  />
       </Switch>

@@ -1,23 +1,29 @@
 .login-top-info {
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-around;
 }
 
+
 .login-form label input{
 	margin-left: 17%;
+	margin-top: 10px;
 	padding: 10px;
 	width: 230px;
 	height: 20px;
 }
 
+.login-form-container{
+
+}
+
 .form-submit{
 	display: flex;
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	justify-content: space-around;
-	background-color: white;
+	/*background-color: white;*/
   padding: 11px 13px 11px 13px;
   color: black;
   font-size: 18px;
@@ -51,11 +57,11 @@
 .login-nav-right{
 	display: flex;
 	align-items: center;
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .header-name{
-	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	margin-right: 10px;
 	font-size: 18px;
 	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
@@ -88,6 +94,14 @@
 	flex-flow: column;
 	justify-content: center;
 	margin-left: 5%;
+}
+
+
+.submit-button{
+	width: 230px;
+	/*border: 1px solid lightblue;*/
+	text-align: center;
+	/*background: linear-gradient(to right, #f5f7fa , #c3cfe2);*/
 }
 
 .frontpage-button a {

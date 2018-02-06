@@ -8,9 +8,14 @@
   margin-top: 140px;
 }
 
-.photo-index-item img{
-  -webkit-filter: drop-shadow(5px 5px 5px #222 );
-  filter: drop-shadow(2.5px 5px 5px #222);
+.photo-index-item{
+  /*-webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(2.5px 5px 5px #222);*/
+}
+
+.photo-index-item:hover{
+  /*background: rgba(255,255,255, 0.5);*/
+  
 }
 
 .captrBG {

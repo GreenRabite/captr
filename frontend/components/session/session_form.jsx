@@ -89,12 +89,10 @@ class SessionForm extends React.Component {
       }
 
     return (
-      <div className="login-form-container login">
+      <div className="login-form-container login animated fadeIn">
         <form onSubmit={this.handleSubmit} className="login-form-box">
           <div className="login-top-info">
-            Welcome to captr!
-            <br/>
-            Please {this.props.formType} below:
+            <b>Please {this.props.formType} below:</b>
           </div>
           <div className="login-form">
             <br/>
@@ -122,7 +120,7 @@ class SessionForm extends React.Component {
               {this.renderErrors()}
             </ul>
             <div className="form-submit">
-              <input className="shadow" type="submit" value="Submit" />
+              <input className="bttn-gradient submit-button" type="submit" value="Submit" />
             </div>
             <div className="session_form_ending_tag">{this.navLink()}</div>
             <br/>

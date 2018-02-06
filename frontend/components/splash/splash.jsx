@@ -40,7 +40,7 @@ class Splash extends React.Component {
             isOpen={this.state.showModal}
             contentLabel="onRequestClose Example"
             onRequestClose={this.handleCloseModal}
-            className="Modal"
+            className="Modal animated fadeIn"
             overlayClassName="Overlay"
             shouldCloseOnOverlayClick={true}
             >
