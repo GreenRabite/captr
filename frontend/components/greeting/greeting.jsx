@@ -34,8 +34,8 @@ const personalGreeting = (currentUser, logout) => (
         </div>
         <div className="login-nav-right">
           <div className="dropdown">
-            <button className="header-name dropbtn">Hello, {currentUser.fname} <i class="fa fa-caret-down"></i></button>
-              <div class="dropdown-content">
+            <button className="header-name dropbtn">Hello, {currentUser.fname} <i className="fa fa-caret-down"></i></button>
+              <div className="dropdown-content">
                 <Link to="/home">Explore Pictures</Link>
                 <Link to="/albums">Explore Albums</Link>
                 <Link to="/albums">Photo Upload</Link>

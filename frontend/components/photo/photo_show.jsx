@@ -1,6 +1,7 @@
 import React from 'react';
 import CommentShowContainer from './../comment/comment_show_container';
 import CommentForm from './../comment/comment_form';
+import { HashLink as Link } from 'react-router-hash-link';
 
 class PhotoShow extends React.Component {
   constructor(props) {
@@ -32,12 +33,13 @@ class PhotoShow extends React.Component {
           <div className="photo-user-headers">
             <h4>{`${photo.owner}`}</h4>
           </div>
-          <button className="bttn-gradient follow-user-bttn">Follow Me</button>
-          <button className="bttn-gradient follow-user-bttn">Comments!</button>
+          <Link to={`/photos/${photo.id}#comments`} className="bttn-gradient follow-user-bttn">Comments!</Link>
+
         </div>
         <div className="comment-form-containers">
           <CommentShowContainer />
         </div>
+        <a id="comments"></a>
       </div>
     );
   }
