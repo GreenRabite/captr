@@ -10,6 +10,17 @@
   right:0;
   z-index: 2;
 }
+.profile-img{
+  width: 30px;
+  height: 30px;
+  /*overflow: hidden;*/
+  /*border-radius: 50%;*/
+  /*object-fit: cover;*/
+  -webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(2.5px 5px 5px #222);
+  /*margin-top: 18px;*/
+  margin-right: 30px;
+}
 
 .nav img{
   height: 55px;

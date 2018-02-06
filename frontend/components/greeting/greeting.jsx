@@ -33,7 +33,14 @@ const personalGreeting = (currentUser, logout) => (
           <input type="text" placeholder="Photos, people, or groups"></input>
         </div>
         <div className="login-nav-right">
-          <h2 className="header-name">Hi, {currentUser.fname}!</h2>
+          <div className="dropdown">
+            <button className="header-name dropbtn">Hello, {currentUser.fname} <i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-content">
+                <Link to="/home">Explore Pictures</Link>
+                <Link to="/albums">Explore Albums</Link>
+                <Link to="/albums">Photo Upload</Link>
+              </div>
+          </div>
           <div className="nav-buttons">
             <button className="bttn-gradient" onClick={logout}>Log Out</button>
           </div>
