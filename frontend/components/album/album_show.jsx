@@ -10,10 +10,15 @@ class AlbumShow extends React.Component {
     this.props.fetchAlbum(this.props.match.params.albumId);
   }
 
+  componentWillReceiveProps(){
+
+  }
+
   render(){
-    if (!this.props.album) {
+    if (!this.props.album.album_photos) {
       return null;
     }
+    debugger;
     let photos = Object.values(this.props.album.album_photos);
     let AlbumShowItems = photos.map((photo)=>{
       return(
