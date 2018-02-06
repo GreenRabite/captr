@@ -29,13 +29,13 @@
   display: flex;
   margin: auto;
   justify-content: space-around;
-  height: 800px;
+  height: 780px;
 }
 
 .photo-show-user-info > img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
   object-fit: cover;
   -webkit-filter: drop-shadow(5px 5px 5px #222 );
   filter: drop-shadow(2.5px 5px 5px #222);

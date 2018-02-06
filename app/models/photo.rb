@@ -15,4 +15,15 @@ class Photo < ApplicationRecord
   primary_key: :id,
   foreign_key: :photo_id,
   class_name: :Comment
+
+  has_many :tags,
+  through: :taggings,
+  source: :tag
+
+  has_many :taggings,
+  primary_key: :id,
+  foreign_key: :photo_id,
+  class_name: :Tagging,
+  dependent: :destroy,
+  inverse_of: :photo
 end
