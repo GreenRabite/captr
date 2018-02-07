@@ -10,6 +10,7 @@ import PhotoIndexContainer from './photo/photo_index_container';
 import AlbumIndexContainer from './album/album_index_container';
 import PhotoShowContainer from './photo/photo_show_container';
 import AlbumShowContainer from './album/album_show_container';
+import PhotoFormContainer from './photo/photo_form_container';
 import SplashContainer from './splash/splash_container';
 
 import Footer from './footer';
@@ -29,10 +30,10 @@ const App = () => {
 
       <Switch>
         <ProtectedRoute path="/home" component={PhotoIndexContainer} />
-        <ProtectedRoute path="/photos/:photoId" component={PhotoShowContainer} />
+        <Route exact path="/photos/upload" component={PhotoFormContainer} />
+        <ProtectedRoute exact path="/photos/:photoId" component={PhotoShowContainer} />
         <ProtectedRoute exact path="/albums" component={AlbumIndexContainer} />
         <ProtectedRoute path="/albums/:albumId" component={AlbumShowContainer} />
-
         <AuthRoute path="/" component={SplashContainer}  />
       </Switch>
 

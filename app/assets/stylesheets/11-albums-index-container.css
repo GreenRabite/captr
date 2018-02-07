@@ -41,6 +41,11 @@
   text-align: center;
 }
 
+.url-headers{
+  /*position: fixed;*/
+  /*margin-top: 90px;*/
+}
+
 .url-headers > h1{
   text-align: center;
   margin-top: 60px;

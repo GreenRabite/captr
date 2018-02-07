@@ -16,6 +16,8 @@
     width: 95%;
     display: block;
     border-bottom: $spacing solid transparent;
+    -webkit-filter: drop-shadow(7px 5px 5px #222 );
+    filter: drop-shadow(5px 5px 5px #222);
   }
 }
 

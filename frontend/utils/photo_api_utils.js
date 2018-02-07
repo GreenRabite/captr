@@ -20,13 +20,16 @@ export const updatePhoto = (photo) => (
   })
 );
 
-export const createPhoto = (photo) => (
-  $.ajax({
+export const createPhoto = (photo) => {
+  console.log(photo);
+  return $.ajax({
     method: 'POST',
     url: `api/photos`,
-    data: {photo}
-  })
-);
+    data: photo,
+    processData: false,
+    contentType: false
+  });
+};
 
 export const deletePhoto = (id) => (
   $.ajax({

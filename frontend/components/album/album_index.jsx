@@ -26,6 +26,7 @@ class AlbumIndex extends React.Component {
           <div className="captrBG">
             <div className="album-index-container">
               {AlbumIndexItems}
+              <img></img>
             </div>
           </div>
           <div className="empty-spacer captrBG"></div>

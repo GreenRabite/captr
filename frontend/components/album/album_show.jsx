@@ -32,6 +32,7 @@ class AlbumShow extends React.Component {
     return(
       <div>
         <div className="url-headers captrBG"><h1>{this.props.album.title}</h1></div>
+        <div><i class="fas fa-upload"></i></div>
           <div className="captrBG">
             <div className="album-photos-container">
               {AlbumShowItems}
