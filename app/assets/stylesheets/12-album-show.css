@@ -40,12 +40,12 @@
   width: 100%;
 }
 
-html{
+html {
   background-color: linear-gradient(to right, #f5f7fa , #c3cfe2);
   background-size: cover;
 }
 
-.appBG{
+.appBG {
   /*background: red;*/
   background: linear-gradient(to right, #f5f7fa , #c3cfe2);
   background-size: cover;
