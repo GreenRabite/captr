@@ -16,9 +16,9 @@ export const receiveAlbum = (album) => ({
   album
 });
 
-export const removeAlbum = (albumId) => ({
+export const removeAlbum = (album) => ({
   type: REMOVE_ALBUM,
-  albumId
+  album
 });
 
 export const fetchAlbums = () => (dispatch) => {

@@ -1,5 +1,6 @@
 import merge from 'lodash/merge';
 import { RECEIVE_ALL_PHOTOS, RECEIVE_PHOTO, REMOVE_PHOTO } from '../actions/photo_actions';
+import { REMOVE_ALBUM } from '../actions/album_actions';
 
 const photoReducer = (state = {}, action) =>{
   let newState = {};
@@ -14,6 +15,14 @@ const photoReducer = (state = {}, action) =>{
     case REMOVE_PHOTO:
       newState = merge({},state);
       delete newState[action.photoId];
+      return newState;
+    case REMOVE_ALBUM:
+      newState = merge({},state);
+      for (let photoId in newState) {
+        if (newState[photoId].album_id === action.album.id) {
+          delete newState[photoId];
+        }
+      }
       return newState;
     default:
       return state;
