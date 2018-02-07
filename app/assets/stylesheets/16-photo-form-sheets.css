@@ -25,8 +25,10 @@
   border: 1px solid black;
   padding: 50px;
   border-radius: 20px;
-  max-height: 400px;
+  max-height: 700px;
   height: 400px;
+  align-items: center;
+  margin: auto;
 }
 
 .photo-form-header{
@@ -41,4 +43,13 @@
 
 .photo-form-main button {
   margin-top: 12px;
+}
+
+.imgSource{
+  width: 75%;
+}
+
+.photo-form-main button{
+  width: 225px;
+  text-align: center;
 }

@@ -4,7 +4,8 @@ import { fetchAlbum } from './../../actions/album_actions';
 
 const mapStateToProps = (state,ownProps) => {
   return {
-    album: state.entities.albums[ownProps.match.params.albumId]
+    album: state.entities.albums[ownProps.match.params.albumId],
+    photos: state.entities.photos
   };
 };
 

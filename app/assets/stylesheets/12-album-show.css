@@ -27,3 +27,18 @@
   overflow: hidden;
   float:left;
 }
+
+.icon-stack{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dotted gray;
+}
+
+.fa-upload{
+  width: 100%;
+}
+
+html{
+  background-color: linear-gradient(to right, #f5f7fa , #c3cfe2);
+}

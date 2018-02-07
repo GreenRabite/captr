@@ -52,11 +52,10 @@ class PhotoForm extends React.Component {
                 placeholder="Description"
                 value={this.state.description}/>
             </div>
-            <img src={this.state.img_url ? this.state.img_url : `` } />
             <button className="bttn-gradient" onClick={this.uploadImage}>Upload Photo</button>
             <div className="photo-form-btn-bar">
-              <button className="photo-form-btn-close">Close</button>
-              <button onClick={this.handleSubmit} className="photo-form-btn-post">Submit</button>
+              <button onClick={this.handleSubmit} className="bttn-gradient">Submit</button>
+              <img className="imgSource"src={this.state.img_url ? this.state.img_url : `` } />
             </div>
           </form>
         </div>

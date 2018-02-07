@@ -10,31 +10,29 @@ class AlbumShow extends React.Component {
     this.props.fetchAlbum(this.props.match.params.albumId);
   }
 
-  componentWillReceiveProps(){
-
-  }
-
   render(){
-    if (!this.props.album.album_photos) {
+    if (this.props.album === undefined || this.props.album.album_photos === undefined ) {
       return null;
     }
-    debugger;
-    let photos = Object.values(this.props.album.album_photos);
-    let AlbumShowItems = photos.map((photo)=>{
-      return(
-        <div>
-          <Link to={`/photos/${photo.id}`}>
-            <img className="album-show-img" src={photo.img_url} key={photo.id}/>
-          </Link>
-        </div>
-      );
-    });
+      let photos = Object.values(this.props.album.album_photos);
+      let AlbumShowItems = photos.map((photo)=>{
+        return(
+          <div>
+            <Link to={`/photos/${photo.id}`}>
+              <img className="album-show-img" src={photo.img_url} key={photo.id}/>
+            </Link>
+          </div>
+        );
+      });
     return(
       <div>
         <div className="url-headers captrBG"><h1>{this.props.album.title}</h1></div>
-        <div><i class="fas fa-upload"></i></div>
+        <div></div>
           <div className="captrBG">
             <div className="album-photos-container">
+              <Link to={`/albums/${this.props.match.params.albumId}/photos/new`}>
+                <div className="album-show-img icon-stack"><i className="fas fa-upload fa-10x"></i></div>
+              </Link>
               {AlbumShowItems}
             </div>
           </div>

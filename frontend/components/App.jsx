@@ -30,7 +30,7 @@ const App = () => {
 
       <Switch>
         <ProtectedRoute path="/home" component={PhotoIndexContainer} />
-        <Route exact path="/photos/upload" component={PhotoFormContainer} />
+        <Route exact path="/albums/:albumId/photos/new" component={PhotoFormContainer} />
         <ProtectedRoute exact path="/photos/:photoId" component={PhotoShowContainer} />
         <ProtectedRoute exact path="/albums" component={AlbumIndexContainer} />
         <ProtectedRoute path="/albums/:albumId" component={AlbumShowContainer} />
