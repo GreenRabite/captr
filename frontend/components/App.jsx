@@ -30,10 +30,10 @@ const App = () => {
       </Switch>
       <AuthRoute exact path="/" component={SplashContainer}  />
 
-      <ProtectedRoute exact path="/albums/:albumId/photos/new" component={PhotoModal} />
       <ProtectedRoute exact path="/photos/:photoId/edit" component={PhotoModal} />
+      <ProtectedRoute exact path="/albums/:albumId/photos/new" component={PhotoModal} />
+      <ProtectedRoute path="/albums/:albumId" component={AlbumShowContainer} />
       <Switch>
-        <ProtectedRoute path="/albums/:albumId" component={AlbumShowContainer} />
         <ProtectedRoute path="/home" component={PhotoIndexContainer} />
         <ProtectedRoute path="/photos/:photoId" component={PhotoShowContainer} />
         <ProtectedRoute exact path="/albums" component={AlbumIndexContainer} />
