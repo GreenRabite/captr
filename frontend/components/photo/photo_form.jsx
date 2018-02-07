@@ -12,8 +12,13 @@ class PhotoForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     let photo = this.state;
-    this.props.createPhoto({photo});
-    this.props.history.push(`/albums/${this.props.match.params.albumId}`);
+    if (this.props.formType === "new") {
+      this.props.createPhoto({photo});
+      this.props.history.push(`/albums/${this.props.match.params.albumId}`);
+    }else {
+      this.props.updatePhoto(photo);
+      this.props.history.push(`/photos/${this.props.match.params.photoId}`);
+    }
   }
 
   updateInput(field) {
@@ -38,10 +43,11 @@ class PhotoForm extends React.Component {
   }
 
   render() {
+    let text = this.props.formType === "new" ? "Upload a New Photo!" : "Edit Your Picture";
     return(
       <div className="">
         <div className="photo-form centered">
-          <div className="photo-form-header">Upload a New Photo!</div>
+          <div className="photo-form-header">{text}</div>
           <form className="photo-form-main">
             <div className="photo-form-content">
               <input onChange={this.updateInput("title")} placeholder="Title" value={this.state.title}></input><br/>

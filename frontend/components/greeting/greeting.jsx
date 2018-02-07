@@ -24,7 +24,7 @@ const personalGreeting = (currentUser, logout) => (
     <hgroup className="nav">
       <div className="nav main-nav-bar">
         <div className="nav-logo">
-          <Link to="/">
+          <Link to="/home">
             <img src={window.staticImage.headerImage} alt="captr"></img>
           </Link>
         </div>

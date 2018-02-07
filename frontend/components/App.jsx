@@ -28,14 +28,15 @@ const App = () => {
         <AuthRoute exact path="/login" component={Splash}   />
         <AuthRoute exact path="/signup" component={Splash} />
       </Switch>
+      <AuthRoute exact path="/" component={SplashContainer}  />
 
-      <Route exact path="/albums/:albumId/photos/new" component={PhotoModal} />
-      <ProtectedRoute path="/albums/:albumId" component={AlbumShowContainer} />
+      <ProtectedRoute exact path="/albums/:albumId/photos/new" component={PhotoModal} />
+      <ProtectedRoute exact path="/photos/:photoId/edit" component={PhotoModal} />
       <Switch>
+        <ProtectedRoute path="/albums/:albumId" component={AlbumShowContainer} />
         <ProtectedRoute path="/home" component={PhotoIndexContainer} />
-        <ProtectedRoute exact path="/photos/:photoId" component={PhotoShowContainer} />
+        <ProtectedRoute path="/photos/:photoId" component={PhotoShowContainer} />
         <ProtectedRoute exact path="/albums" component={AlbumIndexContainer} />
-        <AuthRoute exact path="/" component={SplashContainer}  />
       </Switch>
 
       <footer>

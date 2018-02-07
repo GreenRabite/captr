@@ -75,7 +75,13 @@
 }
 
 .delete-bttn-container{
+  display: flex;
+  justify-content: flex-end;
   margin-top : auto;
   margin-bottom : auto;
-  right-margin: 30px;
+  margin-right: 10px;
+}
+
+.photo-bttn{
+  margin-right: 10px;
 }

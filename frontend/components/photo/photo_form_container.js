@@ -8,7 +8,8 @@ const mapStateToProps = (state, ownProps) =>{
   let photo = {title: "", description: "", img_url: "", album_id: ownProps.match.params.albumId};
   let formType= "new";
   if (ownProps.location.pathname.includes('edit')) {
-    photo = Object.assign({}, photo, state.entities.photos[ownProps.match.params.photoId]);
+    // photo = Object.assign({}, photo, state.entities.photos[ownProps.match.params.photoId]);
+    photo = state.entities.photos[ownProps.match.params.photoId];
     formType = "update";
   }
   return ({

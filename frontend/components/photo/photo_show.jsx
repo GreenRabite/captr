@@ -44,7 +44,10 @@ class PhotoShow extends React.Component {
             </div>
             <Link to={`/photos/${photo.id}#comments`} className="bttn-gradient follow-user-bttn">Comments</Link>
           </div>
-          <div className="delete-bttn-container" onClick={this.deletePhoto}><button className="bttn-gradient delete-bttn">Delete</button></div>
+          <div className="delete-bttn-container" >
+            <Link to={`/photos/${this.props.match.params.photoId}/edit`}><button className="bttn-gradient photo-bttn">Edit</button></Link>
+            <button onClick={this.deletePhoto} className="bttn-gradient photo-bttn">Delete</button>
+          </div>
         </div>
         <div className="comment-form-containers">
           <CommentShowContainer />

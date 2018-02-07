@@ -47,8 +47,9 @@
 
 .imgSource{
   width: 50%;
+  height: 50%;
   overflow: hidden;
-  margin:0;
+  margin: auto;
   align-items: center;
 }
 
