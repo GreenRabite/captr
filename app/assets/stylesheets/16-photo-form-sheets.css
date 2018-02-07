@@ -28,3 +28,17 @@
   max-height: 400px;
   height: 400px;
 }
+
+.photo-form-header{
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.photo-form-main input {
+  margin-top: 12px;
+}
+
+.photo-form-main button {
+  margin-top: 12px;
+}

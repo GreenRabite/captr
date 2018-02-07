@@ -42,14 +42,14 @@ class PhotoForm extends React.Component {
     return(
       <div className="photo-upload-bg">
         <div className="photo-form centered">
-          <div>Upload A New Photo</div>
-          <form>
+          <div className="photo-form-header">Upload a New Photo!</div>
+          <form className="photo-form-main">
             <div className="photo-form-content">
-              <input onChange={this.updateInput("title")} placeholder="Title Here" value={this.state.title}></input><br/>
+              <input onChange={this.updateInput("title")} placeholder="Title" value={this.state.title}></input><br/>
               <input
                 className="photo-form-text-body"
                 onChange={this.updateInput("description")}
-                placeholder="Add a description here..."
+                placeholder="Description"
                 value={this.state.description}/>
             </div>
             <img src={this.state.img_url ? this.state.img_url : `` } />
