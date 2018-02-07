@@ -5,7 +5,7 @@ import PhotoForm from './photo_form';
 import { withRouter} from 'react-router-dom';
 
 const mapStateToProps = (state, ownProps) =>{
-  let photo = {title: "", description: "", img_url: ""};
+  let photo = {title: "", description: "", img_url: "", album_id: ownProps.match.params.albumId};
   let formType= "new";
   if (ownProps.location.pathname.includes('edit')) {
     photo = Object.assign({}, photo, state.entities.photos[ownProps.match.params.photoId]);
@@ -14,7 +14,8 @@ const mapStateToProps = (state, ownProps) =>{
   return ({
     currentUser: state.session.currentUser,
     photo,
-    formType
+    formType,
+    redirectToNewPath: false
   });
 };
 

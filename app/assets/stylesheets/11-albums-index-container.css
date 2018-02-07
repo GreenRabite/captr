@@ -17,8 +17,8 @@
   margin-left: 30px;
   margin-top: 30px;
   overflow: hidden;
-  -webkit-filter: drop-shadow(7px 5px 5px #222 );
-  filter: drop-shadow(5px 5px 5px #222);
+  /*-webkit-filter: drop-shadow(7px 5px 5px #222 );
+  filter: drop-shadow(5px 5px 5px #222);*/
 }
 
 .album-index-item-container > img{
@@ -50,4 +50,21 @@
   text-align: center;
   margin-top: 60px;
   font-size: 30px;
+}
+
+.paper {
+  background: #fff;
+  box-shadow:
+    /* The top layer shadow */
+    0 -1px 1px rgba(0,0,0,0.15),
+    /* The second layer */
+    0 -10px 0 -5px #eee,
+    /* The second layer shadow */
+    0 -10px 1px -4px rgba(0,0,0,0.15),
+     /* The third layer */
+    0 -20px 0 -10px #eee,
+    /* The third layer shadow */
+    0 -20px 1px -9px rgba(0,0,0,0.15);
+    /* Padding for demo purposes */
+    padding: 30px;
 }

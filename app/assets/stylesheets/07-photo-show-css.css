@@ -68,3 +68,14 @@
   margin-top: 20px;
   margin-left: 50px;
 }
+
+.information-nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-bttn-container{
+  margin-top : auto;
+  margin-bottom : auto;
+  right-margin: 30px;
+}

@@ -21,13 +21,10 @@ export const updatePhoto = (photo) => (
 );
 
 export const createPhoto = (photo) => {
-  console.log(photo);
   return $.ajax({
     method: 'POST',
-    url: `api/photos`,
-    data: photo,
-    processData: false,
-    contentType: false
+    url: `api/albums/${photo.albumId}/photos`,
+    data: photo
   });
 };
 

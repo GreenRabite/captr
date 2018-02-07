@@ -11,6 +11,7 @@ import AlbumIndexContainer from './album/album_index_container';
 import PhotoShowContainer from './photo/photo_show_container';
 import AlbumShowContainer from './album/album_show_container';
 import PhotoFormContainer from './photo/photo_form_container';
+import PhotoModal from './photo/photo_modal';
 import SplashContainer from './splash/splash_container';
 
 import Footer from './footer';
@@ -28,13 +29,13 @@ const App = () => {
         <AuthRoute exact path="/signup" component={Splash} />
       </Switch>
 
+      <Route exact path="/albums/:albumId/photos/new" component={PhotoModal} />
+      <ProtectedRoute path="/albums/:albumId" component={AlbumShowContainer} />
       <Switch>
         <ProtectedRoute path="/home" component={PhotoIndexContainer} />
-        <Route exact path="/albums/:albumId/photos/new" component={PhotoFormContainer} />
         <ProtectedRoute exact path="/photos/:photoId" component={PhotoShowContainer} />
         <ProtectedRoute exact path="/albums" component={AlbumIndexContainer} />
-        <ProtectedRoute path="/albums/:albumId" component={AlbumShowContainer} />
-        <AuthRoute path="/" component={SplashContainer}  />
+        <AuthRoute exact path="/" component={SplashContainer}  />
       </Switch>
 
       <footer>

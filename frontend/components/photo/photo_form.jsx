@@ -1,4 +1,5 @@
 import React from 'react';
+import { Redirect, Link, withRouter } from 'react-router-dom';
 
 class PhotoForm extends React.Component {
   constructor(props) {
@@ -10,11 +11,9 @@ class PhotoForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.createPhoto(this.state);
-    this.setState({
-      title: "",
-      description: ""
-    });
+    let photo = this.state;
+    this.props.createPhoto({photo});
+    this.props.history.push(`/albums/${this.props.match.params.albumId}`);
   }
 
   updateInput(field) {
@@ -40,7 +39,7 @@ class PhotoForm extends React.Component {
 
   render() {
     return(
-      <div className="photo-upload-bg">
+      <div className="">
         <div className="photo-form centered">
           <div className="photo-form-header">Upload a New Photo!</div>
           <form className="photo-form-main">

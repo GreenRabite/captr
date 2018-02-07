@@ -22,10 +22,10 @@
 }
 
 .photo-form{
-  border: 1px solid black;
   padding: 50px;
   border-radius: 20px;
-  max-height: 700px;
+  max-height: 525px;
+  max-width: 400px;
   height: 400px;
   align-items: center;
   margin: auto;
@@ -46,10 +46,35 @@
 }
 
 .imgSource{
-  width: 75%;
+  width: 50%;
+  overflow: hidden;
+  margin:0;
+  align-items: center;
 }
 
 .photo-form-main button{
   width: 225px;
   text-align: center;
+}
+
+.Modal-photo-form {
+  position: absolute;
+  width: 400px;
+  height: 525px;
+  background-color: #fff;
+  background: linear-gradient(to right, #f5f7fa , #c3cfe2);
+  top: 20%;
+  left: 50%;
+  margin-left: -220px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.Overlay-photo-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.65);
 }

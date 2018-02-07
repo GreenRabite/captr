@@ -6,12 +6,20 @@ import { HashLink as Link } from 'react-router-hash-link';
 class PhotoShow extends React.Component {
   constructor(props) {
     super(props);
+    this.deletePhoto = this.deletePhoto.bind(this);
   }
 
   componentDidMount(){
     this.props.fetchPhotoComments(this.props.match.params.photoId).
     then(this.props.fetchPhoto(this.props.match.params.photoId)
     );
+  }
+
+  deletePhoto(){
+    if (window.confirm("Are you sure you want to delete this?")) {
+      (this.props.deletePhoto(this.props.match.params.photoId)).then(()=>
+      this.props.history.push(`/home`));
+    }
   }
 
 
@@ -28,13 +36,15 @@ class PhotoShow extends React.Component {
             <h3>{`${this.props.photo.title}`}</h3>
           </div>
         </div>
-        <div className="photo-show-user-info">
-          <img src={photo.owner_pro_img ? `${this.props.photo.owner_pro_img}` : "https://i.stack.imgur.com/IHLNO.jpg"}></img>
-          <div className="photo-user-headers">
-            <h4>{`${photo.owner}`}</h4>
+        <div className="information-nav">
+          <div className="photo-show-user-info">
+            <img src={photo.owner_pro_img ? `${this.props.photo.owner_pro_img}` : "https://i.stack.imgur.com/IHLNO.jpg"}></img>
+            <div className="photo-user-headers">
+              <h4>{`${photo.owner}`}</h4>
+            </div>
+            <Link to={`/photos/${photo.id}#comments`} className="bttn-gradient follow-user-bttn">Comments</Link>
           </div>
-          <Link to={`/photos/${photo.id}#comments`} className="bttn-gradient follow-user-bttn">Comments!</Link>
-
+          <div className="delete-bttn-container" onClick={this.deletePhoto}><button className="bttn-gradient delete-bttn">Delete</button></div>
         </div>
         <div className="comment-form-containers">
           <CommentShowContainer />
