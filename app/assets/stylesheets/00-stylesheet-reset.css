@@ -18,6 +18,8 @@ span, article, footer, time, small {
   box-sizing: inherit;
   background: transparent;
   font-family: 'Montserrat', sans-serif;
+  background-color: linear-gradient(to right, #f5f7fa , #c3cfe2);
+  background-size: cover;
 }
 
 ul {

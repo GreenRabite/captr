@@ -22,7 +22,7 @@ class PhotoIndex extends React.Component {
       );
     }else{
       return(
-        <div className="captrBG">
+        <div className="appBG captrBG">
           <div className="masonry">
             {PhotoIndexItems}
           </div>

@@ -12,6 +12,7 @@ import PhotoShowContainer from './photo/photo_show_container';
 import AlbumShowContainer from './album/album_show_container';
 import PhotoFormContainer from './photo/photo_form_container';
 import PhotoModal from './photo/photo_modal';
+import AlbumModal from './album/album_modal';
 import SplashContainer from './splash/splash_container';
 
 import Footer from './footer';
@@ -30,13 +31,19 @@ const App = () => {
       </Switch>
       <AuthRoute exact path="/" component={SplashContainer}  />
 
-      <ProtectedRoute exact path="/photos/:photoId/edit" component={PhotoModal} />
+
+      <ProtectedRoute exact path="/albums/new" component={AlbumModal} />
       <ProtectedRoute exact path="/albums/:albumId/photos/new" component={PhotoModal} />
-      <ProtectedRoute path="/albums/:albumId" component={AlbumShowContainer} />
+      <ProtectedRoute exact path="/photos/:photoId/edit" component={PhotoModal} />
+      <ProtectedRoute exact path="/albums/:albumId/edit" component={AlbumModal} />
+
       <Switch>
+        // Ugly Routing
+        <ProtectedRoute exact path="/albums/new" component={AlbumIndexContainer} />
+        <ProtectedRoute path="/albums/:albumId" component={AlbumShowContainer} />
+        <ProtectedRoute path="/albums" component={AlbumIndexContainer} />
         <ProtectedRoute path="/home" component={PhotoIndexContainer} />
         <ProtectedRoute path="/photos/:photoId" component={PhotoShowContainer} />
-        <ProtectedRoute exact path="/albums" component={AlbumIndexContainer} />
       </Switch>
 
       <footer>

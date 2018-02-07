@@ -1,23 +1,22 @@
 import React from 'react';
 import { Redirect, Link, withRouter } from 'react-router-dom';
 
-class PhotoForm extends React.Component {
+class AlbumForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = this.props.photo;
+    this.state = this.props.album;
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.uploadImage = this.uploadImage.bind(this);
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    let photo = this.state;
+    let album = this.state;
     if (this.props.formType === "new") {
-      this.props.createPhoto({photo});
-      this.props.history.push(`/albums/${this.props.match.params.albumId}`);
+      this.props.createAlbum(album);
+      this.props.history.push(`/albums`);
     }else {
-      this.props.updatePhoto(photo);
-      this.props.history.push(`/photos/${this.props.match.params.photoId}`);
+      this.props.updateAlbum(album);
+      this.props.history.push(`/albums/${this.props.match.params.albumId}`);
     }
   }
 
@@ -27,25 +26,10 @@ class PhotoForm extends React.Component {
     };
   }
 
-  photoImage(url) {
-    this.setState({ ["img_url"]: url });
-  }
-
-  uploadImage(e) {
-    e.preventDefault();
-    window.photoImage = this.photoImage.bind(this);
-    window.cloudinary.openUploadWidget(
-      window.cloudinary_options,
-      function(errors, result){
-        window.photoImage(result[0].url);
-      }
-    );
-  }
-
   render() {
-    let text = this.props.formType === "new" ? "Upload a New Photo!" : "Edit Your Picture";
+    let text = this.props.formType === "new" ? "Add a New Album!" : "Edit Your Album!";
     return(
-      <div className="appBG">
+      <div className="">
         <div className="photo-form centered">
           <div className="photo-form-header">{text}</div>
           <form className="photo-form-main">
@@ -57,10 +41,8 @@ class PhotoForm extends React.Component {
                 placeholder="Description"
                 value={this.state.description}/>
             </div>
-            <button className="bttn-gradient" onClick={this.uploadImage}>Upload Photo</button>
             <div className="photo-form-btn-bar">
               <button onClick={this.handleSubmit} className="bttn-gradient">Submit</button>
-              <img className="imgSource"src={this.state.img_url ? this.state.img_url : `` } />
             </div>
           </form>
         </div>
@@ -70,4 +52,4 @@ class PhotoForm extends React.Component {
   }
 }
 
-export default PhotoForm;
+export default AlbumForm;
