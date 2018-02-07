@@ -1,0 +1,37 @@
+.masonry {
+  $spacing: 2px;
+  column-gap: $spacing;
+  padding: $spacing;
+  columns: 2;
+  transform: translateZ(0);
+  box-sizing: border-box;
+  width: 85%;
+  margin-top: 90px;
+
+  @media (min-width: 511px) {columns: 2;}
+  @media (min-width: 769px) {columns: 4;}
+  @media (min-width: 1440px) {columns: 5;}
+
+  .masonry-item {
+    width: 95%;
+    display: block;
+    border-bottom: $spacing solid transparent;
+    -webkit-filter: drop-shadow(7px 5px 5px #222 );
+    filter: drop-shadow(5px 5px 5px #222);
+  }
+}
+
+.wrapper .text {
+  position:relative;
+  bottom:20px;
+  left:0px;
+  visibility:hidden;
+  // display: block;
+  float:left;
+  background-color: white;
+  width: 95%;
+  }
+
+.wrapper:hover .text {
+  visibility:visible;
+}
