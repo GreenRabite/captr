@@ -40,6 +40,10 @@
   width: 100%;
 }
 
+.fa-folder{
+  width: 100%;
+}
+
 html {
   background-color: linear-gradient(to right, #f5f7fa , #c3cfe2);
   background-size: cover;
