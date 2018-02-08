@@ -8,7 +8,8 @@ import { withRouter} from 'react-router-dom';
 const mapStateToProps = (state,ownProps) => {
   return {
     photo: state.entities.photos[ownProps.match.params.photoId],
-    comments: state.entities
+    comments: state.entities,
+    currentUser: state.session.currentUser
   };
 };
 

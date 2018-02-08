@@ -28,6 +28,15 @@ class PhotoShow extends React.Component {
       return null;
     }
     let photo = this.props.photo;
+    let hiddenItem;
+    if (parseInt(this.props.currentUser.id) === this.props.photo.owner_id) {
+      hiddenItem = (
+        <div className="delete-bttn-container" >
+          <Link to={`/photos/${this.props.match.params.photoId}/edit`}><button className="main-bttn photo-bttn">Edit</button></Link>
+          <button onClick={this.deletePhoto} className="main-bttn photo-bttn">Delete</button>
+        </div>
+      );
+    }
     return(
       <div>
         <div className="photo-show-main-container">
@@ -44,10 +53,7 @@ class PhotoShow extends React.Component {
             </div>
             <Link to={`/photos/${photo.id}#comments`} className="main-bttn follow-user-bttn">Comments</Link>
           </div>
-          <div className="delete-bttn-container" >
-            <Link to={`/photos/${this.props.match.params.photoId}/edit`}><button className="main-bttn photo-bttn">Edit</button></Link>
-            <button onClick={this.deletePhoto} className="main-bttn photo-bttn">Delete</button>
-          </div>
+          {hiddenItem}
         </div>
         <div className="comment-form-containers">
           <CommentShowContainer />
