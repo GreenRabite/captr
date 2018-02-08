@@ -9,8 +9,8 @@
 }
 
 .album-index-item-container {
-  height: 400px;
-  width: 400px;
+  height: 375px;
+  width: 375px;
   /*background: pink;*/
   /*border: 1px solid black;*/
   border-radius: 5px;
@@ -48,8 +48,10 @@
 
 .url-headers > h1{
   text-align: center;
-  margin-top: 60px;
+  margin-top: 80px;
   font-size: 30px;
+  font-weight: bolder;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .paper {

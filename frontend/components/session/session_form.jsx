@@ -118,7 +118,7 @@ class SessionForm extends React.Component {
               {this.renderErrors()}
             </ul>
             <div className="form-submit">
-              <input className="bttn-gradient submit-button" type="submit" value="Submit" />
+              <input className="main-bttn" type="submit" value={this.props.formType === 'login' ? 'Login' : 'Sign Up'} />
             </div>
             <div className="session_form_ending_tag">{this.navLink()}</div>
             <br/>

@@ -22,8 +22,8 @@
 }
 
 .photo-show-main-container {
-
-  background: linear-gradient(to right, #f5f7fa , #c3cfe2);
+background-color: #E8EAEE;
+  /*background: linear-gradient(to right, #f5f7fa , #c3cfe2);*/
   display: flex;
   margin: auto;
   justify-content: space-around;

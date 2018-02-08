@@ -42,11 +42,11 @@ class PhotoShow extends React.Component {
             <div className="photo-user-headers">
               <h4>{`${photo.owner}`}</h4>
             </div>
-            <Link to={`/photos/${photo.id}#comments`} className="bttn-gradient follow-user-bttn">Comments</Link>
+            <Link to={`/photos/${photo.id}#comments`} className="main-bttn follow-user-bttn">Comments</Link>
           </div>
           <div className="delete-bttn-container" >
-            <Link to={`/photos/${this.props.match.params.photoId}/edit`}><button className="bttn-gradient photo-bttn">Edit</button></Link>
-            <button onClick={this.deletePhoto} className="bttn-gradient photo-bttn">Delete</button>
+            <Link to={`/photos/${this.props.match.params.photoId}/edit`}><button className="main-bttn photo-bttn">Edit</button></Link>
+            <button onClick={this.deletePhoto} className="main-bttn photo-bttn">Delete</button>
           </div>
         </div>
         <div className="comment-form-containers">

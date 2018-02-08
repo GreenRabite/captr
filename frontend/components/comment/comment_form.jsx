@@ -40,7 +40,7 @@ class CommentForm extends React.Component{
             >
             <div><CommentFormItem props={this.props} match = {this.props.match} handleCloseModal= {this.handleCloseModal}/></div>
           </ReactModal>
-          <div className="add-comment-box"><button className="bttn-gradient" onClick={()=>this.handleOpenModal()}>Add A Comment!</button></div>
+          <div className="add-comment-box"><button className="main-bttn" onClick={()=>this.handleOpenModal()}>Add A Comment!</button></div>
         </div>
       </div>
     );

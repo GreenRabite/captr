@@ -7,7 +7,8 @@
 }
 
 .photo-upload-bg{
-  background: linear-gradient(to right, #f5f7fa , #c3cfe2);
+  /*background: linear-gradient(to right, #f5f7fa , #c3cfe2);*/
+  background-color: #E8EAEE;
   /*background-color: pink;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -63,7 +64,8 @@
   width: 400px;
   height: 525px;
   background-color: #fff;
-  background: linear-gradient(to right, #f5f7fa , #c3cfe2);
+  /*background: linear-gradient(to right, #f5f7fa , #c3cfe2);*/
+  background-color: #E8EAEE;
   top: 20%;
   left: 50%;
   margin-left: -220px;

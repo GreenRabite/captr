@@ -42,7 +42,7 @@ class AlbumForm extends React.Component {
                 value={this.state.description}/>
             </div>
             <div className="photo-form-btn-bar">
-              <button onClick={this.handleSubmit} className="bttn-gradient">Submit</button>
+              <button onClick={this.handleSubmit} className="main-bttn">Submit</button>
             </div>
           </form>
         </div>

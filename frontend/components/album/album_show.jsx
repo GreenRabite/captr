@@ -47,8 +47,8 @@ class AlbumShow extends React.Component {
         <div className="url-headers captrBG"><h1>{this.props.album.title}</h1></div>
           <div>
             <div className="album-show-bttn-container" >
-              <Link to={`/albums/${this.props.match.params.albumId}/edit`}><button className="bttn-gradient photo-bttn">Edit</button></Link>
-              <button onClick={this.deleteAlbum} className="bttn-gradient photo-bttn">Delete</button>
+              <Link to={`/albums/${this.props.match.params.albumId}/edit`}><button className="main-bttn photo-bttn">Edit</button></Link>
+              <button onClick={this.deleteAlbum} className="main-bttn photo-bttn">Delete</button>
             </div>
           </div>
         <div></div>

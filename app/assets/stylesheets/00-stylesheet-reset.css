@@ -19,6 +19,7 @@ span, article, footer, time, small {
   background: transparent;
   font-family: 'Montserrat', sans-serif;
   background-color: linear-gradient(to right, #f5f7fa , #c3cfe2);
+  /*background-color: #E8EAEE;*/
   background-size: cover;
 }
 

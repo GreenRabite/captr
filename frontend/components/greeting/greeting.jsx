@@ -14,7 +14,7 @@ const sessionLinks = () => (
     </div>
     <div className="nav-buttons">
       <div className="nav-button-login"><Link to="/login">Log In</Link></div>
-      <div className="bttn-gradient"><Link to="/signup">Sign Up</Link></div>
+      <Link to="/signup"><div className="main-bttn sign-up-bttn">Sign Up</div></Link>
     </div>
   </nav>
 );
@@ -41,7 +41,7 @@ const personalGreeting = (currentUser, logout) => (
               </div>
           </div>
           <div className="nav-buttons">
-            <button className="bttn-gradient" onClick={logout}>Log Out</button>
+            <button className="main-bttn" onClick={logout}>Log Out</button>
           </div>
         </div>
       </div>

@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { login, logout, signup } from './../../actions/session_actions';
-import SplashHeaders from './splash_headers';
+import SplashExperiments from './splash_experiments';
 
 const mapDispatchToProps = (dispatch) => ({
   login: (user) => dispatch(login(user))
 });
 
-export default connect(null,mapDispatchToProps)(SplashHeaders);
+export default connect(null,mapDispatchToProps)(SplashExperiments);

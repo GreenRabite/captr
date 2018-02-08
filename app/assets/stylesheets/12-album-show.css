@@ -45,13 +45,15 @@
 }
 
 html {
-  background-color: linear-gradient(to right, #f5f7fa , #c3cfe2);
+  /*background-color: linear-gradient(to right, #f5f7fa , #c3cfe2);*/
+  background-color: #E8EAEE;
   background-size: cover;
 }
 
 .appBG {
   /*background: red;*/
-  background: linear-gradient(to right, #f5f7fa , #c3cfe2);
+  /*background: linear-gradient(to right, #f5f7fa , #c3cfe2);*/
+  background-color: #E8EAEE;
   background-size: cover;
   /*min-height: 900px;*/
 }

@@ -24,11 +24,11 @@ class AlbumIndex extends React.Component {
     }else{
       return(
         <div className="appBG">
-          <div className="url-headers captrBG"><h1>Albums</h1></div>
+          <div className="url-headers captrBG"><h1>ALBUMS</h1></div>
           <div className="captrBG">
             <div className="album-index-container">
               <Link to="/albums/new">
-                <div className="album-index-item-container paper icon-stack"><i className="far fa-folder fa-10x"></i></div>
+                <div className="album-index-item-container animated fadeInLeft paper icon-stack"><i className="far fa-folder fa-10x"></i></div>
               </Link>
               {AlbumIndexItems}
               <img></img>

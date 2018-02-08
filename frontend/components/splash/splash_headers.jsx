@@ -12,8 +12,8 @@ class SplashHeaders extends React.Component {
         <h1>Follow your passion.</h1>
         <h3>Join the <strong>captr</strong> community and share your stories with passionate people</h3>
         <div className="button-front-page-container">
-          <Link className="bttn-gradient" to="/login">Log In</Link> <br/>
-          <Link className="bttn-gradient" onClick={()=>this.props.login({username:"dobrynin", password:"password"})} to="/">Demo Log In</Link>
+          <Link className="main-bttn" to="/login">Log In</Link> <br/>
+          <Link className="main-bttn" onClick={()=>this.props.login({username:"dobrynin", password:"password"})} to="/">Demo Log In</Link>
         </div>
       </div>
     </div>

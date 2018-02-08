@@ -15,6 +15,11 @@
 	height: 20px;
 }
 
+.sign-up-bttn{
+	margin: auto;
+	margin-bottom: 20px;
+}
+
 .login-form-container{
 
 }
@@ -31,8 +36,8 @@
 
 
 .form-submit input:hover{
-  color: #0D120A;
-  background-color: #EDE3E9;
+  /*color: #0D120A;
+  background-color: #EDE3E9;*/
 }
 
 .session_form_ending_tag {
@@ -93,7 +98,15 @@
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
-	margin-left: 5%;
+	/*margin-left: 5%;*/
+	/*margin: auto;*/
+}
+
+.button-main-page{
+	display: block;
+	/*text-align: center;*/
+	margin:0 auto;
+	margin-top: 10px;
 }
 
 

@@ -2,7 +2,8 @@
 	margin: 450px;
 }
 .loading-bg{
-	background: linear-gradient(to right, #f5f7fa , #c3cfe2);
+	/*background: linear-gradient(to right, #f5f7fa , #c3cfe2);*/
+	background-color: #E8EAEE;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
