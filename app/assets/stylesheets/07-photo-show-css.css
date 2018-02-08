@@ -83,3 +83,7 @@
 .photo-bttn{
   margin-right: 10px;
 }
+
+.fa-times-circle{
+  cursor: pointer;
+}
