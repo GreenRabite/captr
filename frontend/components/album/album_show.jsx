@@ -12,7 +12,6 @@ class AlbumShow extends React.Component {
   }
 
   deleteAlbum(){
-    debugger;
     if (window.confirm("Are you sure you want to delete this?")) {
       (this.props.deleteAlbum(this.props.match.params.albumId)).then(()=>
       this.props.history.push(`/albums`));
@@ -24,6 +23,7 @@ class AlbumShow extends React.Component {
     if (this.props.album === undefined || this.props.album.album_photos === undefined ) {
       return (
         <div className="appBG">
+          <div className="empty-spacer">.</div>
           <div className="album-photos-container">
             <Link to={`/albums/${this.props.match.params.albumId}/photos/new`}>
               <div className="album-show-img icon-stack"><i className="fas fa-upload fa-10x"></i></div>
@@ -33,29 +33,56 @@ class AlbumShow extends React.Component {
       );
     }
       let photos = Object.values(this.props.album.album_photos);
+      debugger;
       let AlbumShowItems = photos.map((photo)=>{
         return(
           <div>
+
+          <div className="empty-spacer2"></div>
             <Link to={`/photos/${photo.id}`}>
-              <img className="album-show-img" src={photo.img_url} key={photo.id}/>
+              <div className="content space">
+                <div className="content-overlay"></div>
+                <img className="content-image" src={photo.img_url} key={photo.id}/>
+                <div className="content-details fadeIn-top">
+                  <div className="center"><h3>{photo.title}</h3></div>
+                  <div className="center"><p>{photo.description ? photo.description : "No Description" }</p></div>
+                </div>
+              </div>
             </Link>
           </div>
         );
       });
-    return(
-      <div className="appBG">
-        <div className="url-headers captrBG"><h1>{this.props.album.title}</h1></div>
+      let hiddenItem;
+      debugger;
+      if (parseInt(this.props.currentUser.id) === this.props.album.owner_id) {
+        hiddenItem = (
           <div>
             <div className="album-show-bttn-container" >
               <Link to={`/albums/${this.props.match.params.albumId}/edit`}><button className="main-bttn photo-bttn">Edit</button></Link>
               <button onClick={this.deleteAlbum} className="main-bttn photo-bttn">Delete</button>
             </div>
           </div>
+        );
+      }
+    return(
+      <div className="appBG">
+        <div className="url-headers captrBG">
+          <h1>{this.props.album.title} by {this.props.album.owner}</h1> <br></br>
+        </div>
+          {hiddenItem}
         <div></div>
           <div className="captrBG">
-            <div className="album-photos-container">
+            <div className="album-photos-container  animated pulse">
               <Link to={`/albums/${this.props.match.params.albumId}/photos/new`}>
-                <div className="album-show-img icon-stack"><i className="fas fa-upload fa-10x"></i></div>
+                <div className="empty-spacer2">.</div>
+                <div className="content space">
+                  <div className="content-overlay"></div>
+                <div className="album-show-img icon-stack content-image-icon"><i className="fas fa-upload fa-10x"></i></div>
+                  <div className="content-details fadeIn-top">
+                    <div className="center"><h3>New Photo</h3></div>
+                    <div className="center"><p>Upload Here</p></div>
+                  </div>
+                </div>
               </Link>
               {AlbumShowItems}
             </div>

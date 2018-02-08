@@ -40,7 +40,7 @@ const App = () => {
       <Switch>
         // Ugly Routing
         <ProtectedRoute exact path="/albums/new" component={AlbumIndexContainer} />
-        <ProtectedRoute exact path="/albums/:albumId" component={AlbumShowContainer} />
+        <ProtectedRoute path="/albums/:albumId" component={AlbumShowContainer} />
         <ProtectedRoute exact path="/albums" component={AlbumIndexContainer} />
         <ProtectedRoute path="/home" component={PhotoIndexContainer} />
         <ProtectedRoute path="/photos/:photoId" component={PhotoShowContainer} />

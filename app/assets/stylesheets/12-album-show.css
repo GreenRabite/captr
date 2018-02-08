@@ -3,17 +3,17 @@
   width: 400px;
   border-radius: 5px;
   overflow: hidden;
-  margin-left: 20px;
-  margin-top: 20px;
+  /*margin-left: 20px;
+  margin-top: 20px;*/
   background: white;
 }
 
 .album-photos-container{
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 75%;
   justify-content: center;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
   -webkit-filter: drop-shadow(7px 5px 5px #222 );
   filter: drop-shadow(5px 5px 5px #222);
 }
@@ -33,7 +33,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px dotted gray;
+  /*border: 1px dotted gray;*/
 }
 
 .fa-upload{
@@ -62,4 +62,20 @@ html {
   margin-top: 10px;
   display: flex;
   justify-content: center;
+}
+
+.album-show-html{
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+.bgColor{
+  background-color: #E8EAEE;
+  background-size: cover;
+  height: 1000px;
+}
+
+.album-show-bttn-container-title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
 }

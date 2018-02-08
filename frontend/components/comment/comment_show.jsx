@@ -20,7 +20,7 @@ class CommentShow extends React.Component{
       );
     }else {
       let CommentShowItems = this.props.comments.map((comment)=>{
-        return <CommentShowItem key={comment.id} comment={comment} deleteComment={this.props.deleteComment}/>;
+        return <CommentShowItem key={comment.id} comment={comment} currentUser={this.props.currentUser} deleteComment={this.props.deleteComment}/>;
       });
       return(
         <div>

@@ -13,7 +13,7 @@ class AlbumForm extends React.Component {
     let album = this.state;
     if (this.props.formType === "new") {
       this.props.createAlbum(album);
-      this.props.history.push(`/albums`);
+      this.props.history.push(`/albums`).then(()=>this.props.fetchAlbums());
     }else {
       this.props.updateAlbum(album);
       this.props.history.push(`/albums/${this.props.match.params.albumId}`);
@@ -42,7 +42,7 @@ class AlbumForm extends React.Component {
                 value={this.state.description}/>
             </div>
             <div className="photo-form-btn-bar">
-              <button onClick={this.handleSubmit} className="main-bttn">Submit</button>
+              <button onClick={this.handleSubmit} className="main-bttn-form">Submit</button>
             </div>
           </form>
         </div>

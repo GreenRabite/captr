@@ -6,6 +6,14 @@
   transform: translate(-50%, -50%);
 }
 
+.center-screen{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  /* bring your own prefixes */
+  /*transform: translate(-50%, -50%);*/
+}
+
 .photo-upload-bg{
   /*background: linear-gradient(to right, #f5f7fa , #c3cfe2);*/
   background-color: #E8EAEE;
@@ -47,8 +55,8 @@
 }
 
 .imgSource{
-  width: 50%;
-  height: 50%;
+  width: 75px;
+  height: 75px;
   overflow: hidden;
   margin: auto;
   align-items: center;
@@ -80,4 +88,15 @@
   right: 0;
   bottom: 0;
   background: rgba(0,0,0,0.65);
+}
+
+.adjust{
+  margin-left: 30px;
+}
+
+.img-container{
+  width: 300px;
+
+  border: 1px solid
+  margin-top: 200px;
 }

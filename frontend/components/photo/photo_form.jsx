@@ -13,7 +13,7 @@ class PhotoForm extends React.Component {
     e.preventDefault();
     let photo = this.state;
     if (this.props.formType === "new") {
-      this.props.createPhoto({photo});
+      this.props.createPhoto({photo}).then(()=>(this.props.fetchAlbum(this.props.match.params.albumId)));
       this.props.history.push(`/albums/${this.props.match.params.albumId}`);
     }else {
       this.props.updatePhoto(photo);
@@ -46,7 +46,7 @@ class PhotoForm extends React.Component {
     let text = this.props.formType === "new" ? "Upload a New Photo!" : "Edit Your Picture";
     return(
       <div className="appBG">
-        <div className="photo-form centered">
+        <div className="centered">
           <div className="photo-form-header">{text}</div>
           <form className="photo-form-main">
             <div className="photo-form-content">
@@ -57,10 +57,12 @@ class PhotoForm extends React.Component {
                 placeholder="Description"
                 value={this.state.description}/>
             </div>
-            <button className="main-bttn" onClick={this.uploadImage}>Upload Photo</button>
-            <div className="photo-form-btn-bar">
-              <button onClick={this.handleSubmit} className="main-bttn">Submit</button>
-              <img className="imgSource"src={this.state.img_url ? this.state.img_url : `` } />
+            <button className="main-bttn-form" onClick={this.uploadImage}>Upload Photo</button>
+            <div onClick={this.handleSubmit}>
+              <button className="main-bttn-form">Submit</button> <br/>
+            </div>
+            <div className="img-container">
+              <img className="imgSource"src={this.state.img_url ? this.state.img_url : "" } />
             </div>
           </form>
         </div>

@@ -10,7 +10,10 @@ const mapStateToProps = (state, ownProps) => {
     comment = state.comments[ownProps.match.params.photoId];
     formType = "update";
   }
-  return ({ comment, formType });
+  return ({ comment,
+     formType,
+     currentUser : state.session.currentUser
+    });
 };
 
 const mapDispatchToProps = (dispatch) => ({

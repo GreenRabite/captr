@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { updatePhoto, createPhoto } from './../../actions/photo_actions';
-import { requestAlbums } from './../../actions/album_actions';
+import { fetchAlbum } from './../../actions/album_actions';
 import PhotoForm from './photo_form';
 import { withRouter} from 'react-router-dom';
 
@@ -23,7 +23,7 @@ const mapStateToProps = (state, ownProps) =>{
 const mapDispatchToProps = (dispatch) => ({
   updatePhoto: (photo) => dispatch(updatePhoto(photo)),
   createPhoto: (newPhoto)=> dispatch(createPhoto(newPhoto)),
-  requestAlbums: ()=>dispatch(requestAlbums())
+  fetchAlbum: (id)=>dispatch(fetchAlbum(id))
 });
 
 export default withRouter(connect(mapStateToProps,mapDispatchToProps)(PhotoForm));

@@ -87,3 +87,11 @@ background-color: #E8EAEE;
 .fa-times-circle{
   cursor: pointer;
 }
+
+
+.main-ps-container{
+  display: flex;
+  background-color: pink;
+  border: 1px solid black;
+  width: 400px
+}

@@ -6,11 +6,11 @@
 }
 
 .search input {
-  width: 900px;
-  height: 15px;
+  width: 700px;
+  /*height: 15px;*/
 
-  background: #fcfcfc;
   border: 1px solid #aaa;
+  /*background: #fcfcfc;*/
   border-radius: 7px;
   box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
 }

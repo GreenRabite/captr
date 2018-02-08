@@ -48,10 +48,18 @@
   overflow: hidden;
 }
 
+.content-ps {
+  position: relative;
+  width: 90%;
+  min-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
 .content .content-overlay {
   background: rgba(0,0,0,0.4);
   position: absolute;
-  height: 99%;
+  height: 100%;
   width: 100%;
   left: 0;
   top: 0;
@@ -73,6 +81,14 @@
   min-height: 360px;
   max-height: 360px;
   min-width: 360px;
+  max-width: 360px;
+}
+.content-image-icon{
+  object-fit: cover;
+  overflow: hidden;
+  min-height: 360px;
+  max-height: 360px;
+  // min-width: 360px;
   max-width: 360px;
 }
 
@@ -126,4 +142,22 @@
 
 .fadeIn-right{
   left: 80%;
+}
+
+.center-album{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 100px;
+  // margin-top: 90px;
+}
+
+.img-size {
+  width: 400px;
+  height: 400px;
+  background-color: pink;
+}
+.space{
+  margin-bottom: 15px;
+  margin: 5px;
 }

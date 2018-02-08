@@ -10,8 +10,16 @@
 .empty-spacer{
   height: 80px;
 }
+.empty-spacer2{
+  height: 30px;
+  visibility: hidden;
+}
 
 .add-comment-box{
   display: flex;
   justify-content: center;
+}
+
+.hor-spacer{
+  width: 15px;
 }
