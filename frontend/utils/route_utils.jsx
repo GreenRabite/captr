@@ -11,7 +11,7 @@ const Auth = ({ loggedIn, path, component: Component, exact }) => (
     exact={exact}
     path={path}
     render={props => (
-      loggedIn ? <Redirect to="/albums" /> : <Component {...props} />
+      loggedIn ? <Redirect to="/home" /> : <Component {...props} />
     )}
   />
 );
