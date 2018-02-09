@@ -63,7 +63,7 @@ end
   end
   Photo.create(title: Faker::Coffee.blend_name, img_url: "https://picsum.photos/1920/1080/?image=#{valid_image_links.sample}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
   Photo.create(title: Faker::Coffee.variety, img_url: "https://picsum.photos/1800/800/?image=#{valid_image_links.sample}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
-  Photo.create(title: Faker::Pokemon.move, img_url: "https://picsum.photos/800/1800/?image=#{valid_image_links.sample}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
+  Photo.create(title: Faker::Pokemon.move, img_url: "https://picsum.photos/800/1200/?image=#{valid_image_links.sample}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
 end
 
 
