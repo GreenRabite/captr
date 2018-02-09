@@ -2,11 +2,14 @@ import React from 'react';
 import CommentShowContainer from './../comment/comment_show_container';
 import CommentForm from './../comment/comment_form';
 import { HashLink as Link } from 'react-router-hash-link';
+import TagsInput from 'react-tagsinput';
+
 
 class PhotoShow extends React.Component {
   constructor(props) {
     super(props);
     this.deletePhoto = this.deletePhoto.bind(this);
+    this.state = {tags: []};
   }
 
   componentDidMount(){
@@ -20,6 +23,10 @@ class PhotoShow extends React.Component {
       (this.props.deletePhoto(this.props.match.params.photoId)).then(()=>
       this.props.history.push(`/home`));
     }
+  }
+
+  handleChange(tags){
+    this.setState({tags});
   }
 
 
@@ -55,10 +62,12 @@ class PhotoShow extends React.Component {
           </div>
           {hiddenItem}
         </div>
-        <div className="comment-form-containers">
-          <CommentShowContainer />
+        <div className="bottom-form-container">
+          <div className="comment-form-containers">
+            <CommentShowContainer />
+          </div>
+          <a id="comments"></a>
         </div>
-        <a id="comments"></a>
       </div>
     );
   }
