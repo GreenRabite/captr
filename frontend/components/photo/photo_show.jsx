@@ -51,7 +51,7 @@ class PhotoShow extends React.Component {
             <div className="photo-user-headers">
               <h4>{`${photo.owner}`}</h4>
             </div>
-            <Link to={`/photos/${photo.id}#comments`} className="main-bttn follow-user-bttn">Comments</Link>
+            <Link to={`/photos/${photo.id}#comments`} className="main-bttn-form follow-user-bttn">Comments</Link>
           </div>
           {hiddenItem}
         </div>

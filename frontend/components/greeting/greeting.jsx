@@ -31,7 +31,7 @@ const personalGreeting = (currentUser, logout) => (
         <ul className="nav-links">
           <NavLink to="/home" ><li>Photos</li></NavLink>
           <NavLink to="/albums" ><li>Albums</li></NavLink>
-          <Link to="https://www.linkedin.com/in/andywluo/"><li>About Us</li></Link>
+          <a href="https://www.linkedin.com/in/andywluo/" target="_blank"><li>About Us</li></a>
         </ul>
         <div className="search">
           <span className="fa fa-search"></span>

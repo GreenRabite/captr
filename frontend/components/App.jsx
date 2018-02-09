@@ -29,7 +29,6 @@ const App = () => {
         <AuthRoute exact path="/login" component={Splash}   />
         <AuthRoute exact path="/signup" component={Splash} />
       </Switch>
-      <AuthRoute exact path="/" component={SplashContainer}  />
 
 
       <ProtectedRoute exact path="/albums/new" component={AlbumModal} />
@@ -44,6 +43,7 @@ const App = () => {
         <ProtectedRoute path="/albums" component={AlbumIndexContainer} />
         <ProtectedRoute path="/home" component={PhotoIndexContainer} />
         <ProtectedRoute path="/photos/:photoId" component={PhotoShowContainer} />
+        <AuthRoute path="/" component={SplashContainer}  />
       </Switch>
 
       <footer>
