@@ -56,6 +56,16 @@ html {
   background-color: #E8EAEE;
   background-size: cover;
   /*min-height: 900px;*/
+  // min-height: 950px;
+}
+
+.appBG2 {
+  /*background: red;*/
+  /*background: linear-gradient(to right, #f5f7fa , #c3cfe2);*/
+  background-color: #E8EAEE;
+  background-size: cover;
+  /*min-height: 900px;*/
+  min-height: 950px;
 }
 
 .album-show-bttn-container{
@@ -78,4 +88,8 @@ html {
 .album-show-bttn-container-title{
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
+}
+
+.margin-maker{
+  margin-top: 90px;
 }

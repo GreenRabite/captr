@@ -216,3 +216,18 @@ footer {
   display: flex;
   align-items: center;
 }
+
+.nav-links{
+  display: flex;
+  color: white;
+  font-weight: 1000;
+}
+
+.nav-links li{
+  margin: 20px;
+  text-transform: uppercase;
+}
+
+.active{
+  font-weight: 1000;
+}

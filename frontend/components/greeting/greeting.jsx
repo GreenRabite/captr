@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const sessionLinks = () => (
   <nav className="nav">
@@ -28,6 +28,11 @@ const personalGreeting = (currentUser, logout) => (
             <img src={window.staticImage.headerImage} alt="captr"></img>
           </Link>
         </div>
+        <ul className="nav-links">
+          <NavLink to="/home" ><li>Photos</li></NavLink>
+          <NavLink to="/albums" ><li>Albums</li></NavLink>
+          <Link to="https://www.linkedin.com/in/andywluo/"><li>About Us</li></Link>
+        </ul>
         <div className="search">
           <span className="fa fa-search"></span>
           <input type="text" placeholder="Photos, people, or groups"></input>
