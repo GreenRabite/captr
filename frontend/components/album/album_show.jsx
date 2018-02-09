@@ -28,12 +28,15 @@ class AlbumShow extends React.Component {
             <Link to={`/albums/${this.props.match.params.albumId}/photos/new`}>
               <div className="album-show-img icon-stack"><i className="fas fa-upload fa-10x"></i></div>
             </Link>
+            <div className="album-show-bttn-container" >
+              <Link to={`/albums/${this.props.match.params.albumId}/edit`}><button className="main-bttn photo-bttn">Edit</button></Link>
+              <button onClick={this.deleteAlbum} className="main-bttn photo-bttn">Delete</button>
+            </div>
           </div>
         </div>
       );
     }
       let photos = Object.values(this.props.album.album_photos);
-      debugger;
       let AlbumShowItems = photos.map((photo)=>{
         return(
           <div>
@@ -53,7 +56,6 @@ class AlbumShow extends React.Component {
         );
       });
       let hiddenItem;
-      debugger;
       if (parseInt(this.props.currentUser.id) === this.props.album.owner_id) {
         hiddenItem = (
           <div>
@@ -62,6 +64,22 @@ class AlbumShow extends React.Component {
               <button onClick={this.deleteAlbum} className="main-bttn photo-bttn">Delete</button>
             </div>
           </div>
+        );
+      }
+      let hiddenItem2;
+      if (parseInt(this.props.currentUser.id) === this.props.album.owner_id) {
+        hiddenItem2 = (
+          <Link to={`/albums/${this.props.match.params.albumId}/photos/new`}>
+            <div className="empty-spacer2">.</div>
+            <div className="content space">
+              <div className="content-overlay"></div>
+              <div className="album-show-img icon-stack content-image-icon"><i className="fas fa-upload fa-10x"></i></div>
+              <div className="content-details fadeIn-top">
+                <div className="center"><h3>New Photo</h3></div>
+                <div className="center"><p>Upload Here</p></div>
+              </div>
+            </div>
+          </Link>
         );
       }
     return(
@@ -73,17 +91,7 @@ class AlbumShow extends React.Component {
         <div></div>
           <div className="captrBG">
             <div className="album-photos-container  animated pulse">
-              <Link to={`/albums/${this.props.match.params.albumId}/photos/new`}>
-                <div className="empty-spacer2">.</div>
-                <div className="content space">
-                  <div className="content-overlay"></div>
-                <div className="album-show-img icon-stack content-image-icon"><i className="fas fa-upload fa-10x"></i></div>
-                  <div className="content-details fadeIn-top">
-                    <div className="center"><h3>New Photo</h3></div>
-                    <div className="center"><p>Upload Here</p></div>
-                  </div>
-                </div>
-              </Link>
+              {hiddenItem2}
               {AlbumShowItems}
             </div>
 
