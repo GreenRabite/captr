@@ -15,9 +15,9 @@ const PhotoIndexItem = ({photo}) => {
 
   return (
 
-      <div className="wrapper animated pulse">
+      <div className="wrapper">
         <Link to={`/photos/${photo.id}`}>
-          <img className="masonry-item photo-index-item hover" src={`${photo.img_url}`}/>
+          <img className="masonry-item photo-index-item hover animated fadeIn" src={`${photo.img_url}`}/>
           <p className="text">{photo.title}</p>
         </Link>
 

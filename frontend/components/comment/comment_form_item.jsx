@@ -33,10 +33,10 @@ class CommentFormItem extends React.Component {
       return(
         <div>
           <form onSubmit={this.handleSubmit}>
-            <label>Comment: <br/>
-            <input type="text" onChange={this.update('body')} value={this.state.body} />
-          </label><br/>
-          <button type="submit">Submit</button>
+            <label> <br/>
+            <input type="text" placeholder="Add your comment here" onChange={this.update('body')} value={this.state.body} />
+          </label><br/><br/>
+        <button className="main-bttn-form center-bttn" type="submit">Submit</button>
         </form>
       </div>
     );
