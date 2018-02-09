@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import LoadingScreen from './../ui_loading_screen';
 
 class AlbumShow extends React.Component {
   constructor(props){
@@ -24,16 +25,23 @@ class AlbumShow extends React.Component {
       return (
         <div className="appBG">
           <div className="empty-spacer">.</div>
-          <div className="album-photos-container">
-            <Link to={`/albums/${this.props.match.params.albumId}/photos/new`}>
-              <div className="album-show-img icon-stack"><i className="fas fa-upload fa-10x"></i></div>
-            </Link>
             <div className="album-show-bttn-container" >
               <Link to={`/albums/${this.props.match.params.albumId}/edit`}><button className="main-bttn photo-bttn">Edit</button></Link>
               <button onClick={this.deleteAlbum} className="main-bttn photo-bttn">Delete</button>
             </div>
+          <div className="album-photos-container centered">
+            <Link to={`/albums/${this.props.match.params.albumId}/photos/new`}>
+              <div className="album-show-img icon-stack"><i className="fas fa-upload fa-10x"></i></div>
+            </Link>
+          <br/>
+
           </div>
         </div>
+      );
+    }
+    if (this.props.loading) {
+      return(
+        <LoadingScreen />
       );
     }
       let photos = Object.values(this.props.album.album_photos);

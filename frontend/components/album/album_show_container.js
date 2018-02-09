@@ -6,7 +6,8 @@ const mapStateToProps = (state,ownProps) => {
   return {
     album: state.entities.albums[ownProps.match.params.albumId],
     photos: state.entities.photos,
-    currentUser: state.session.currentUser
+    currentUser: state.session.currentUser,
+    loading: state.ui.loading
   };
 };
 
