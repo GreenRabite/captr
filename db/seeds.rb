@@ -14,6 +14,14 @@ Tag.destroy_all
 Tagging.destroy_all
 User.create(username: "Rabite", password:"password", email: "green.rabite@gmail.com", fname:"Andy")
 User.create(username: "dobrynin", password:"password", email: "dobrynin@gmail.com", fname:"David")
+User.create(username: "MJ", password:"password", email:Faker::Internet.email, fname:"DemoUser", profile_img:"https://images.fineartamerica.com/images-medium-large-5/michael-jordan-2-paul-meijering.jpg")
+User.create(username: "Kobe", password:"password", email:Faker::Internet.email, fname:"DemoUser", profile_img:"https://img00.deviantart.net/da93/i/2015/345/2/1/colored_pencil_drawing_of_kobe_bryant_by_jasminasusak-d9jrmnh.jpg")
+User.create(username: "BI", password:"password", email:Faker::Internet.email, fname:"DemoUser", profile_img:"https://rical-players-nba.s3.amazonaws.com/250x250/8082841d-e516-43c6-a81b-7987fa321acd.jpg")
+User.create(username: "zO", password:"password", email:Faker::Internet.email, fname:"DemoUser", profile_img:"http://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4066421.png&w=350&h=254")
+User.create(username: "KuzKontrol", password:"password", email:Faker::Internet.email, fname:"DemoUser", profile_img:"https://media.nbclosangeles.com/images/652*368/Kyle-Kuzma-Lakers-Suns.jpg")
+User.create(username: "Link", password:"password", email:Faker::Internet.email, fname:"DemoUser", profile_img:"https://www.zeldaeurope.de/galerie/albums/userpics/10003/hw_artwork_char_link_portrait2.jpg")
+User.create(username: "Taylor", password:"password", email:Faker::Internet.email, fname:"DemoUser", profile_img:"https://s3-us-west-2.amazonaws.com/aa-progress-tracker/students/avatars/000/002/599/medium/Taylor_Schmutz_2.jpg?1512771191")
+User.create(username: "LB23", password:"password", email:Faker::Internet.email, fname:"DemoUser", profile_img:"https://b.fssta.com/uploads/application/nba/players/214152.vresize.350.425.medium.35.png")
 Album.create(title:"Arizona", owner_id:1)
 Photo.create(title: "Cool Pic", img_url: "https://picsum.photos/1920/1080/?image=950", owner_id:1, album_id: 1)
 
@@ -46,10 +54,8 @@ valid_image_links = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 1
  1081, 1082, 1083, 1084]
 
 
-
 10.times do
-  User.create(username: Faker::Simpsons.character, password:"password", email:Faker::Internet.email, fname:"DemoUser")
-  Album.create(title:Faker::LeagueOfLegends.location, owner_id:User.all.to_a.sample.id)
+  Album.create(title:Faker::Overwatch.location, owner_id:User.all.to_a.sample.id)
 end
 #
 23.times do
@@ -62,15 +68,14 @@ end
     album_id = Album.all.last.id
   end
   Photo.create(title: Faker::Coffee.blend_name, img_url: "https://picsum.photos/1920/1080/?image=#{valid_image_links.sample}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
-  Photo.create(title: Faker::Coffee.variety, img_url: "https://picsum.photos/1800/800/?image=#{valid_image_links.sample}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
+  Photo.create(title: Faker::Coffee.variety, img_url: "https://picsum.photos/1900/800/?image=#{valid_image_links.sample}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
   Photo.create(title: Faker::Pokemon.move, img_url: "https://picsum.photos/800/1200/?image=#{valid_image_links.sample}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
 end
 
 
-comments = ["amazing picture!", "Really nice shot, capture the soul perfectly", "great angle", "cool pic", "Awesome", " could've done better", "Great view", "amazing!!!!", "love this", "need a better angle", "can i get a hires  copy?", "pretty awesome", "really cool!", "awesome shot", "wow", "can i get an autograph"]
-34.times do
-  Comment.create(body: Faker::RickAndMorty.quote, user_id: User.all.to_a.sample.id, photo_id: Photo.all.to_a.sample.id)
-  Comment.create(body: Faker::WorldOfWarcraft.quote, user_id: User.all.to_a.sample.id, photo_id: Photo.all.to_a.sample.id)
+comments = ["amazing picture!", "Really nice shot, capture the soul perfectly", "great angle", "cool pic", "Awesome", " could've done better", "Great view", "amazing!!!!", "love this", "need a better angle", "can i get a hires  copy?", "pretty awesome", "really cool!", "awesome shot", "wow", "can i get an autograph","not that good tbh", "its alite", "AMAZING","Great job on this!!",
+"awesome job", "woahhhh", "sick shot", "i love it!!!!", "sign me up for another"]
+200.times do
   Comment.create(body: comments.sample, user_id: User.all.to_a.sample.id, photo_id: Photo.all.to_a.sample.id)
 end
 

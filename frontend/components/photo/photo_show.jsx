@@ -68,6 +68,9 @@ class PhotoShow extends React.Component {
           </div>
           <a id="comments"></a>
         </div>
+        <div className="tags-container">
+          <h1></h1>
+        </div>
       </div>
     );
   }
