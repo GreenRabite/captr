@@ -11,7 +11,6 @@ const mapStateToProps = (state, ownProps) =>{
     album = state.entities.albums[ownProps.match.params.albumId];
     formType = "update";
   }
-  debugger;
   return ({
     currentUser: state.session.currentUser,
     album,

@@ -2,7 +2,6 @@ import React from 'react';
 
 const CommentShowItem = ({comment, deleteComment, currentUser}) => {
   let hiddenItem = <div className="hor-spacer"></div>;
-  debugger;
   if (parseInt(currentUser.id) === comment.user_id) {
     hiddenItem = (
       <div onClick={()=>(deleteComment(comment.id))} >

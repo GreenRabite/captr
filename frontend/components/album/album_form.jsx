@@ -13,7 +13,6 @@ class AlbumForm extends React.Component {
     let album = this.state;
     if (this.props.formType === "new") {
       this.props.createAlbum(album).then(()=>this.props.fetchAlbums());
-      debugger;
       this.props.history.push(`/albums`);
     }else {
       this.props.updateAlbum(album);
