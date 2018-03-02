@@ -91,7 +91,10 @@ input {
 }
 
 .nav-logo {
-  width: 75px;
+  width: 100px;
+  /*background-color: pink;*/
+  margin-top: 10px;
+  margin-left: -10px;
 }
 
 
@@ -120,6 +123,10 @@ input {
   width: 100vw;*/
   display: flex;
   justify-content: center;
+}
+
+html, body, h1 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -230,4 +237,9 @@ footer {
 
 .active{
   font-weight: 1000;
+}
+
+.logo{
+  width: 100%;
+
 }

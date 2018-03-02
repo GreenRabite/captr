@@ -25,7 +25,7 @@ const personalGreeting = (currentUser, logout) => (
       <div className="nav main-nav-bar">
         <div className="nav-logo">
           <Link to="/home">
-            <img src={window.staticImage.headerImage} alt="captr"></img>
+            <img className="logo" src={window.staticImage.headerImage} alt="captr"></img>
           </Link>
         </div>
         <ul className="nav-links">
