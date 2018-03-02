@@ -13,6 +13,14 @@ export const fetchAlbum = (albumId) => (
   })
 );
 
+// export const fetchUserAlbums = (albumId) => (
+//   $.ajax({
+//     method: 'GET',
+//     url: `api/albums/${albumId}`,
+//     data: {albumId}
+//   })
+// );
+
 export const updateAlbum = (album) => (
   $.ajax({
     method: 'PATCH',

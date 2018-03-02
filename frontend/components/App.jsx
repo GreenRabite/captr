@@ -11,6 +11,7 @@ import AlbumIndexContainer from './album/album_index_container';
 import PhotoShowContainer from './photo/photo_show_container';
 import AlbumShowContainer from './album/album_show_container';
 import PhotoFormContainer from './photo/photo_form_container';
+import PhotoUploadContainer from './photo/photo_upload_container';
 import PhotoModal from './photo/photo_modal';
 import AlbumModal from './album/album_modal';
 import SplashContainer from './splash/splash_container';
@@ -42,6 +43,7 @@ const App = () => {
         <ProtectedRoute path="/albums/:albumId" component={AlbumShowContainer} />
         <ProtectedRoute path="/albums" component={AlbumIndexContainer} />
         <ProtectedRoute path="/home" component={PhotoIndexContainer} />
+        <ProtectedRoute path="/photos/upload" component={PhotoUploadContainer} />
         <ProtectedRoute path="/photos/:photoId" component={PhotoShowContainer} />
         <AuthRoute path="/" component={SplashContainer}  />
       </Switch>

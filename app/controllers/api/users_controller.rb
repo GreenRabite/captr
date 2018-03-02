@@ -9,6 +9,11 @@ class Api::UsersController < ApplicationController
     end
   end
 
+  def albums
+    @albums = current_user.albums
+    render :albums
+  end
+
   private
 
   def user_params

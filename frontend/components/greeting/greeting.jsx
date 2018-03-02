@@ -8,10 +8,7 @@ const sessionLinks = () => (
         <img src={window.staticImage.headerImage} alt="captr"></img>
       </Link>
     </div>
-    <div className="search">
-      <span className="fa fa-search"></span>
-      <input type="text" placeholder="Photos, people, or groups"></input>
-    </div>
+
     <div className="nav-buttons">
       <div className="nav-button-login"><Link to="/login">Log In</Link></div>
       <Link to="/signup"><div className="main-bttn sign-up-bttn">Sign Up</div></Link>
@@ -38,7 +35,7 @@ const personalGreeting = (currentUser, logout) => (
           <input type="text" placeholder="Photos, people, or groups"></input>
         </div>
         <div className="right-side-nav-items">
-          <div><i className="fas fa-cloud-upload-alt fa-2x"></i></div>
+          <Link to="/photos/upload"><i className="fas fa-cloud-upload-alt fa-2x"></i></Link>
           <div className="login-nav-right">
             <div className="dropdown">
               <button className="header-name dropbtn">Hello, {currentUser.fname} <i className="fa fa-caret-down"></i></button>
