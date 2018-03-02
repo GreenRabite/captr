@@ -10,8 +10,15 @@ class Api::UsersController < ApplicationController
   end
 
   def albums
-    @albums = current_user.albums
-    render :albums
+    # p "Params are:"
+    # p params[:user_id]
+    @user = User.find_by(id: params[:user_id])
+    if @user
+      @albums = @user.albums
+      render :albums
+    else
+      render json: "Could not find user", status: 404
+    end
   end
 
   private
