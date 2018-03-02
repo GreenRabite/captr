@@ -243,3 +243,13 @@ footer {
   width: 100%;
 
 }
+
+.right-side-nav-items{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fa-cloud-upload-alt{
+  color: white;
+  margin-top: 5px;
+}

@@ -37,17 +37,21 @@ const personalGreeting = (currentUser, logout) => (
           <span className="fa fa-search"></span>
           <input type="text" placeholder="Photos, people, or groups"></input>
         </div>
-        <div className="login-nav-right">
-          <div className="dropdown">
-            <button className="header-name dropbtn">Hello, {currentUser.fname} <i className="fa fa-caret-down"></i></button>
+        <div className="right-side-nav-items">
+          <div><i className="fas fa-cloud-upload-alt fa-2x"></i></div>
+          <div className="login-nav-right">
+            <div className="dropdown">
+              <button className="header-name dropbtn">Hello, {currentUser.fname} <i className="fa fa-caret-down"></i></button>
               <div className="dropdown-content">
                 <Link to="/home">Explore Pictures</Link>
                 <Link to="/albums">Explore Albums</Link>
               </div>
+            </div>
+            <div className="nav-buttons">
+              <button className="main-bttn" onClick={logout}>Log Out</button>
+            </div>
           </div>
-          <div className="nav-buttons">
-            <button className="main-bttn" onClick={logout}>Log Out</button>
-          </div>
+
         </div>
       </div>
     </hgroup>
