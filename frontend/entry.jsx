@@ -12,7 +12,7 @@ import * as APIAlbum from './utils/album_api_utils';
 import {login, logout, signup, receiveCurrentUser, receiveErrors } from './actions/session_actions';
 import {fetchPhotos, fetchPhoto, createPhoto, updatePhoto, deletePhoto } from './actions/photo_actions';
 import { receiveComments, receiveComment, removeComment, fetchPhotoComments, fetchOneComment, createComment, updateComment, deleteComment } from './actions/comment_actions';
-import { fetchAlbums, fetchAlbum, createAlbum, updateAlbum, deleteAlbum } from './actions/album_actions';
+import { fetchAlbums, fetchAlbum, createAlbum, updateAlbum, deleteAlbum, fetchUserAlbums } from './actions/album_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');
@@ -39,12 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // window.updateAlbum = APIAlbum.updateAlbum;
   // window.createAlbum = APIAlbum.createAlbum;
   // window.deleteAlbum = APIAlbum.deleteAlbum;
+  // window.fetchUserAlbums = APIUsers.fetchUserAlbums;
   //Action Creators
   window.fetchAlbums = fetchAlbums;
   window.fetchAlbum = fetchAlbum;
   window.createAlbum = createAlbum;
   window.updateAlbum = updateAlbum;
   window.deleteAlbum = deleteAlbum;
+  window.fetchUserAlbum = fetchUserAlbums;
 
   ReactDOM.render(<Root store = { store } />, root);
 });

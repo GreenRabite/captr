@@ -1,4 +1,5 @@
 import * as APIAlbum from './../utils/album_api_utils';
+import * as APIUser from './../utils/users_api_utils';
 import { loading } from './ui_actions';
 
 //export constants
@@ -31,6 +32,12 @@ export const fetchAlbum = (albumId) => (dispatch) => {
   dispatch(loading());
   return APIAlbum.fetchAlbum(albumId).then((album)=>
   (dispatch(receiveAlbum(album))));
+};
+
+export const fetchUserAlbums = (userId) => (dispatch) => {
+  dispatch(loading());
+  return APIUser.fetchUserAlbums(userId).then((albums)=>
+  (dispatch(receiveAlbums(albums))));
 };
 
 export const createAlbum = (album) => (dispatch) => (

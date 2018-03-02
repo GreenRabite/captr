@@ -5,3 +5,11 @@ export const signup = (user) => (
     data: {user}
   })
 );
+
+export const fetchUserAlbums = (userId) => (
+  $.ajax({
+    method: 'GET',
+    url: `/api/users/${userId}/albums`,
+    data: {userId}
+  })
+);
