@@ -1,15 +1,124 @@
 .photo-upload-container{
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 650px;
   border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+  background-color: white;
+  -webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(2.5px 5px 5px #222);
 }
 
 .upload-overlay{
   display: flex;
   justify-content: center;
-  border: 1px solid red;
-  min-height: 100px;
-  min-width: 100px;
+  min-height: 500px;
+  min-width: 500px;
   align-items: center;
   margin-top: 150px;
+  /*border: 1px solid red;*/
+
+}
+
+.select-container{
+  /*margin-top: 30px;*/
+}
+
+.form-container{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+  /*border: 1px dotted black;*/
+}
+
+.main-bttn-form-upload {
+  /*margin-right: 10px;*/
+  margin-top: 10px;
+  margin-left: 60px;
+  width: 150px;
+  background: #3498db;
+  border-bottom: #2980b9 3px solid;
+  border-left: #2980b9 1px solid;
+  border-right: #2980b9 1px solid;
+  border-radius: 6px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  float: left;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.main-bttn-form-upload:hover {
+  opacity: 0.8;
+}
+
+.img-container2{
+  width: 300px;
+  margin-top: 50px;
+}
+
+.imgSource2{
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+  margin: auto;
+  align-items: center;
+}
+
+.form-text-body{
+  margin-top: 10px;
+  width: 260px;
+}
+
+.select-boxes{
+  text-transform: uppercase;
+  margin-top: 5px;
+  color: green;
+}
+
+select  {
+    outline: 0;
+    overflow: hidden;
+    height: 35px;
+    width: 170px;
+    /*background: #2c343c;*/
+    background: #3498db;
+    /*color: #747a80;*/
+    color: white;
+    border: #2c343c;
+    padding: 5px 3px 5px 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-left: -10px;
+}
+
+select option {border: 1px solid #000; background: #3498db;}
+
+
+.bg-upload {
+  /* The image used */
+  background-image: url("https://images.pexels.com/photos/34090/pexels-photo.jpg?w=2560&h=1440");
+  position: absolute;
+  /* Full height */
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.photo-upload-xform{
+  text-transform: uppercase;
+}
+
+.options-list{
+  text-transform: uppercase;
 }
