@@ -28,6 +28,35 @@ export const createPhoto = (photo) => {
   });
 };
 
+export const createPhotoBrandNewAlbum = (photo) => {
+  return $.ajax({
+    method: 'POST',
+    url: `api/photos`,
+    data: {
+      photo: {
+        title: photo.title,
+        description: photo.description,
+        img_url: photo.img_url        
+      }
+    }
+  });
+};
+
+export const createPhotoNewAlbum = (photo) => {
+  return $.ajax({
+    method: 'POST',
+    url: `api/albums/${photo.value}/photos`,
+    data: {
+      photo: {
+        title: photo.title,
+        description: photo.description,
+        img_url: photo.img_url,
+        album_id: photo.value
+      }
+    }
+  });
+};
+
 export const deletePhoto = (id) => (
   $.ajax({
     method: 'DELETE',

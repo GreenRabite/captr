@@ -2,6 +2,18 @@ class Api::PhotosController < ApplicationController
   def create
     @photo = Photo.new(photo_params)
     @photo.owner_id = current_user.id
+    # p @photo
+    if @photo.save
+      render :show
+    else
+      render json: @photo.errors.full_messages, status: 422
+    end
+  end
+
+  def create_album_photo
+    @photo = Photo.new(photo_params)
+    @photo.owner_id = current_user.id
+    @photo.album_id = Album.last.id
     if @photo.save
       render :show
     else
@@ -45,6 +57,6 @@ class Api::PhotosController < ApplicationController
 
   private
   def photo_params
-    params.require(:photo).permit(:title, :description, :img_url, :owner_id, :album_id)
+    params.require(:photo).permit(:title, :description, :img_url, :owner_id, :album_id, :albumTitle, :albumDescription)
   end
 end

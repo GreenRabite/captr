@@ -11,6 +11,7 @@ Rails.application.routes.draw do
       resources :photos, except: [:new, :create] do
         resources :comments, only: [:create]
       end
+      post :photos, :to =>  'photos#create_album_photo'
       resources :comments, only: [:index, :update, :destroy, :show]
       resources :albums, only: [:index, :create, :update, :destroy, :show] do
         resources :photos, only: [:create]

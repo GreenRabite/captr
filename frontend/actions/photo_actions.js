@@ -38,6 +38,14 @@ export const createPhoto = (photo) => (dispatch) => (
   APIPhoto.createPhoto(photo).then((newPhoto)=> (dispatch(receivePhoto(newPhoto))))
 );
 
+export const createPhotoNewAlbum = (photo) => (dispatch) => (
+  APIPhoto.createPhotoNewAlbum(photo).then((newPhoto)=> (dispatch(receivePhoto(newPhoto))))
+);
+
+export const createPhotoBrandNewAlbum = (photo) => (dispatch) => (
+  APIPhoto.createPhotoBrandNewAlbum(photo).then((newPhoto)=> (dispatch(receivePhoto(newPhoto))))
+);
+
 export const updatePhoto = (photo) => (dispatch) => (
   APIPhoto.updatePhoto(photo).then((newPhoto)=> (dispatch(receivePhoto(newPhoto))))
 );

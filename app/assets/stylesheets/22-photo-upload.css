@@ -1,0 +1,15 @@
+.photo-upload-container{
+  width: 600px;
+  height: 600px;
+  border: 1px solid black;
+}
+
+.upload-overlay{
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+  min-height: 100px;
+  min-width: 100px;
+  align-items: center;
+  margin-top: 150px;
+}
