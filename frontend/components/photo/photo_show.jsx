@@ -49,7 +49,6 @@ class PhotoShow extends React.Component {
         <div className="photo-show-main-container">
           <div className="photo-show-container">
             <img src={`${this.props.photo.img_url}`} />
-            <h3>{`${this.props.photo.title}`}</h3>
           </div>
         </div>
         <div className="information-nav">
@@ -59,6 +58,7 @@ class PhotoShow extends React.Component {
               <h4>{`${photo.owner}`}</h4>
             </div>
             <Link to={`/photos/${photo.id}#comments`} className="main-bttn-form follow-user-bttn">Comments</Link>
+            <div className="photo-show-title">{`${this.props.photo.title}`}</div >
           </div>
           {hiddenItem}
         </div>
