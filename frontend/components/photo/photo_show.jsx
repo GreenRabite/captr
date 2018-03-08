@@ -58,9 +58,11 @@ class PhotoShow extends React.Component {
               <h4>{`${photo.owner}`}</h4>
             </div>
             <Link to={`/photos/${photo.id}#comments`} className="main-bttn-form follow-user-bttn">Comments</Link>
-            <div>
-              <div className="photo-show-title">{`${this.props.photo.title}`}</div >
-              <div className="photo-show-description">{this.props.photo.description !== null ? `${this.props.photo.description}` : ""}</div >
+            <div className="title-holder">
+              <div>
+                <div className="photo-show-title">{`${this.props.photo.title}`}</div >
+                <div className="photo-show-description">{this.props.photo.description !== null ? `${this.props.photo.description}` : ""}</div >
+              </div>
             </div>
           </div>
           {hiddenItem}

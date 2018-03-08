@@ -70,6 +70,7 @@ background-color: #E8EAEE;
 .information-nav{
   display: flex;
   justify-content: space-between;
+  /*width: 100%;*/
 }
 
 .delete-bttn-container{
@@ -97,7 +98,7 @@ background-color: #E8EAEE;
 }
 
 .photo-show-title{
-  margin-left: 300px;
+  /*margin-left: 300px;*/
   margin-top: 20px;
   text-transform: uppercase;
   font-weight: bold;
@@ -105,9 +106,18 @@ background-color: #E8EAEE;
 }
 
 .photo-show-description{
-  margin-left: 300px;
+  /*margin-left: 300px;*/
   margin-top: 20px;
   /*text-transform: uppercase;*/
   font-style: italic;
   font-size: 17px;
+}
+
+.title-holder{
+  display: flex;
+  /*margin: 0 auto;*/
+  justify-content: center;
+  /*vertical-align: middle;*/
+  /*position: relative;*/
+  width: 900px;
 }

@@ -47,7 +47,7 @@ class AlbumShow extends React.Component {
       let photos = Object.values(this.props.album.album_photos);
       let AlbumShowItems = photos.map((photo)=>{
         return(
-          <div>
+          <div key={photo.id}>
 
           <div className="empty-spacer2"></div>
             <Link to={`/photos/${photo.id}`}>
