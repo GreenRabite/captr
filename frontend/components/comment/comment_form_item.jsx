@@ -35,7 +35,7 @@ class CommentFormItem extends React.Component {
           <form onSubmit={this.handleSubmit}>
             <div className="input-field">
               <label> <br/>
-                <input type="text" placeholder="Add your comment here" onChange={this.update('body')} value={this.state.body} />
+                <textarea name="textarea" placeholder="Add your comment here" rows="8" cols="20" onChange={this.update('body')} value={this.state.body}/>
               </label><br/><br/>
             </div>
         <div className="center-bttn">
