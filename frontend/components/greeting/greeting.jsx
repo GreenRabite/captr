@@ -42,6 +42,7 @@ const personalGreeting = (currentUser, logout) => (
               <div className="dropdown-content">
                 <Link to="/home">Explore Pictures</Link>
                 <Link to="/albums">Explore Albums</Link>
+                <Link to="/photos/upload">Photo Upload</Link>
               </div>
             </div>
             <div className="nav-buttons">

@@ -124,3 +124,10 @@
 	border-radius: 5px;
 	border: 1px solid gray;
 }
+
+.errors{
+	/*display: flex;
+	justify-content: center;
+	flex-direction: column;*/
+	text-align: center;
+}
