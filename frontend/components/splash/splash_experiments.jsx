@@ -10,7 +10,7 @@ class SplashExperiments extends React.Component {
     return(
       <div className="splashBG">
         <div className="bodySplash">
-          <h1>Follow your passion.</h1>
+          <h1>Follow Your Passion</h1>
           <h3>Join the <strong>captr</strong> community and share your stories with passionate people</h3>
           <div className="button-front-page-container">
             <div className="button-main-page"><Link className="main-bttn" to="/login">Log In</Link></div>
