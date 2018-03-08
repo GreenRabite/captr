@@ -116,8 +116,8 @@ background-color: #E8EAEE;
 .title-holder{
   display: flex;
   /*margin: 0 auto;*/
-  justify-content: center;
+  justify-content: flex-end;
   /*vertical-align: middle;*/
-  /*position: relative;*/
+  position: relative;
   width: 900px;
 }
