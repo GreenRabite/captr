@@ -55,8 +55,8 @@
 }
 
 .imgSource{
-  width: 75px;
-  height: 75px;
+  max-width: 250px;
+  max-height: 200px;
   overflow: hidden;
   margin: auto;
   align-items: center;
@@ -69,7 +69,7 @@
 
 .Modal-photo-form {
   position: absolute;
-  width: 400px;
+  width: 380px;
   height: 525px;
   background-color: #fff;
   /*background: linear-gradient(to right, #f5f7fa , #c3cfe2);*/
@@ -95,8 +95,10 @@
 }
 
 .img-container{
-  width: 300px;
+  width: 250px;
+  height: 200px;
 
   // border: 1px solid;
   margin-top: 150px;
+  overflow: hidden;
 }
