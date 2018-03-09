@@ -49,8 +49,8 @@ class PhotoUpload extends React.Component{
         title: this.state.title,
         description: this.state.description,
         img_url: this.state.img_url
-      }));
-      this.props.history.push(`/albums`);
+      })).then(()=>this.props.history.push(`/albums`));
+
     }else {
       this.props.createPhotoNewAlbum({
         title: this.state.title,
