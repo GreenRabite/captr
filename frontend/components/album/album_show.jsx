@@ -81,7 +81,7 @@ class AlbumShow extends React.Component {
             <div className="empty-spacer2">.</div>
             <div className="content space">
               <div className="content-overlay"></div>
-              <div className="album-show-img icon-stack content-image-icon"><i className="fas fa-upload fa-10x"></i></div>
+              <div className="album-show-img icon-stack content-image-icon"><img src={window.staticImage.newPhoto}/></div>
               <div className="content-details fadeIn-top">
                 <div className="center"><h3>New Photo</h3></div>
                 <div className="center"><p>Upload Here</p></div>

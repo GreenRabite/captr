@@ -13,6 +13,8 @@ class AlbumIndex extends React.Component {
     this.props.fetchAlbums();
   }
 
+  // <i className="far fa-folder fa-10x"></i>
+
   render(){
     let AlbumIndexItems = this.props.albums.map((album) => {
       return <AlbumIndexItem key={album.id} album={album} />;
@@ -31,7 +33,7 @@ class AlbumIndex extends React.Component {
                 <div className="album-index-item-container animated fadeInLeft paper icon-stack">
                 <div className="content">
                   <div className="content-overlay"></div>
-                    <div className="content-image-icon center-album"><i className="far fa-folder fa-10x"></i></div>
+                    <div className="content-image-icon center-album"><img src={window.staticImage.newAlbum}/></div>
                     <div className="album-index-item-info content-details fadeIn-top">
                       <div className="center"><h3>New Album</h3></div>
                       <div className="center"><p>Click Here to Create Your Own Albums</p></div>

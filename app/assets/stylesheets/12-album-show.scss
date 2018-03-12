@@ -8,6 +8,12 @@
   background: white;
 }
 
+.album-show-img > img{
+  height: 250px;
+  width: 250px;
+  margin-right: 25px;
+}
+
 .album-photos-container{
   display: flex;
   flex-wrap: wrap;
