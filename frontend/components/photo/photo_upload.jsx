@@ -24,8 +24,11 @@ class PhotoUpload extends React.Component{
     };
   }
 
-  photoImage(url) {
-    this.setState({ ["img_url"]: url });
+  photoImage(url1,url2) {
+    this.setState({
+      ["img_url"]: url1,
+      ["thumb_url"] : url2
+     });
   }
 
   uploadImage(e) {
@@ -34,7 +37,7 @@ class PhotoUpload extends React.Component{
     window.cloudinary.openUploadWidget(
       window.cloudinary_options,
       function(errors, result){
-        window.photoImage(result[0].url);
+        window.photoImage(result[0].url,result[0].thumbnail_url);
       }
     );
   }
@@ -48,7 +51,8 @@ class PhotoUpload extends React.Component{
       }).then(()=>this.props.createPhotoBrandNewAlbum({
         title: this.state.title,
         description: this.state.description,
-        img_url: this.state.img_url
+        img_url: this.state.img_url,
+        thumb_url: this.state.thumb_url
       })).then(()=>this.props.history.push(`/albums`));
 
     }else {
@@ -56,6 +60,7 @@ class PhotoUpload extends React.Component{
         title: this.state.title,
         description: this.state.description,
         img_url: this.state.img_url,
+        thumb_url: this.state.thumb_url,
         value: parseInt(this.state.value)
       }).then(()=>this.props.history.push(`/albums/${this.state.value}`));
     }

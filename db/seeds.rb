@@ -73,10 +73,10 @@ end
   d = valid_image_links.sample
   e = valid_image_links.sample
   Photo.create(title: Faker::Coffee.blend_name, img_url: "https://picsum.photos/2560/1440/?image=#{a}", thumb_url: "https://picsum.photos/400/200/?image=#{a}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
-  Photo.create(title: Faker::Coffee.origin, img_url: "https://picsum.photos/2560/1440/?image=#{b}", thumb_url: "https://picsum.photos/400/200/?image=#{a}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
-  Photo.create(title: Faker::Coffee.variety, img_url: "https://picsum.photos/1920/1080/?image=#{c}", thumb_url: "https://picsum.photos/400/200/?image=#{b}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
-  Photo.create(title: Faker::Pokemon.move, img_url: "https://picsum.photos/800/1200/?image=#{d}", thumb_url: "https://picsum.photos/200/400/?image=#{c}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
-  Photo.create(title: Faker::Cat.breed, img_url: "https://picsum.photos/1000/1300/?image=#{e}", thumb_url: "https://picsum.photos/200/500/?image=#{c}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
+  Photo.create(title: Faker::Coffee.origin, img_url: "https://picsum.photos/2560/1440/?image=#{b}", thumb_url: "https://picsum.photos/400/200/?image=#{b}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
+  Photo.create(title: Faker::Coffee.variety, img_url: "https://picsum.photos/1920/1080/?image=#{c}", thumb_url: "https://picsum.photos/400/200/?image=#{c}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
+  Photo.create(title: Faker::Pokemon.move, img_url: "https://picsum.photos/800/1200/?image=#{d}", thumb_url: "https://picsum.photos/300/400/?image=#{d}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
+  Photo.create(title: Faker::Cat.breed, img_url: "https://picsum.photos/2560/1440/?image=#{e}", thumb_url: "https://picsum.photos/300/400/?image=#{e}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
 end
 
 

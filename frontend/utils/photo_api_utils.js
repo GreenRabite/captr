@@ -36,7 +36,8 @@ export const createPhotoBrandNewAlbum = (photo) => {
       photo: {
         title: photo.title,
         description: photo.description,
-        img_url: photo.img_url        
+        img_url: photo.img_url,
+        thumb_url: photo.thumb_url
       }
     }
   });
@@ -51,6 +52,7 @@ export const createPhotoNewAlbum = (photo) => {
         title: photo.title,
         description: photo.description,
         img_url: photo.img_url,
+        thumb_url: photo.thumb_url,
         album_id: photo.value
       }
     }
