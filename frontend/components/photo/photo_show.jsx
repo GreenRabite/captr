@@ -29,6 +29,7 @@ class PhotoShow extends React.Component {
     this.setState({tags});
   }
 
+  //<Link to={`/photos/${photo.id}#comments`} className="main-bttn-form follow-user-bttn">Comments</Link>
 
   render(){
     if (!this.props.photo) {
@@ -57,7 +58,7 @@ class PhotoShow extends React.Component {
             <div className="photo-user-headers">
               <h4>{`${photo.owner}`}</h4>
             </div>
-            <Link to={`/photos/${photo.id}#comments`} className="main-bttn-form follow-user-bttn">Comments</Link>
+
             <div className="title-holder">
               <div>
                 <div className="photo-show-title">{`${this.props.photo.title}`}</div >
