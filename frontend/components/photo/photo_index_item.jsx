@@ -12,12 +12,12 @@ import { Link } from 'react-router-dom';
 
 
 const PhotoIndexItem = ({photo}) => {
-
+  debugger;
   return (
 
       <div className="wrapper">
         <Link to={`/photos/${photo.id}`}>
-          <img className="masonry-item photo-index-item hover animated fadeIn" src={`${photo.img_url}`}/>
+          <img className="masonry-item photo-index-item hover animated fadeIn" src={`${photo.thumb_url}`}/>
           <p className="text">{photo.title}</p>
         </Link>
 

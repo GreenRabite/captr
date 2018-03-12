@@ -27,7 +27,7 @@ background-color: #E8EAEE;
   display: flex;
   margin: auto;
   justify-content: space-around;
-  height: 780px;
+  height: 770px;
 }
 
 .photo-show-user-info > img {
@@ -38,20 +38,21 @@ background-color: #E8EAEE;
   -webkit-filter: drop-shadow(5px 5px 5px #222 );
   filter: drop-shadow(2.5px 5px 5px #222);
   /*margin-top: 18px;*/
-  margin-left: 30px;
+  margin-left: 80px;
 }
 
 .photo-show-user-info {
   display: flex;
   justify-content: center;
   width: 60%;
-  margin-top:30px;
+  margin-top:10px;
 }
 
 .photo-user-headers h4{
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
   margin-left: 20px;
+  margin-top: 30px;
 }
 
 .photo-user-headers h5{
@@ -100,6 +101,7 @@ background-color: #E8EAEE;
 .photo-show-title{
   /*margin-left: 300px;*/
   margin-top: 20px;
+  margin-right: 120px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 20px;
@@ -107,10 +109,12 @@ background-color: #E8EAEE;
 
 .photo-show-description{
   /*margin-left: 300px;*/
-  margin-top: 20px;
+  /*margin-top: 20px;*/
+  margin-right: 120px;
   /*text-transform: uppercase;*/
   font-style: italic;
   font-size: 17px;
+  /*position: absolute;*/
 }
 
 .title-holder{
@@ -120,4 +124,5 @@ background-color: #E8EAEE;
   /*vertical-align: middle;*/
   position: relative;
   width: 900px;
+  height: 100px;
 }

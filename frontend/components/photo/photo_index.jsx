@@ -1,6 +1,7 @@
 import React from 'react';
 import PhotoIndexItem from './photo_index_item';
 import LoadingScreen from './../ui_loading_screen';
+import MasonryInfiniteScroller from 'react-masonry-infinite';
 
 class PhotoIndex extends React.Component {
   constructor(props){
@@ -26,6 +27,7 @@ class PhotoIndex extends React.Component {
           <div className="masonry">
             {PhotoIndexItems}
           </div>
+
         </div>
       );
     }

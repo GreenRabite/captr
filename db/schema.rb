@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180206054425) do
+ActiveRecord::Schema.define(version: 20180312060607) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,7 +32,6 @@ ActiveRecord::Schema.define(version: 20180206054425) do
     t.datetime "updated_at", null: false
     t.index ["owner_id"], name: "index_albums_on_owner_id"
     t.index ["title", "owner_id"], name: "index_albums_on_title_and_owner_id", unique: true
-    t.index ["title"], name: "index_albums_on_title"
   end
 
   create_table "comments", force: :cascade do |t|
@@ -57,6 +56,7 @@ ActiveRecord::Schema.define(version: 20180206054425) do
     t.string "image_content_type"
     t.integer "image_file_size"
     t.datetime "image_updated_at"
+    t.string "thumb_url", null: false
     t.index ["album_id"], name: "index_photos_on_album_id"
     t.index ["owner_id"], name: "index_photos_on_owner_id"
     t.index ["title"], name: "index_photos_on_title"

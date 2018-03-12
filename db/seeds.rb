@@ -12,8 +12,8 @@ Photo.destroy_all
 Comment.destroy_all
 Tag.destroy_all
 Tagging.destroy_all
-User.create(username: "Rabite", password:"password", email: "green.rabite@gmail.com", fname:"Andy")
-User.create(username: "dobrynin", password:"password", email: "dobrynin@gmail.com", fname:"David")
+User.create(username: "Rabite", password:"password", email: "green.rabite@gmail.com", fname:"Andy", profile_img:"https://vignette.wikia.nocookie.net/mana/images/c/c8/Rabite.png/revision/latest?cb=20090319143253")
+User.create(username: "dobrynin", password:"password", email: "dobrynin@gmail.com", fname:"Guest", profile_img:"https://www.biography.com/.image/t_share/MTE4MDAzNDEwNzg5ODI4MTEw/barack-obama-12782369-1-402.jpg")
 User.create(username: "MJ", password:"password", email:Faker::Internet.email, fname:"DemoUser", profile_img:"https://images.fineartamerica.com/images-medium-large-5/michael-jordan-2-paul-meijering.jpg")
 User.create(username: "Kobe", password:"password", email:Faker::Internet.email, fname:"DemoUser", profile_img:"https://img00.deviantart.net/da93/i/2015/345/2/1/colored_pencil_drawing_of_kobe_bryant_by_jasminasusak-d9jrmnh.jpg")
 User.create(username: "BI", password:"password", email:Faker::Internet.email, fname:"DemoUser", profile_img:"https://rical-players-nba.s3.amazonaws.com/250x250/8082841d-e516-43c6-a81b-7987fa321acd.jpg")
@@ -23,7 +23,7 @@ User.create(username: "Link", password:"password", email:Faker::Internet.email, 
 User.create(username: "Taylor", password:"password", email:Faker::Internet.email, fname:"DemoUser", profile_img:"https://s3-us-west-2.amazonaws.com/aa-progress-tracker/students/avatars/000/002/599/medium/Taylor_Schmutz_2.jpg?1512771191")
 User.create(username: "LB23", password:"password", email:Faker::Internet.email, fname:"DemoUser", profile_img:"https://b.fssta.com/uploads/application/nba/players/214152.vresize.350.425.medium.35.png")
 Album.create(title:"Arizona", owner_id:1)
-Photo.create(title: "Cool Pic", img_url: "https://picsum.photos/1920/1080/?image=950", owner_id:1, album_id: 1)
+Photo.create(title: "Cool Pic", img_url: "https://picsum.photos/1920/1080/?image=950",thumb_url: "https://picsum.photos/1920/1080/?image=950", owner_id:1, album_id: 1)
 
 valid_image_links = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 87, 88, 89, 90, 91, 92, 93, 94,
  95, 96, 98, 99, 100, 101, 102, 103, 104, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134,
@@ -67,15 +67,22 @@ end
     Album.create(title: Faker::Cat.name, owner_id: owner_id)
     album_id = Album.all.last.id
   end
-  Photo.create(title: Faker::Coffee.blend_name, img_url: "https://picsum.photos/1920/1080/?image=#{valid_image_links.sample}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
-  Photo.create(title: Faker::Coffee.variety, img_url: "https://picsum.photos/1900/800/?image=#{valid_image_links.sample}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
-  Photo.create(title: Faker::Pokemon.move, img_url: "https://picsum.photos/800/1200/?image=#{valid_image_links.sample}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
+  a = valid_image_links.sample
+  b = valid_image_links.sample
+  c = valid_image_links.sample
+  d = valid_image_links.sample
+  e = valid_image_links.sample
+  Photo.create(title: Faker::Coffee.blend_name, img_url: "https://picsum.photos/2560/1440/?image=#{a}", thumb_url: "https://picsum.photos/400/200/?image=#{a}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
+  Photo.create(title: Faker::Coffee.origin, img_url: "https://picsum.photos/2560/1440/?image=#{b}", thumb_url: "https://picsum.photos/400/200/?image=#{b}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
+  Photo.create(title: Faker::Coffee.variety, img_url: "https://picsum.photos/1920/1080/?image=#{c}", thumb_url: "https://picsum.photos/400/200/?image=#{c}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
+  Photo.create(title: Faker::Pokemon.move, img_url: "https://picsum.photos/800/1200/?image=#{d}", thumb_url: "https://picsum.photos/300/400/?image=#{d}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
+  Photo.create(title: Faker::Cat.breed, img_url: "https://picsum.photos/2560/1440/?image=#{e}", thumb_url: "https://picsum.photos/300/400/?image=#{e}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
 end
 
 
 comments = ["amazing picture!", "Really nice shot, capture the soul perfectly", "great angle", "cool pic", "Awesome", " could've done better", "Great view", "amazing!!!!", "love this", "need a better angle", "can i get a hires  copy?", "pretty awesome", "really cool!", "awesome shot", "wow", "can i get an autograph","not that good tbh", "its alite", "AMAZING","Great job on this!!",
-"awesome job", "woahhhh", "sick shot", "i love it!!!!", "sign me up for another"]
-200.times do
+"awesome job", "woahhhh", "sick shot", "i love it!!!!", "sign me up for another","Andy is the GOAT"]
+300.times do
   Comment.create(body: comments.sample, user_id: User.all.to_a.sample.id, photo_id: Photo.all.to_a.sample.id)
 end
 

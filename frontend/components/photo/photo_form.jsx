@@ -27,8 +27,11 @@ class PhotoForm extends React.Component {
     };
   }
 
-  photoImage(url) {
-    this.setState({ ["img_url"]: url });
+  photoImage(url1,url2) {
+    this.setState({
+      ["img_url"]: url1,
+      ["thumb_url"] : url1
+     });
   }
 
   uploadImage(e) {
@@ -37,7 +40,7 @@ class PhotoForm extends React.Component {
     window.cloudinary.openUploadWidget(
       window.cloudinary_options,
       function(errors, result){
-        window.photoImage(result[0].url);
+        window.photoImage(result[0].url, result[0].thumbnail_url);
       }
     );
   }
