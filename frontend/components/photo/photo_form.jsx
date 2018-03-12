@@ -30,7 +30,7 @@ class PhotoForm extends React.Component {
   photoImage(url1,url2) {
     this.setState({
       ["img_url"]: url1,
-      ["thumb_url"] : url2
+      ["thumb_url"] : url1
      });
   }
 
