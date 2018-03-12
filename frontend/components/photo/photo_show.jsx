@@ -29,7 +29,6 @@ class PhotoShow extends React.Component {
     this.setState({tags});
   }
 
-  //<Link to={`/photos/${photo.id}#comments`} className="main-bttn-form follow-user-bttn">Comments</Link>
 
   render(){
     if (!this.props.photo) {
@@ -46,7 +45,7 @@ class PhotoShow extends React.Component {
       );
     }
     return(
-      <div>
+      <div className="main-container">
         <div className="photo-show-main-container">
           <div className="photo-show-container">
             <img src={`${this.props.photo.img_url}`} />
@@ -57,6 +56,9 @@ class PhotoShow extends React.Component {
             <img src={photo.owner_pro_img ? `${this.props.photo.owner_pro_img}` : "https://i.stack.imgur.com/IHLNO.jpg"}></img>
             <div className="photo-user-headers">
               <h4>{`${photo.owner}`}</h4>
+            </div>
+            <div>
+              <Link to={`/photos/${photo.id}#comments`} className="main-bttn-form follow-user-bttn">Comments</Link>
             </div>
 
             <div className="title-holder">
