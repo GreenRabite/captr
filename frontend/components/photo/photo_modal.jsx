@@ -44,7 +44,7 @@ class PhotoModal extends React.Component {
             overlayClassName="Overlay-photo-form"
             shouldCloseOnOverlayClick={true}
             >
-            <PhotoFormContainer/>
+            <PhotoFormContainer handleCloseModal={this.handleCloseModal}/>
           </ReactModal>
         </div>
       </div>

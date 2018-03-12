@@ -50,6 +50,7 @@ class PhotoForm extends React.Component {
     return(
       <div className="appBG">
         <div className="centered">
+          <div className="flex-box-container"><div className="x-icon" onClick={this.props.handleCloseModal}>X</div></div>
           <div className="photo-form-header">{text}</div>
           <form className="photo-form-main">
             <div className="photo-form-content">

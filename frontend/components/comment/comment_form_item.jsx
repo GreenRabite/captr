@@ -32,7 +32,9 @@ class CommentFormItem extends React.Component {
   render(){
       return(
         <div>
+
           <form onSubmit={this.handleSubmit}>
+            <div className="flex-box-container2"><div className="x-icon" onClick={this.props.handleCloseModal}>X</div></div>
             <div className="input-field">
               <label> <br/>
                 <textarea name="textarea" placeholder="Add your comment here" rows="8" cols="20" onChange={this.update('body')} value={this.state.body}/>

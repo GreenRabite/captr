@@ -74,11 +74,41 @@
   background-color: #fff;
   /*background: linear-gradient(to right, #f5f7fa , #c3cfe2);*/
   background-color: #E8EAEE;
-  top: 20%;
+  top: 15%;
   left: 50%;
   margin-left: -220px;
+  // margin-top: 20px;
   border-radius: 5px;
   padding: 20px;
+}
+
+.x-icon{
+  color: #ff0000;
+  font-size: 17px;
+  font-weight: bold;
+  width: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.x-icon:hover{
+  opacity: .4;
+  cursor: pointer;
+
+}
+
+.flex-box-container{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -30px;
+  margin-top: -20px;
+}
+
+.flex-box-container2{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -10px;
+  margin-top: -20px;
 }
 
 .Overlay-photo-form {
