@@ -9,6 +9,10 @@
   /*background-color: gray;*/
 }
 
+.main-container{
+  /*height: 100vh;*/
+}
+
 .photo-show-container img{
   z-index: -1;
   -webkit-filter: drop-shadow(5px 5px 5px #222 );
@@ -22,12 +26,13 @@
 }
 
 .photo-show-main-container {
-background-color: #E8EAEE;
+  background-color: #E8EAEE;
   /*background: linear-gradient(to right, #f5f7fa , #c3cfe2);*/
   display: flex;
   margin: auto;
   justify-content: space-around;
-  height: 770px;
+  /*height: 770px;*/
+  height: 85vh;
 }
 
 .photo-show-user-info > img {
