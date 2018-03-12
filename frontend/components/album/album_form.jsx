@@ -30,13 +30,14 @@ class AlbumForm extends React.Component {
     let text = this.props.formType === "new" ? "Add a New Album!" : "Edit Your Album!";
     return(
       <div className="">
-        <div className="photo-form centered">
-          <div className="photo-form-header">{text}</div>
-          <form className="photo-form-main">
-            <div className="photo-form-content">
+        <div className="flex-box-container2"><div className="x-icon" onClick={this.props.handleCloseModal}>X</div></div>
+        <div className="album-form centered">
+          <div className="album-form-header">{text}</div>
+          <form className="album-form-main">
+            <div className="album-form-content">
               <input onChange={this.updateInput("title")} placeholder="Title" value={this.state.title}></input><br/>
               <input
-                className="photo-form-text-body"
+                className="album-form-text-body"
                 onChange={this.updateInput("description")}
                 placeholder="Description"
                 value={this.state.description}/>

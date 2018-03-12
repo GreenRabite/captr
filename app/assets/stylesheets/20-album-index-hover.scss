@@ -1,4 +1,21 @@
-
+.Modal-album-form{
+  // position: absolute;
+  width: 340px;
+  height: 280px;
+  background-color: #fff;
+  // /*background: linear-gradient(to right, #f5f7fa , #c3cfe2);*/
+  // background-color: #E8EAEE;
+  // top: 20%;
+  // left: 39%;
+  // // margin-right: 75px;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 *, *:before, *:after{
   margin: 0;

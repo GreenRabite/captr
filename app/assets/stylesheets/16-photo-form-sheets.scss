@@ -54,6 +54,30 @@
   margin-top: 12px;
 }
 
+.album-form{
+  // padding: 50px;
+  border-radius: 20px;
+  max-height: 280px;
+  max-width: 340px;
+  height: 300px;
+  align-items: center;
+  margin: auto;
+}
+
+.album-form-header{
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.album-form-main input {
+  margin-top: 12px;
+}
+
+.album-form-main button {
+  margin-top: 12px;
+}
+
 .imgSource{
   max-width: 250px;
   max-height: 200px;
@@ -62,7 +86,7 @@
   align-items: center;
 }
 
-.photo-form-main button{
+.album-form-main button{
   width: 225px;
   text-align: center;
 }
@@ -108,7 +132,15 @@
   display: flex;
   justify-content: flex-end;
   margin-right: -10px;
-  margin-top: -20px;
+  margin-top: -15px;
+}
+
+.flex-box-container3{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  // z-index: 1;
+  // margin-top: -15px;
 }
 
 .Overlay-photo-form {

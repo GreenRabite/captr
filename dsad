@@ -1,0 +1,704 @@
+[33mcommit 8dbe0c76b2428c2fb3647044f9cc976633ad0df6[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Mon Mar 12 02:22:10 2018 -0700
+
+    Add event handlers on close out of modal from unique spots
+
+[33mcommit 0a086692e99dadbaf3fba2b7e865150df8f04462[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Mon Mar 12 01:41:50 2018 -0700
+
+    Add static images for new albums and new photos
+
+[33mcommit 54810d3b26f03efee85f3f0444c20ff5526a27c5[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Mon Mar 12 01:24:17 2018 -0700
+
+    adjust VH on photo show container to get better adjustments
+
+[33mcommit 283320c539b00fd1ca62ea282bfb25c9141f461e[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Mon Mar 12 01:16:53 2018 -0700
+
+    Fix height for photo show elements
+
+[33mcommit 95c965685f415702f834bdd6ce1a0d5157b321b1[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Mon Mar 12 01:02:53 2018 -0700
+
+    commented out ActionCable verbage for now to allow heroku to run properly
+
+[33mcommit 1da46149fa1453373d909b7daa1e34ce497d074d[m
+Merge: 66452d0 f68d831
+Author: Andy Luo <31423255+GreenRabite@users.noreply.github.com>
+Date:   Mon Mar 12 00:49:06 2018 -0700
+
+    Merge pull request #14 from GreenRabite/infinite-loading
+    
+    Infinite loading
+
+[33mcommit f68d8314d73690c149e82e0a9f24143527af2bdb[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Mon Mar 12 00:48:00 2018 -0700
+
+    Fix issues with photo show css
+
+[33mcommit a249920b6390beee3f65db10df41a3a48cd5359e[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Mon Mar 12 00:06:09 2018 -0700
+
+    Fix PhotoIndex page
+
+[33mcommit 9bfa3f9f2012d7cbe1ae6412e30cc2ab58fef209[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Sun Mar 11 23:55:56 2018 -0700
+
+    Updated all photo forms to include thumb_url as input
+
+[33mcommit f08bded87b160a699c1267aaca541776e003b418[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Sun Mar 11 23:31:02 2018 -0700
+
+    Got seeds working. Add new column thumb_url to photos schema.
+
+[33mcommit 66452d07aa6716a8323861278ad6655503a0baa2[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Sun Mar 11 21:47:43 2018 -0700
+
+    Initial commit for websockets
+
+[33mcommit 3030af01d3550d0f03bc1abc9203dfc0ef5779b7[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Fri Mar 9 09:02:13 2018 -0800
+
+    Added third promise so albums properly reloads after creation
+
+[33mcommit f21ea412969815fbf1b08cee4c4759f05a57036b[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Fri Mar 9 07:12:04 2018 -0800
+
+    Readd analytics
+
+[33mcommit 5e3a70e2f764e82041873d34180671895ddac9b2[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Thu Mar 8 17:52:43 2018 -0800
+
+    Fix errors on heroku
+
+[33mcommit a1d3465e2ec2cc5dabcd80f4d47cac361bd07f23[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Thu Mar 8 17:46:16 2018 -0800
+
+    Remove google analytics
+
+[33mcommit 0a968ce41f5aac6c23e6855591eef0deb33cda2c[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Mar 7 23:08:50 2018 -0800
+
+    Installed Google Analytics
+
+[33mcommit 98a891db13d4817b0bd6da6eb9fc5c6d2e612a04[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Mar 7 22:44:54 2018 -0800
+
+    Update configuration files to remove errors
+
+[33mcommit 63ceeae4ce5580de013b765ede35d1562b72fcc7[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Mar 7 22:26:43 2018 -0800
+
+    fix photo show title. fix title
+
+[33mcommit e65908b13e837e045931db8e4c702295e390db4c[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Mar 7 22:21:43 2018 -0800
+
+    fix photo show panel
+
+[33mcommit d2bc9182f8aa3daa86050fcc5ce32be1f816a45a[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Mar 7 22:00:31 2018 -0800
+
+    Remove logger from store
+
+[33mcommit 80301039f471225373b9a2d65b0efb9384c9e2c2[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Mar 7 21:52:41 2018 -0800
+
+    fix modal container
+
+[33mcommit 7a59208b146d0895d2ea1db66a2b4ab16722929f[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Mar 7 21:37:31 2018 -0800
+
+    ADd photo show description to photos
+
+[33mcommit 8a7d8d325f88891541c0ed3b0a5fa20a012d4e12[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Mar 7 21:28:18 2018 -0800
+
+    Change input field to textarea for comments
+
+[33mcommit 1f758754e56f66a6f835d02887b5374a97f7fde0[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Mar 7 21:02:18 2018 -0800
+
+    Add title to Photo show
+
+[33mcommit 496f8feddb7d60a18586000d7e1447fd7ef43bde[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Mar 7 18:48:46 2018 -0800
+
+    Update styling of splash page
+
+[33mcommit 2e87d18db723d507b3967e455bad7bf35ee9defd[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Mar 7 18:43:33 2018 -0800
+
+    Center error messages for session forms
+
+[33mcommit 16897fd6f6a2b3c871d44e89a5e0acec81134113[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Mon Mar 5 14:26:08 2018 -0800
+
+    Photo Upload complete when not in album
+
+[33mcommit d98794c4a1aed160b3e4accec3fa0dd17a6b67db[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Sun Mar 4 21:08:57 2018 -0800
+
+    PhotoUpload Feature now working
+
+[33mcommit 556022a66e36750cd9161f89d171b7fb389c45ff[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Fri Mar 2 11:49:26 2018 -0800
+
+    fetchUserAlbums ajax, action creator, and thunk action creator all work
+
+[33mcommit d17164b34dc1c3c71ca24e8f4f659b54168a26f3[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Fri Mar 2 10:38:01 2018 -0800
+
+    Fix Users controller to work on all
+
+[33mcommit 40b935d7bf9ebb33123392a11a880ffa48510489[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Fri Mar 2 10:20:42 2018 -0800
+
+    Add upload picture button and backend for uploading picture from anywhere
+
+[33mcommit 5a6309ef9d197838ad8fc4c81c3631049fef19c4[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Fri Mar 2 00:29:52 2018 -0800
+
+    Add Photo Upload icon to main nav bar
+
+[33mcommit 72df27dd81d8a423b5b1c6ebdf74a0202a43e22d[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Fri Mar 2 00:08:01 2018 -0800
+
+    changed logo
+
+[33mcommit e7aa5b00aea1aa40a4712ea5815c1961062157bf[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Fri Feb 9 16:01:45 2018 -0800
+
+    Remove debuggers and add favicon to site
+
+[33mcommit aba3a4b12f42d306107456e5acdb0edc16f46d4d[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Fri Feb 9 15:44:34 2018 -0800
+
+    Add final production readme and additional seeds
+
+[33mcommit 9cd9bd3ce934b88229fc7a8ef2587e3550b168b0[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Fri Feb 9 11:56:37 2018 -0800
+
+    added production ReadMe page
+
+[33mcommit 205355188249cd178c14ab5c06f456b71abd00a5[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Fri Feb 9 09:21:19 2018 -0800
+
+    new seed files
+
+[33mcommit 8c8ec0ddda6d75d92b3ec1c8799dcff10572fe79[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Fri Feb 9 09:13:42 2018 -0800
+
+    reseed database
+
+[33mcommit 292b32460040d7d77e8d3464b6fc08f398e0c050[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Thu Feb 8 20:53:48 2018 -0800
+
+    Added additional styling on button and fix broken code
+
+[33mcommit 7a91c41a3152009e9f4641f59df9d09ad079df2c[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Thu Feb 8 18:12:44 2018 -0800
+
+    Added nav links to nav bar
+
+[33mcommit e24c455f01dde97dbd27277d414902f5ac224964[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Thu Feb 8 17:01:16 2018 -0800
+
+    Added Loading screen to PhotoIndex
+
+[33mcommit acebf5fc6813cc4764be7ad1a233d2e12a513675[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Thu Feb 8 16:45:02 2018 -0800
+
+    Fix typo in routes utils
+
+[33mcommit f64a534c8723c8b7d861c1c4402628d8bcfb2155[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Thu Feb 8 16:41:42 2018 -0800
+
+    Updated look on Add comment button
+
+[33mcommit be8cec0fc2b9258dd626d033c4f155d4ca5fe749[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Thu Feb 8 16:20:15 2018 -0800
+
+    updated work
+
+[33mcommit 4b72ef4e132bb26b90a13a26cb290a3ff388f43f[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Thu Feb 8 15:32:24 2018 -0800
+
+    fix typo on scss
+
+[33mcommit 2552f8b8e4c19c667c020baff9b3d9934b58b254[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Thu Feb 8 15:29:28 2018 -0800
+
+    added scss to css
+
+[33mcommit 3959b7b844785ad8741e8684bfcf899faef8d82f[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Thu Feb 8 15:17:36 2018 -0800
+
+    Users can only edit/delete their own photos. Edit/Delete button is not there when user is not logged in
+
+[33mcommit dac8530df56f0d90a612f9c45d84ad9c2bf32b8e[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Thu Feb 8 15:07:45 2018 -0800
+
+    Fix styling on PhotoShow, AlbumShow. Added session creditinals to AlbumShow and CommentForms
+
+[33mcommit 7e2c6e11f2aa182adeb907a7b26f51955659f0de[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Thu Feb 8 00:39:13 2018 -0800
+
+    Fix splash page's background carousel
+
+[33mcommit a951d618ce397678a129e4ec87e39dbba48ee93e[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Thu Feb 8 00:30:14 2018 -0800
+
+    Complete restyling of buttons. Added background slideshow to splash page, add hover effects on albums
+
+[33mcommit 5bd876bdfe9e5d860d7ca52f96d8adee41243c8c[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Feb 7 18:37:04 2018 -0800
+
+    Add New Album icon changed from upload icon to new folder icon
+
+[33mcommit 6b21930cf6ec16d900a1fcc41c941f038c797fd0[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Feb 7 17:21:17 2018 -0800
+
+    Added delete function for comments on PhotoShow page
+
+[33mcommit 11cf698cff8e3bd4b7a0b7081e3b7ff16c114efc[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Feb 7 16:29:09 2018 -0800
+
+    added full HTTPS protocol to cloudinary widget
+
+[33mcommit 5eea2e82e4cf46901e3054706c09272a2c45abc2[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Feb 7 16:21:50 2018 -0800
+
+    deleted suprious objects
+
+[33mcommit 94f1f77f387b3761cbe36905104c93d8b51c901e[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Feb 7 15:52:59 2018 -0800
+
+    more css fixes
+
+[33mcommit 85b97d1e594ecf711e66b470ac54a4fc66f7deb2[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Feb 7 15:46:07 2018 -0800
+
+    changed some css files
+
+[33mcommit fba0b937e5e4abb7a42f9e03b60f05519e7f9fa1[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Feb 7 15:18:37 2018 -0800
+
+    updated some tables
+
+[33mcommit c937349b973f044da35aa7121c5fda477d58a09b[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Feb 7 14:13:01 2018 -0800
+
+    Added albums delete and edit functions on. Fixed some rendering issues
+
+[33mcommit 10bf26554c69ce474a613fc62b6dcd534fc27e01[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Feb 7 09:31:44 2018 -0800
+
+    added update only to current user if its there photo
+
+[33mcommit ce5957d65aabfab57c5563fd27a5049e743bd2a7[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Feb 7 09:14:39 2018 -0800
+
+    Fix formatting and typos on PhotoShow and PhotoEdit page
+
+[33mcommit 13055e4d6e8b363be25bddd461be521b01aa415f[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Feb 7 07:39:45 2018 -0800
+
+    added Delete Photo from PhotoShow page
+
+[33mcommit 2f8c1c5d847990989d7794df349607036e10efc9[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Tue Feb 6 20:05:51 2018 -0800
+
+    Adjust hidden variables n PhotosIndex. Add Upload picture to Albums
+
+[33mcommit 257b7b78313adb35b196b4460ab51b6b7670cb1b[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Tue Feb 6 18:26:13 2018 -0800
+
+    add more seed data
+
+[33mcommit b96d5acbf8d877b5c2e53891a26728af23a3ddf5[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Tue Feb 6 18:14:20 2018 -0800
+
+    add more seed data
+
+[33mcommit 974dcba6492ab112a138ecad039f90248b70cf40[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Tue Feb 6 18:09:17 2018 -0800
+
+    fix auth issue with CSRF tokens
+
+[33mcommit cab54c3b057b656da696754e2b9456199ab07c12[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Tue Feb 6 17:33:56 2018 -0800
+
+    fix seed files
+
+[33mcommit d6ebe0456194999ee59fd3fbac4a761f4e0fdbfc[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Tue Feb 6 17:12:15 2018 -0800
+
+    working on photo forms
+
+[33mcommit 832514dbe093eb8b1ccaf5f2168aa6cf5ee87dd2[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Tue Feb 6 07:55:37 2018 -0800
+
+    Added fragment linking to comments on PhotoSHow page
+
+[33mcommit a9b26b4e7d6090a80ce2644a8975ce6b232bc259[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Tue Feb 6 07:35:07 2018 -0800
+
+    added menu dropdown bar in navbar
+
+[33mcommit 67ad04ff55eda46ad18357b5b8a4ef49a0d2cca2[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Tue Feb 6 00:33:59 2018 -0800
+
+    Set up captr for AWS access. Fix error that occur when going from AlbumIndex to AlbumShow.
+
+[33mcommit 955724e3e78edd33cf08f2d0e3bc7373ee171bac[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Mon Feb 5 20:11:28 2018 -0800
+
+    added masonry view to PhotoIndex page, added hover effects displaying anme
+
+[33mcommit 0dfdd64d5988596a1f345b1bf80523290c6f226f[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Mon Feb 5 17:27:56 2018 -0800
+
+    added backend for tags. did not complete yet
+
+[33mcommit 1298cee2af73fb63b21dde00b09dc6a9b3e4e746[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Mon Feb 5 14:52:38 2018 -0800
+
+    Added Tags and Taggings seed data
+
+[33mcommit 73d7345c7c782964d67d56ada3c07a998a805dac[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Mon Feb 5 12:22:34 2018 -0800
+
+    added AlbumIndex information
+
+[33mcommit a139e62fc813db08b1e9ea3e62b6024ee71dd6ff[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Mon Feb 5 00:12:32 2018 -0800
+
+    create album controllers, ajax calls, and action/thunk creators. Also tested each one to ensure success
+
+[33mcommit b067aa30263ed6e9d925ff2868fd55c58abe12d0[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Sun Feb 4 17:44:06 2018 -0800
+
+    Add PhotoShow links in PhotoIndex page
+
+[33mcommit fbeacc7a66c8d90e1aa0e0448f5b08c217b401db[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Sun Feb 4 17:25:16 2018 -0800
+
+    add commenting functionality to photos
+
+[33mcommit 931f8e606217ed85ab454fe0d25fc272acf0ebbb[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Sun Feb 4 01:09:45 2018 -0800
+
+    Added Comment Show feature on Photo show page
+
+[33mcommit 1f6ca4d18e42b2cc917edd41e3ebfc2304a090e9[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Sat Feb 3 23:20:53 2018 -0800
+
+    comments only show up for CommentShowItems using a promise on two async callbacks
+
+[33mcommit 45dc14221d3d3187a6e74b7ceecf17cb90bed834[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Sat Feb 3 17:33:11 2018 -0800
+
+    Comments: Added preliminary work on comment's ajax calls, thunk and action creators, comment reducers
+
+[33mcommit 8d419f90750f86ed8639c90e3a81fa981aff03c8[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Sat Feb 3 14:15:48 2018 -0800
+
+    added ajax calls for comments
+
+[33mcommit 8bbdcbddb8848a51f095c6a22490e996045ddce4[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Sat Feb 3 09:22:05 2018 -0800
+
+    Created model and model validations for comments. Add basic associations base off of foreign keys
+
+[33mcommit 489b73a836c98392c1f5a8f06bb07b8cf4a77a72[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Sat Feb 3 08:44:56 2018 -0800
+
+    added loading features, initialize photo comments, and populated photo show components
+
+[33mcommit 3808d3fc67c7c971994ac756b7506bac79b06ae4[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Fri Feb 2 22:13:07 2018 -0800
+
+    fix typo in photo actions creators and added photo show page
+
+[33mcommit d800b5a76a317619fd84e971f6bfeee38349d1ed[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Fri Feb 2 13:52:27 2018 -0800
+
+    fixed routing issue with the app
+
+[33mcommit edf481c313f72af22003005350639aa5e6037e35[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Fri Feb 2 13:19:18 2018 -0800
+
+    fix routing issue
+
+[33mcommit 032b33574968ddc433a7e022147f74c4dc08474b[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Fri Feb 2 13:06:47 2018 -0800
+
+    added demo login
+
+[33mcommit 68451d08443cd4b149fb68141cd179e42102c557[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Fri Feb 2 09:14:28 2018 -0800
+
+    isses with margin fixed on nav bar
+
+[33mcommit 64a7cf39aa669508f495906e99c7a72dc715eff1[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Fri Feb 2 09:11:34 2018 -0800
+
+    fix margin issue
+
+[33mcommit aa7498d4c204240671ed888c8c81f5f2011d4c3a[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Fri Feb 2 08:59:44 2018 -0800
+
+    fix nav bar on large resolution
+
+[33mcommit 18dcef3652226223df41a2e8e2317cbff224e32a[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Fri Feb 2 08:53:48 2018 -0800
+
+    navbar
+
+[33mcommit b1924f96fd55ea9aec293d77714a9afdf8bd0428[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Fri Feb 2 08:38:06 2018 -0800
+
+    add photoindexcontainer
+
+[33mcommit bbe1af85c9e05493923e2b0e26cc792336797fd6[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Thu Feb 1 18:03:15 2018 -0800
+
+    tested photo api util calls, thunk action creators, and item reducers
+
+[33mcommit 65e4cbb6bf75a0d429b756680a7fa463a65846fe[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Thu Feb 1 15:22:14 2018 -0800
+
+    Added in photo slice of state including reducers, reg action/thunk action creators, and ajax calls
+
+[33mcommit 6eace643744c2736b334038a7c09ebe728d5ad30[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Thu Feb 1 11:23:00 2018 -0800
+
+    fix issues with stylesheet
+
+[33mcommit a02c343145afc00e874018b942ba5a31eafda9c0[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Thu Feb 1 11:19:09 2018 -0800
+
+    fixed splash page
+
+[33mcommit 8837254eab2c7c157e510517fce53789c3166cf1[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Thu Feb 1 09:52:28 2018 -0800
+
+    fix errors for sign in/ sign up
+
+[33mcommit 912bd2537754c9526c6b6237e5fa1b5f7cf0b776[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Thu Feb 1 02:38:24 2018 -0800
+
+    captr authenication and styling completed for splash, new session, and new users
+
+[33mcommit 14798df47335785ee58d1f588d0ec12a904bb95c[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Jan 31 13:23:15 2018 -0800
+
+    full auth implemented
+
+[33mcommit db18e7d14ad4bad1998f53d36e8b285f65a18fb4[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Jan 31 09:32:25 2018 -0800
+
+    session and users actions operate normally
+
+[33mcommit c15d98c78301d1c92f2565c7154fca054b565957[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Jan 31 07:19:58 2018 -0800
+
+    fixed issues with importing/exporting react components
+
+[33mcommit e74c4d917eba680cb5f01c4a09aa80008cb2b93a[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Tue Jan 30 23:46:34 2018 -0800
+
+    added session reducers and errors reducers into application
+
+[33mcommit 0e414916d9bf860abffe9b2a5d647b87d57fc219[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Tue Jan 30 21:33:09 2018 -0800
+
+    rewrote some of the user model files to correctly use the password function and tidy up naming coventions
+
+[33mcommit 33181550eca399a2d9a3f7014fc2e3c279001d83[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Tue Jan 30 18:02:30 2018 -0800
+
+    added users controllers and session controller. added show page for users after login
+
+[33mcommit 77057dbb9485c132682fa538344ecc804fa1834f[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Tue Jan 30 17:17:03 2018 -0800
+
+    commented out session controller
+
+[33mcommit 6ec2ba3b6ba5444745c8bb2549099f7ead4f2d2c[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Tue Jan 30 16:58:19 2018 -0800
+
+    heroku config changes move jqueryes and pry rails
+
+[33mcommit 41a85777c1f4c656d1207ce39814b3af348e59a4[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Tue Jan 30 01:54:37 2018 -0800
+
+    created working react component
+
+[33mcommit b7c81fb75d6f203bb2f2331708c3ab0438eac6bd[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Tue Jan 30 01:42:42 2018 -0800
+
+    recompile rails and node.js files
+
+[33mcommit b81e4024f967e6270cfe02c14ec7676ed5f6a99b[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Tue Jan 30 01:32:45 2018 -0800
+
+    Nuking all files
+
+[33mcommit 592bbde62abbb616c88f5c43ea42b08e18643185[m
+Author: Andy Luo <31423255+GreenRabite@users.noreply.github.com>
+Date:   Tue Jan 30 01:28:04 2018 -0800
+
+    Delete manifest.js
+
+[33mcommit ced5b7db8ba6caecf3acb4be7903c968c0e50944[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Tue Jan 30 00:47:02 2018 -0800
+
+    updated entry files
+
+[33mcommit 509d0e09ecb4ef8483847ff8ad3a5fb94500938c[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Tue Jan 30 00:32:58 2018 -0800
+
+    fix wiki page per david's suggesstions
+
+[33mcommit e02f8a697d6e4b43640f0c04ec00e336980938fa[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Sun Jan 28 15:14:22 2018 -0800
+
+    Added wiki work into github
+
+[33mcommit 1a5e5727dfec9e2815252a2b02a95612f4923121[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Sun Jan 28 01:32:39 2018 -0800
+
+    started working on wireframes for proposal
+
+[33mcommit a1ea0498473c682d13735c08955581b9fd83231d[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Jan 24 22:02:08 2018 -0800
+
+    Install node.js and webpack to proj. initialize frontend folder
+
+[33mcommit 519eafa6578addd71645d53532ec41fc3b0cd9e6[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Jan 24 07:01:16 2018 -0800
+
+    working on skeleton for project schema and readme
+
+[33mcommit a2713159aa963ab51121f4d4ae3e9a13c3f48bfa[m
+Author: Aluo <green.rabite@gmail.com>
+Date:   Wed Jan 24 01:17:57 2018 -0800
+
+    initialize rails back end project for captur

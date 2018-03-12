@@ -40,11 +40,11 @@ class AlbumModal extends React.Component {
             isOpen={this.state.showModal}
             contentLabel="onRequestClose Example"
             onRequestClose={this.handleCloseModal}
-            className="Modal-photo-form animated fadeIn"
+            className="Modal-album-form animated fadeIn"
             overlayClassName="Overlay-photo-form"
             shouldCloseOnOverlayClick={true}
             >
-            <AlbumFormContainer/>
+            <AlbumFormContainer handleCloseModal={this.handleCloseModal}/>
           </ReactModal>
         </div>
       </div>
