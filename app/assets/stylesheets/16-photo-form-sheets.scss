@@ -92,18 +92,22 @@
 }
 
 .Modal-photo-form {
-  position: absolute;
-  width: 380px;
-  height: 525px;
+  // position: absolute;
+  width: 340px;
+  height: 480px;
   background-color: #fff;
-  /*background: linear-gradient(to right, #f5f7fa , #c3cfe2);*/
-  background-color: #E8EAEE;
-  top: 15%;
-  left: 50%;
-  margin-left: -220px;
-  // margin-top: 20px;
-  border-radius: 5px;
+  // /*background: linear-gradient(to right, #f5f7fa , #c3cfe2);*/
+  // background-color: #E8EAEE;
+  // top: 20%;
+  // left: 39%;
+  // // margin-right: 75px;
+  margin-top: 70px;
+  border-radius: 10px;
   padding: 20px;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .x-icon{
@@ -157,10 +161,18 @@
 }
 
 .img-container{
+  max-width: 250px;
+  max-height: 150px;
+  height: 150px;
   width: 250px;
-  height: 200px;
-
-  // border: 1px solid;
-  margin-top: 150px;
+  margin-top: 20px;
   overflow: hidden;
+  // border: 1px solid black;
+}
+
+.photo-form-bttn-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 60px;
 }

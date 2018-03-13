@@ -12,7 +12,6 @@ import { Link } from 'react-router-dom';
 
 
 const PhotoIndexItem = ({photo}) => {
-  debugger;
   return (
 
       <div className="wrapper">

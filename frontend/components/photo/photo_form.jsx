@@ -61,9 +61,11 @@ class PhotoForm extends React.Component {
                 placeholder="Description"
                 value={this.state.description}/>
             </div>
-            <button className="main-bttn-form" onClick={this.uploadImage}>Upload Photo</button>
-            <div onClick={this.handleSubmit}>
-              <button className="main-bttn-form">Submit</button> <br/>
+            <div className="photo-form-bttn-box">
+              <button className="main-bttn-form" onClick={this.uploadImage}>Upload</button>
+              <div onClick={this.handleSubmit}>
+                <button className="main-bttn-form">Submit</button> <br/>
+              </div>
             </div>
             <div className="img-container">
               <img className="imgSource"src={this.state.img_url ? this.state.img_url : "" } />
