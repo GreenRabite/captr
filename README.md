@@ -14,6 +14,7 @@ captr is a full-stack web application modeled after Flickr. It was developed wit
 + Store and organize your photos in albums
 + Users can edit/update their own photos/albums
 + Users can explore the community and look at other users photos
++ 
 
 ## Technologies
 
