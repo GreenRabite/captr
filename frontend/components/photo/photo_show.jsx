@@ -2,7 +2,6 @@ import React from 'react';
 import CommentShowContainer from './../comment/comment_show_container';
 import CommentForm from './../comment/comment_form';
 import { HashLink as Link } from 'react-router-hash-link';
-import TagsInput from 'react-tagsinput';
 
 
 class PhotoShow extends React.Component {

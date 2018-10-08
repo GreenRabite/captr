@@ -12,6 +12,7 @@
     "lodash": "^4.17.4",
     "masonry-css": "0.0.6",
     "masonry-layout": "^4.2.1",
+    "prop-types": "^15.6.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-dropzone": "^4.2.7",
