@@ -5,7 +5,7 @@ import { LOADING } from './../actions/ui_actions';
 import merge from 'lodash/merge';
 
 const _initialLoadState = {
-  loading: false
+  loading: true
 };
 
 const uiReducer = (state = _initialLoadState, action) => {
