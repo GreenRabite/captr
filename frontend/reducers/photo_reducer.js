@@ -2,6 +2,10 @@ import merge from 'lodash/merge';
 import { RECEIVE_ALL_PHOTOS, RECEIVE_PHOTO, REMOVE_PHOTO } from '../actions/photo_actions';
 import { REMOVE_ALBUM } from '../actions/album_actions';
 
+
+// This function is for the photo reducer
+
+
 const photoReducer = (state = {}, action) =>{
   let newState = {};
   Object.freeze(state);
