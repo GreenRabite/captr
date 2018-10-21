@@ -21,24 +21,6 @@ class AlbumShow extends React.Component {
 
 
   render(){
-    // if (this.props.album === undefined || this.props.album.album_photos === undefined ) {
-    //   return (
-    //     <div className="appBG2">
-    //       <div className="empty-spacer">.</div>
-    //         <div className="album-show-bttn-container margin-maker" >
-    //           <Link to={`/albums/${this.props.match.params.albumId}/edit`}><button className="main-bttn photo-bttn">Edit</button></Link>
-    //           <button onClick={this.deleteAlbum} className="main-bttn photo-bttn">Delete</button>
-    //         </div>
-    //       <div className="album-photos-container centered">
-    //         <Link to={`/albums/${this.props.match.params.albumId}/photos/new`}>
-    //           <div className="album-show-img icon-stack"><i className="fas fa-upload fa-10x"></i></div>
-    //         </Link>
-    //       <br/>
-
-    //       </div>
-    //     </div>
-    //   );
-    // }
     if (this.props.loading) {
       return(
         <LoadingScreen />
