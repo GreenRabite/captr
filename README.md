@@ -2,7 +2,7 @@
 
 [captr live](http://captr.herokuapp.com)
 
-captr is a full-stack web application modeled after Flickr. It was developed with a Ruby on Rails backend, PostgreSQL relational database, and a React.js/Redux architecture frontend. This project was designed and built within a two week timeframe although planned improvements will be added over time.
+captr is a full-stack web application modeled after Flickr. It was developed with a Ruby on Rails backend, PostgreSQL relational database, and a React.js/Redux architecture frontend. The backend API endpoints are based on REST principles and form the backbone of this web application CRUD functionality. This project was designed and built within a two week timeframe although planned improvements will be added over time.
 
 [captr](http://captr.herokuapp.com) is a web application that will allow users of all ages to view and share their photos with the world. Captr will allow users to upload their own photos, create albums, and even explore photos uploaded by other users.
 
@@ -14,7 +14,7 @@ captr is a full-stack web application modeled after Flickr. It was developed wit
 + Store and organize your photos in albums
 + Users can edit/update their own photos/albums
 + Users can explore the community and look at other users photos
-+ 
++ Users can save their favorite photos for further use
 
 ## Technologies
 
@@ -22,6 +22,7 @@ captr is a full-stack web application modeled after Flickr. It was developed wit
 + Redux
 + Ruby on Rails
 + PostgreSQL
++ jBuilder
 + jQuery
 + SCSS
 + Cloudinary
