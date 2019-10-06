@@ -55,7 +55,7 @@ valid_image_links = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 1
 
 
 10.times do
-  Album.create(title:Faker::Overwatch.location, owner_id:User.all.to_a.sample.id)
+  Album.create(title:Faker::Games::Overwatch.location, owner_id:User.all.to_a.sample.id)
 end
 #
 23.times do
@@ -64,7 +64,7 @@ end
   if @user.albums.length > 0
     album_id = @user.albums.sample.id
   else
-    Album.create(title: Faker::Cat.name, owner_id: owner_id)
+    Album.create(title: Faker::Creature::Cat.name, owner_id: owner_id)
     album_id = Album.all.last.id
   end
   a = valid_image_links.sample
@@ -75,8 +75,8 @@ end
   Photo.create(title: Faker::Coffee.blend_name, img_url: "https://picsum.photos/2560/1440/?image=#{a}", thumb_url: "https://picsum.photos/400/200/?image=#{a}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
   Photo.create(title: Faker::Coffee.origin, img_url: "https://picsum.photos/2560/1440/?image=#{b}", thumb_url: "https://picsum.photos/400/200/?image=#{b}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
   Photo.create(title: Faker::Coffee.variety, img_url: "https://picsum.photos/1920/1080/?image=#{c}", thumb_url: "https://picsum.photos/400/200/?image=#{c}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
-  Photo.create(title: Faker::Pokemon.move, img_url: "https://picsum.photos/800/1200/?image=#{d}", thumb_url: "https://picsum.photos/300/400/?image=#{d}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
-  Photo.create(title: Faker::Cat.breed, img_url: "https://picsum.photos/2560/1440/?image=#{e}", thumb_url: "https://picsum.photos/300/400/?image=#{e}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
+  Photo.create(title: Faker::Games::Pokemon.move, img_url: "https://picsum.photos/800/1200/?image=#{d}", thumb_url: "https://picsum.photos/300/400/?image=#{d}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
+  Photo.create(title: Faker::Creature::Cat.breed, img_url: "https://picsum.photos/2560/1440/?image=#{e}", thumb_url: "https://picsum.photos/300/400/?image=#{e}", owner_id:User.all.to_a.sample.id, album_id: Album.all.to_a.sample.id)
 end
 
 
@@ -87,9 +87,9 @@ comments = ["amazing picture!", "Really nice shot, capture the soul perfectly", 
 end
 
 2.times do
-  Tag.create(name: Faker::Overwatch.location)
-  Tag.create(name: Faker::GameOfThrones.city)
-  Tag.create(name: Faker::LordOfTheRings.location)
+  Tag.create(name: Faker::Games::Overwatch.location)
+  Tag.create(name: Faker::TvShows::GameOfThrones.city)
+  Tag.create(name: Faker::Movies::LordOfTheRings.location)
 end
 
 arr= [];
