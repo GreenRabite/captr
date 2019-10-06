@@ -2,7 +2,6 @@ class Api::PhotosController < ApplicationController
   def create
     @photo = Photo.new(photo_params)
     @photo.owner_id = current_user.id
-    # p @photo
     if @photo.save
       render :show
     else
@@ -31,7 +30,7 @@ class Api::PhotosController < ApplicationController
   end
 
   def index
-    @photos = Photo.all
+    @photos = Photo.includes(:owner).all
     render :index
   end
 
