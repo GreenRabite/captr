@@ -30,8 +30,17 @@ class Api::PhotosController < ApplicationController
   end
 
   def index
-    @photos = Photo.includes(:owner).all
+    @photos = Photo.includes(:owner).first(20)
+  end
+
+  def fetch_more_photos
+    count = params[:num].to_i < Photo.all.count ? (params[:num].to_i + 15) : Photo.all.count
+    @photos = Photo.includes(:owner).first(count)
     render :index
+  end
+
+  def total_count
+    render json: {totalCount: Photo.all.count}
   end
 
   def destroy

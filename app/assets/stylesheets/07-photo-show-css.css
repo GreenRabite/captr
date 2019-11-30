@@ -44,6 +44,7 @@
   filter: drop-shadow(2.5px 5px 5px #222);
   /*margin-top: 18px;*/
   margin-left: 80px;
+  flex-shrink:0;
 }
 
 .photo-show-user-info {

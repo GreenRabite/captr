@@ -11,6 +11,9 @@ Rails.application.routes.draw do
       resources :photos, except: [:new, :create] do
         resources :comments, only: [:create]
       end
+      get '/more_photos', to: 'photos#fetch_more_photos'
+      get '/photo_count', to: 'photos#total_count'
+
       post :photos, :to =>  'photos#create_album_photo'
       resources :comments, only: [:index, :update, :destroy, :show]
       resources :albums, only: [:index, :create, :update, :destroy, :show] do

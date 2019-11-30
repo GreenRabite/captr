@@ -1,9 +1,27 @@
+// direct api utils
+
+export const countAllPhotos = () => (
+  $.ajax({
+    method: 'GET',
+    url: `api/photo_count`
+  })
+)
+
+// indirect api utils
+
 export const fetchPhotos = () => (
   $.ajax({
     method: 'GET',
     url: `api/photos`
   })
 );
+
+export const fetchMorePhotos = (photoCount) => (
+  $.ajax({
+    method: 'GET',
+    url: `api/more_photos?num=${photoCount}`
+  })
+)
 
 export const fetchPhoto = (id) => (
   $.ajax({

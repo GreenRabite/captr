@@ -34,6 +34,11 @@ export const fetchPhoto = (id) => (dispatch) => {
   (dispatch(receivePhoto(photo))));
 };
 
+export const fetchMorePhotos = (num) => (dispatch) => {
+  return APIPhoto.fetchMorePhotos(num).then((photos) => 
+  dispatch(receiveAllPhotos(photos)));
+}
+
 export const createPhoto = (photo) => (dispatch) => (
   APIPhoto.createPhoto(photo).then((newPhoto)=> (dispatch(receivePhoto(newPhoto))))
 );
