@@ -36,6 +36,7 @@ Users can add photos to albums they own with the `Add Photo` button. Users can u
 
 ![UploadExample](https://raw.githubusercontent.com/GreenRabite/captr/master/repo_assets/new-picture.gif)
 
+
 #### Adding Photos to Albums
 
 When viewing their own album, users can upload a new photo to the album only if are the owners of the album. If they are not, the upload button does not appear. The user can also update and delete their photos/albums only if they are the owners. This was done with a join association between `albums` and `photos` in a `joins table` called `album_photos`.
