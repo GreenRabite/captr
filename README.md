@@ -34,7 +34,8 @@ captr is a full-stack web application modeled after Flickr. It was developed wit
 
 Users can add photos to albums they own with the `Add Photo` button. Users can upload any number of photos to an album they own. Once the images have been uploaded, a submit form is rendered so that users can add a title and description to their photos.
 
-![UploadExample](https://github.com/GreenRabite/captr/raw/documentation/repo_assets/new-picture.gif)
+![UploadExample](https://raw.githubusercontent.com/GreenRabite/captr/master/repo_assets/new-picture.gif)
+
 
 #### Adding Photos to Albums
 
