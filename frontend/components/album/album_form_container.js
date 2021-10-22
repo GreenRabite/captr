@@ -7,7 +7,6 @@ const mapStateToProps = (state, ownProps) =>{
   let album = {title: "", description: ""};
   let formType= "new";
   if (ownProps.location.pathname.includes('edit')) {
-    // album = Object.assign({}, album, state.entities.albums[ownProps.match.params.albumId]);
     album = state.entities.albums[ownProps.match.params.albumId];
     formType = "update";
   }
